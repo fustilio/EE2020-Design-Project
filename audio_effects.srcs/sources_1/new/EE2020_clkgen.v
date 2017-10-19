@@ -19,9 +19,9 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+    
 module EE2020_clkgen(input CLOCK, output reg clk_20k, reg clk_50M);
-
+    
     reg [11:0] COUNT_20k = 0;
     reg COUNT_50M = 0;
    
