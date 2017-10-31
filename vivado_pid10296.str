@@ -1,0 +1,344 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 10296
+
+Current time: 	10/30/17 6:10:30 PM SGT
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 8.1
+Version: 6.3
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Jeremylsw
+User home directory: C:/Users/s9539968a
+User working directory: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/s9539968a/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/s9539968a/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	159 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 395 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 46 MB (+45595kb) [00:00:23]
+// [Engine Memory]: 356 MB (+221493kb) [00:00:23]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\s9539968a\Desktop\EE2020\Project\audio_effects\audio_effects.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 403 MB (+30895kb) [00:00:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 403 MB. GUI used memory: 25 MB. Current time: 10/30/17 6:10:32 PM SGT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+348kb) [00:00:39]
+// [Engine Memory]: 452 MB (+29989kb) [00:00:39]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 489 MB. GUI used memory: 32 MB. Current time: 10/30/17 6:10:50 PM SGT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 489 MB (+15467kb) [00:00:45]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 51 MB (+459kb) [00:00:47]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: audio_effects; location: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 705.457 ; gain = 102.754 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 55 MB (+1179kb) [00:01:37]
+// Elapsed time: 121 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (dist_mem_gen_0.xci) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), dmg - dist_mem_gen_0 (dist_mem_gen_0.xci)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), dmg - dist_mem_gen_0 (dist_mem_gen_0.xci)]", 9, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// p:g (cv:JFrame): Re-customize IP: addNotify
+// [GUI Memory]: 64 MB (+6509kb) [00:03:04]
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+// [GUI Memory]: 70 MB (+2511kb) [00:04:42]
+// Elapsed time: 97 seconds
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// [Engine Memory]: 520 MB (+6250kb) [00:04:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 526 MB. GUI used memory: 40 MB. Current time: 10/30/17 6:14:52 PM SGT
+// Elapsed time: 14 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 294, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 90, 197); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 234, 106); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 200, 89); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 235, 76); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 542 MB. GUI used memory: 40 MB. Current time: 10/30/17 6:15:27 PM SGT
+selectCodeEditor("AUDIO_FX_TOP.v", 235, 76); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 260, 52); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+// [Engine Memory]: 546 MB (+608kb) [00:05:32]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), dmg - dist_mem_gen_0 (dist_mem_gen_0.xci)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), dmg - dist_mem_gen_0 (dist_mem_gen_0.xci)]", 9, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// p:g (cv:JFrame): Re-customize IP: addNotify
+setText("Data Width", "12"); // O:ao (cS:N, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.data_width {12}] [get_ips dist_mem_gen_0] 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 727.402 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run dist_mem_gen_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_run -jobs 2 dist_mem_gen_0_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 30 18:15:55 2017] Launched dist_mem_gen_0_synth_1... Run output will be captured here: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.runs/dist_mem_gen_0_synth_1/runme.log 
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.ip_user_files -ipstatic_source_dir C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectCodeEditor("AUDIO_FX_TOP.v", 364, 122); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 78 MB (+5276kb) [00:05:58]
+selectCodeEditor("AUDIO_FX_TOP.v", 384, 108); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 84 MB (+1536kb) [00:07:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 569 MB. GUI used memory: 45 MB. Current time: 10/30/17 6:17:33 PM SGT
+// [GUI Memory]: 98 MB (+10983kb) [00:07:46]
+// Elapsed time: 153 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 384, 108); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 384, 108, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("AUDIO_FX_TOP.v", 384, 108); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 106 MB (+2325kb) [00:08:55]
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [Engine Memory]: 574 MB (+680kb) [00:08:56]
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 111 MB (+480kb) [00:08:58]
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("AUDIO_FX_TOP.v", 313, 127); // bH:N (JPanel:JComponent, cv:JFrame)
+// [Engine Memory]: 603 MB (+258kb) [00:09:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 603 MB. GUI used memory: 53 MB. Current time: 10/30/17 6:19:07 PM SGT
+// Elapsed time: 10 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 477, 103); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("AUDIO_FX_TOP.v", 523, 100); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 149 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 424, 159); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 448, 153); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 395 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cv:JFrame)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_OUT_OF_CONTEXT_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run dist_mem_gen_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 240, 120); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 166, 117); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 252, 144); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 370, 178); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 30 18:29:10 2017] Launched dist_mem_gen_0_synth_1, synth_1... Run output will be captured here: dist_mem_gen_0_synth_1: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.runs/dist_mem_gen_0_synth_1/runme.log synth_1: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log [Mon Oct 30 18:29:10 2017] Launched impl_1... Run output will be captured here: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# Current time: 10/30/17 6:29:26 PM SGT
+# Process ID: 10296
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/.Xil/Vivado-10296-acer/ss10296.1015066410544.log" (See C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/vivado_pid10296.debug)
+*/
+// HOptionPane Error: "boost::filesystem::remove: The process cannot access the file because it is being<br>used by another process: "C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/<br>.Xil/Vivado-10296-acer/ss10296.1015066410544.log" (Vivado v2016.2 (64-bit))"
+// Elapsed time: 150 seconds
+selectButton("RDIResource.MainWindowUtils_ERROR_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Elapsed time: 393 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 90, 132); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 311 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cv:JFrame)

@@ -42,21 +42,25 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/MyWork/EE2020proj/audio_effects/audio_effects.cache/wt [current_project]
-  set_property parent.project_path D:/MyWork/EE2020proj/audio_effects/audio_effects.xpr [current_project]
-  set_property ip_repo_paths d:/MyWork/EE2020proj/audio_effects/audio_effects.cache/ip [current_project]
-  set_property ip_output_repo d:/MyWork/EE2020proj/audio_effects/audio_effects.cache/ip [current_project]
-  add_files -quiet D:/MyWork/EE2020proj/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.dcp
-  read_xdc D:/MyWork/EE2020proj/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
+  set_property webtalk.parent_dir D:/MyWork/audio_effects/audio_effects.cache/wt [current_project]
+  set_property parent.project_path D:/MyWork/audio_effects/audio_effects.xpr [current_project]
+  set_property ip_repo_paths d:/MyWork/audio_effects/audio_effects.cache/ip [current_project]
+  set_property ip_output_repo d:/MyWork/audio_effects/audio_effects.cache/ip [current_project]
+  add_files -quiet D:/MyWork/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.dcp
+  add_files -quiet d:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
+  set_property netlist_only true [get_files d:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
+  read_xdc -mode out_of_context -ref dist_mem_gen_0 -cells U0 d:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc
+  set_property processing_order EARLY [get_files d:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc]
+  read_xdc D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
   link_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
   write_hwdef -file AUDIO_FX_TOP.hwdef
   close_msg_db -file init_design.pb
@@ -118,5 +122,21 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+}
+
+start_step write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force AUDIO_FX_TOP.mmi }
+  write_bitstream -force AUDIO_FX_TOP.bit 
+  catch { write_sysdef -hwdef AUDIO_FX_TOP.hwdef -bitfile AUDIO_FX_TOP.bit -meminfo AUDIO_FX_TOP.mmi -file AUDIO_FX_TOP.sysdef }
+  catch {write_debug_probes -quiet -force debug_nets}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
 }
 

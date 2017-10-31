@@ -1,0 +1,767 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 5324
+
+Current time: 	10/31/17 2:39:17 PM SGT
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Student
+User home directory: C:/Users/Student
+User working directory: D:/MyWork/audio_effects
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Student/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Student/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 407 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\MyWork\audio_effects\audio_effects.xpr. Version: Vivado v2016.2 
+// [GUI Memory]: 36 MB (+35565kb) [00:00:12]
+// [Engine Memory]: 393 MB (+260921kb) [00:00:12]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/MyWork/audio_effects/audio_effects.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 411 MB. GUI used memory: 29 MB. Current time: 10/31/17 2:39:19 PM SGT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 53 MB (+15196kb) [00:00:24]
+// [Engine Memory]: 467 MB (+56858kb) [00:00:24]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project D:/MyWork/audio_effects/audio_effects.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 493 MB (+2811kb) [00:00:27]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 56 MB (+872kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: audio_effects; location: D:/MyWork/audio_effects; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 731.477 ; gain = 101.336 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// a:a (cv:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 59 MB (+330kb) [00:02:11]
+// Elapsed time: 188 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Project 1-311] Could not find the file 'D:/MyWork/hello_data.coe', nor could it be found using path 'C:/Users/s9539968a/Desktop/EE2020/Project/hello_data.coe'.", 0); // d:a (JViewport:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 2); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 5); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 6, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+// [Engine Memory]: 518 MB (+322kb) [00:03:58]
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// HMemoryUtils.trashcanNow. Engine heap size: 518 MB. GUI used memory: 43 MB. Current time: 10/31/17 2:43:04 PM SGT
+setFileChooser("D:/MyWork/EE2020proj/hello_data.coe");
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files D:/MyWork/EE2020proj/hello_data.coe -to_files D:/MyWork/hello_data.coe -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'D:/MyWork/hello_data.coe' with file 'D:/MyWork/EE2020proj/hello_data.coe'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 63 MB (+349kb) [00:04:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 539 MB. GUI used memory: 40 MB. Current time: 10/31/17 2:43:24 PM SGT
+// [GUI Memory]: 70 MB (+4309kb) [00:04:38]
+// [GUI Memory]: 75 MB (+1397kb) [00:04:49]
+// Elapsed time: 50 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a100 - custom_clock (custom_clock.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a100 - custom_clock (custom_clock.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b20k - custom_clock (custom_clock.v)]", 6); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b20k - custom_clock (custom_clock.v)]", 6); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b30k - custom_clock (custom_clock.v)]", 7, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b50k - custom_clock (custom_clock.v)]", 8, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k - custom_clock (custom_clock.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc100 - custom_clock (custom_clock.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+// [GUI Memory]: 79 MB (+943kb) [00:05:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a100 - custom_clock (custom_clock.v)]", 5, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc100 - custom_clock (custom_clock.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+// [GUI Memory]: 84 MB (+1165kb) [00:05:19]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k - custom_clock (custom_clock.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k - custom_clock (custom_clock.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b50k - custom_clock (custom_clock.v)]", 8, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b20k - custom_clock (custom_clock.v)]", 6, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k - custom_clock (custom_clock.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+// Elapsed time: 45 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree20k - project_3b (project_3b.v)]", 12); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree20k - project_3b (project_3b.v)]", 12); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree5k - project_3b (project_3b.v)]", 14); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree5k - project_3b (project_3b.v)]", 14); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2a20k - custom_clock (custom_clock.v)]", 4); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k - custom_clock (custom_clock.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k - custom_clock (custom_clock.v), gffm - get_frequency_from_m (get_frequency_from_m.v)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k - custom_clock (custom_clock.v), mvg - m_value_getter (m_value_getter.v)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b20k - custom_clock (custom_clock.v)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc3b20k - custom_clock (custom_clock.v)]", 10, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_BLOCK_DESIGN_SUB_DESIGN_UNITS, "Add existing block design sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+// Elapsed time: 15 seconds
+dismissFileChooser();
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// [GUI Memory]: 91 MB (+1998kb) [00:07:44]
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, "Add or create design sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+// [GUI Memory]: 95 MB (+15kb) [00:08:18]
+// Elapsed time: 36 seconds
+String[] filenames31467 = {"D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/deciToDigits.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/EE2020_clkgen.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/FlexiClock.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/frequency_to_m.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/generateSine.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/m_to_clock.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/sevenseg.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/sineLUT.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/Task3A.v"};
+setFileChooser(filenames31467);
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+dismissFileChooser();
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VerilogSourceFile_small ; 2 ; EE2020_clkgen.v ; xil_defaultlib ; D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new", 1, "EE2020_clkgen.v", 2); // bI:v (JViewport:JComponent, b:g)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // y:JideButton (CommandBar:DockableBar, b:g)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // y:JideButton (CommandBar:DockableBar, b:g)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // y:JideButton (CommandBar:DockableBar, b:g)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // y:JideButton (CommandBar:DockableBar, b:g)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VerilogSourceFile_small ; 1 ; deciToDigits.v ; xil_defaultlib ; D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new", 0, "1", 1); // bI:v (JViewport:JComponent, b:g)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VerilogSourceFile_small ; 8 ; Task3A.v ; xil_defaultlib ; D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new", 7, "8", 1, true, false, false, false, false); // bI:v (JViewport:JComponent, b:g) - Shift Key
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // y:JideButton (CommandBar:DockableBar, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+setFileChooser("D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/AUDIO_FX_TOP.v");
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VerilogSourceFile_small ; 1 ; AUDIO_FX_TOP.v ; xil_defaultlib ; D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new", 0, "AUDIO_FX_TOP.v", 2); // bI:v (JViewport:JComponent, b:g)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // y:JideButton (CommandBar:DockableBar, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+String[] filenames16706 = {"D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/clockToSine8.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/clockToSound.v"};
+setFileChooser(filenames16706);
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+// [Engine Memory]: 550 MB (+5946kb) [00:08:47]
+// Elapsed time: 10 seconds
+String[] filenames29306 = {"D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/EE2020_clkgen.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/FlexiClock.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/Task3A.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/deciToDigits.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/frequency_to_m.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/generateSine.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/m_to_clock.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/sevenseg.v", "D:/MyWork/EE2020proj/integration/integration/integration.srcs/sources_1/new/sineLUT.v"};
+setFileChooser(filenames29306);
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 106 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EE2020_clkgen (EE2020_clkgen.v)]", 24, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("custom_clock.v", 84, 472); // bH:N (JPanel:JComponent, cv:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc100 - custom_clock (custom_clock.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 20 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 92, 442); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 148, 264); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 158, 271); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 158, 271); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 101 MB (+1316kb) [00:10:18]
+// Elapsed time: 15 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 115, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 101, 303); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 133, 390); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 147, 386); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 149, 427); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 154, 411); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 156, 424); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 15, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 358, 362); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Basys3_Master.xdc", 422, 360); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Basys3_Master.xdc", 389, 419); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("Basys3_Master.xdc", 464, 455); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "Basys3_Master.xdc", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Basys3_Master.xdc", 325, 375, true, false, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Shift Key
+selectCodeEditor("Basys3_Master.xdc", 322, 367, true, false, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Shift Key
+selectCodeEditor("Basys3_Master.xdc", 288, 481); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Basys3_Master.xdc", 366, 512, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+// Elapsed time: 12 seconds
+selectCodeEditor("Basys3_Master.xdc", 368, 256); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// y:y (cv:JFrame): Invalid Top Module: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:y)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // y:y (cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 107, 448); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 106 MB (+91kb) [00:11:56]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("AUDIO_FX_TOP.v", 100, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 231, 404); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 565 MB. GUI used memory: 53 MB. Current time: 10/31/17 2:51:05 PM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("AUDIO_FX_TOP.v", 127, 228); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 155, 235); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 104, 235); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 103, 235, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("AUDIO_FX_TOP.v", 143, 245); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 130, 249); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 121, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 119, 236); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 113, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 40, 262); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 44, 273, false, true, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key
+selectCodeEditor("AUDIO_FX_TOP.v", 43, 261); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 47, 278, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 41, 277, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 41, 272, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 41, 294, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 42, 313, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 124, 260); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("AUDIO_FX_TOP.v", 125, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 100, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 122, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 108, 286); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 126, 278); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 127, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 124, 298); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 125, 310); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 131, 334); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 124, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 112, 334); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 202, 415); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 230, 139); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 51 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 206, 286); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 7, 192); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 10, 503); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 280, 525); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 280, 525, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey(null, null, 'z');
+selectCodeEditor("AUDIO_FX_TOP.v", 26, 495); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 13, 500); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 596, 498); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 280, 392); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 280, 392, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("AUDIO_FX_TOP.v", 258, 358); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 214, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 13, 497); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 109, 385); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 262, 338); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 265, 337); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 340, 334); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 433, 327); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 268, 447); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 195, 335); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 266, 481); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 254, 526); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 258, 517); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 238, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 238, 353, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 290, 400); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 222, 337); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 222, 337, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("AUDIO_FX_TOP.v", 299, 405); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 243, 374); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 179, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 179, 336, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("AUDIO_FX_TOP.v", 201, 381); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 220, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 286, 456); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 286, 456, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("AUDIO_FX_TOP.v", 271, 399); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 123, 257); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 122, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 131, 449); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 220, 355); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 123, 382); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 280, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("AUDIO_FX_TOP.v", 81, 298, false, true, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 298, false, true, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key - Double Click
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 298, false, true, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 299, false, true, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 299, false, true, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 299, false, true, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 299, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 299, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 82, 299, false, false, true, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Alt Key
+selectCodeEditor("AUDIO_FX_TOP.v", 95, 302, false, true, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Control Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("AUDIO_FX_TOP.v", 68, 276); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree20k - project_3b (project_3b.v)]", 12, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), lp - led_picker (led_picker.v)]", 16, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), lp - led_picker (led_picker.v)]", 16, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("led_picker.v", 141, 466); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("led_picker.v", 142, 367); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("led_picker.v", 70, 364); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("led_picker.v", 106, 382); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("led_picker.v", 113, 380); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("led_picker.v", 153, 459); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 144 seconds
+selectCodeEditor("led_picker.v", 249, 458); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("led_picker.v", 260, 486); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_picker.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree20k - project_3b (project_3b.v)]", 12, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), sp - speaker_picker (speaker_picker.v)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), sp - speaker_picker (speaker_picker.v)]", 15, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ssp - sevenseg_picker (sevenseg_picker.v)]", 17, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ssp - sevenseg_picker (sevenseg_picker.v)]", 17, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("sevenseg_picker.v", 155, 269); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("sevenseg_picker.v", 152, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("sevenseg_picker.v", 147, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("sevenseg_picker.v", 67, 116); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("sevenseg_picker.v", 370, 169); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("sevenseg_picker.v", 121, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("sevenseg_picker.v", 224, 430); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("sevenseg_picker.v", 151, 334); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("sevenseg_picker.v", 133, 273); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sevenseg_picker.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led_picker.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("Basys3_Master.xdc", 294, 317); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Basys3_Master.xdc", 300, 235); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 69, 157); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 201, 156); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 154, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 578, 298); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 461, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 122, 279); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 121, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 237, 308); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("speaker_picker.v", 183, 193); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("speaker_picker.v", 278, 212); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "speaker_picker.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 187, 177); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run dist_mem_gen_0_synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'... 
+// TclEventType: LOAD_FEATURE
+// [Engine Memory]: 578 MB (+873kb) [00:21:13]
+// TclEventType: LOAD_FEATURE
+// Tcl Message: ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file d:/MyWork/hello_data.coe 
+// Tcl Message: ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s). ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'dist_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs:  ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. Failed to generate IP 'dist_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs:  
+// ak:a (cv:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, ak:a)
+dismissDialog("Launch Run Critical Messages"); // ak:a (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 587 MB. GUI used memory: 61 MB. Current time: 10/31/17 3:00:21 PM SGT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 30, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 30, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 30, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v)]", 13, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v)]", 13, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v)]", 13, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v)]", 13, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v)]", 13, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v)]", 13, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v)]", 13, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v), dmg - dist_mem_gen_0 (dist_mem_gen_0.xci)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v), dmg - dist_mem_gen_0 (dist_mem_gen_0.xci)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), mpthree50k - project_3b (project_3b.v), dmg - dist_mem_gen_0 (dist_mem_gen_0.xci)]", 14, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// p:g (cv:JFrame): Re-customize IP: addNotify
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficients File(coefficient_file)' for Invalid COE File- Unable to open the file d:/MyWork/hello_data.coe  . IP 'dist_mem_gen_0' 
+// Tcl Message: INFO: [IP_Flow 19-3438] Customization errors found on 'dist_mem_gen_0'. Restoring to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficients File(coefficient_file)' for Invalid COE File- Unable to open the file d:/MyWork/hello_data.coe  . IP 'dist_mem_gen_0' 
+// Tcl Message: INFO: [IP_Flow 19-3447] Customization errors found during restoring IP 'dist_mem_gen_0' to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3439] Failed to restore IP 'dist_mem_gen_0' customization to its previous valid configuration. 
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, "PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE", (HResource) null, "RST & Initialization", 2, false, true); // cR:g (F:JPanel, p:g) - Double Click
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, p:g)
+dismissFileChooser();
+// Elapsed time: 19 seconds
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, p:g)
+setFileChooser("D:/MyWork/audio_effects/hello_data.coe");
+// [Engine Memory]: 615 MB (+7767kb) [00:22:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 68 MB. Current time: 10/31/17 3:01:11 PM SGT
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "memory config", 0); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port config", 1); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cR:g (F:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {D:/MyWork/audio_effects/hello_data.coe}] [get_ips dist_mem_gen_0] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'd:/MyWork/audio_effects/hello_data.coe' provided. It will be converted relative to IP Instance files '../../../../hello_data.coe' 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 814.973 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_run -jobs 2 dist_mem_gen_0_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Oct 31 15:02:29 2017] Launched dist_mem_gen_0_synth_1... Run output will be captured here: D:/MyWork/audio_effects/audio_effects.runs/dist_mem_gen_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:02 . Memory (MB): peak = 814.973 ; gain = 0.000 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory D:/MyWork/audio_effects/audio_effects.ip_user_files/sim_scripts -ip_user_files_dir D:/MyWork/audio_effects/audio_effects.ip_user_files -ipstatic_source_dir D:/MyWork/audio_effects/audio_effects.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 79 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 112 MB (+816kb) [00:31:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 75 MB. Current time: 10/31/17 3:31:14 PM SGT
+// Elapsed time: 1980 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bL:g (cv:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.2   **** Build date : Jun  2 2016-16:57:03     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// Tcl Message: open_hw_target 
+// Tcl Message: ERROR: [Labtoolstcl 44-469] There is no current hw_target. 
+dismissDialog("Auto Connect"); // bL:g (cv:JFrame)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// [GUI Memory]: 120 MB (+2074kb) [00:56:55]
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: open_hw_target 
+// Tcl Message: ERROR: [Labtoolstcl 44-469] There is no current hw_target. 
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 78 MB. Current time: 10/31/17 3:35:59 PM SGT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: open_hw_target 
+// Tcl Message: ERROR: [Labtoolstcl 44-469] There is no current hw_target. 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: open_hw_target 
+// Tcl Message: ERROR: [Labtoolstcl 44-469] There is no current hw_target. 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// TclEventType: HW_SYSMON_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 701 MB. GUI used memory: 72 MB. Current time: 10/31/17 3:36:19 PM SGT
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 702 MB (+59916kb) [00:57:17]
+// TclEventType: HW_DEVICE_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// [Engine Memory]: 776 MB (+40620kb) [00:57:18]
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // r:a (ap:JPanel, aW:ak)
+dismissFileChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, aW:ak)
+// 'A' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 375, 70); // dI:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cv:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// G:be (cv:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Confirm Close"); // G:be (cv:JFrame)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "dist_mem_gen_0_synth_1 ; dist_mem_gen_0 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ; 1325 ; 0 ; 0 ; 0 ; 0 ; Tue Oct 31 15:01:34 SGT 2017 ; 00:04:59 ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 3, "synth_design Complete!", 2, false); // W:as (JViewport:JComponent, cv:JFrame)
+// PAPropertyPanels.initPanels (dist_mem_gen_0_synth_1) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bL:g)
+// TclEventType: RUN_FAILED
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 225, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 279, 323); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 261, 338); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 251, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("AUDIO_FX_TOP.v", 251, 337); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 201, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "AUDIO_FX_TOP.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 650, 539); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 637, 489); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 224, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("AUDIO_FX_TOP.v", 273, 501); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("AUDIO_FX_TOP.v", 106, 503); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Oct 31 15:37:43 2017] Launched synth_1... Run output will be captured here: D:/MyWork/audio_effects/audio_effects.runs/synth_1/runme.log [Tue Oct 31 15:37:43 2017] Launched impl_1... Run output will be captured here: D:/MyWork/audio_effects/audio_effects.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:01:01 . Memory (MB): peak = 967.324 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// ap:G (cv:JFrame): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ap:G (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_runs impl_1 -to_step write_bitstream. , [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file d:/MyWork/hello_data.coe. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project D:/MyWork/audio_effects/audio_effects.xpr. , [Project 1-311] Could not find the file 'D:/MyWork/hello_data.coe', nor could it be found using path 'C:/Users/s9539968a/Desktop/EE2020/Project/hello_data.coe'.. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+// [GUI Memory]: 127 MB (+457kb) [00:58:51]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 32, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 31, false, true, false, false, false, false); // z:k (G:JPanel, cv:JFrame) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 32, false); // z:k (G:JPanel, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files d:/MyWork/audio_effects/hello_data.coe 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 31, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, hello_data.coe]", 32, false); // z:k (G:JPanel, cv:JFrame)

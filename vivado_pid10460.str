@@ -1,0 +1,91 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 10460
+
+Current time: 	10/31/17 2:09:20 PM SGT
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 8.1
+Version: 6.3
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Jeremylsw
+User home directory: C:/Users/s9539968a
+User working directory: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/s9539968a/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/s9539968a/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	196 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 381 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 47 MB (+46830kb) [00:00:24]
+// [Engine Memory]: 359 MB (+224549kb) [00:00:24]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\s9539968a\Desktop\EE2020\Project\audio_effects\audio_effects.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: open_project C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 388 MB (+12216kb) [00:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 390 MB. GUI used memory: 27 MB. Current time: 10/31/17 2:09:23 PM SGT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 478 MB (+73963kb) [00:00:43]
+// [GUI Memory]: 55 MB (+5801kb) [00:00:50]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects/audio_effects.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 499 MB. GUI used memory: 35 MB. Current time: 10/31/17 2:09:47 PM SGT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 503 MB (+1166kb) [00:00:55]
+// Project name: audio_effects; location: C:/Users/s9539968a/Desktop/EE2020/Project/audio_effects; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 768.063 ; gain = 150.371 
+// [GUI Memory]: 61 MB (+3467kb) [00:00:55]
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 66 MB (+1876kb) [00:04:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 526 MB. GUI used memory: 35 MB. Current time: 10/31/17 2:18:03 PM SGT
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 991 seconds
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+// [GUI Memory]: 70 MB (+1260kb) [00:19:17]
