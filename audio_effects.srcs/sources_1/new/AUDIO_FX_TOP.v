@@ -40,57 +40,24 @@ module AUDIO_FX_TOP(
     // Clock Divider Module: Generate necessary clocks from 100MHz FPGA CLK
     // Please create the clock divider module and instantiate it here.
 
+      wire clk_20k;
+      wire clk_50M;
+    
       FlexiClock cc20k(20000,CLK,clk_20k);
       FlexiClock cc2(50000000,CLK,clk_50M);
-
   
      //////////////////////////////////////////////////////////////////////////////////
      //SPI Module: Converting serial data into a 12-bit parallel register
      //Do not change the codes in this area
        wire [11:0]MIC_in;
        SPI u1 (CLK, clk_20k, J_MIC3_Pin3, J_MIC3_Pin1, J_MIC3_Pin4, MIC_in);
-        
        
     /////////////////////////////////////////////////////////////////////////////////////
     // Real-time Audio Effect Features
     // Please create modules to implement different features and instantiate them here   
-      
-      wire [15:0]led_display;
-      wire [13:0]sevensegment2b;
-      project_2b mpt(MIC_in, clk_20k2a, clk_1002a, led_display, sevensegment2b);
-      
+            
       wire [11:0]speaker_out;
-//      wire [11:0]hellospeaker20k;
-//      wire [11:0]hellospeaker30k;
-//      wire [11:0]hellospeaker50k;
-//      //Plays if !btnU and !btnD
-//      project_3b mpthree20k(clk_20k3b, hellospeaker20k);
-      
-//      //Plays if btnU
-//      project_3b mpthree50k(clk_50k3b, hellospeaker50k);
-//      //Plays if btnD
-//      project_3b mpthree5k(clk_30k3b, hellospeaker30k);
-      
-      
-//      //Module to select which speaker should be played
-//      wire [11:0]speaker_selected;
-//      speaker_picker sp(CLK,sw,hellospeaker20k,hellospeaker30k,hellospeaker50k,
-//                        btnU,btnD,btnC,speaker_selected);
-//      assign speaker_out = speaker_selected;
-      
-//      //Module to select which led should be output
-//      wire [15:0]led_selected;
-//      led_picker lp(CLK,sw,led_display,led_selected);
-//      assign led = led_selected;
-      
-//      //Module to select which seven-segment to display
-//      wire [3:0]an_selected;
-//      wire [6:0]seg_selected;
-//      sevenseg_picker ssp(clk_100,sw,sevensegment2b,an_selected,seg_selected);
-//      assign an = an_selected;
-//      assign seg = seg_selected;
-      
-      task_selector ts(CLK, sw, btn, led, an, seg, speaker_out);
+      task_selector ts(CLK, MIC_in, sw, btn, led, an, seg, dp, speaker_out);
       
     /////////////////////////////////////////////////////////////////////////////////////
     //DAC Module: Digital-to-Analog Conversion
