@@ -32,6 +32,14 @@ module task_selector(
     output [11:0] speaker_selected
     );
     
+    parameter TASK_ONE = 4'b0001, TASK_TWO_A = 4'b0010, TASK_TWO_B = 4'b0011,
+              TASK_THREE_A = 4'b0100, TASK_THREE_B = 4'b0101, TASK_FOUR = 4'b0110;
+    wire [3:0] state;
+    assign state[0] = sw[3];
+    assign state[1] = sw[2];
+    assign state[2] = sw[1];
+    assign state[3] = sw[0];
+    
     wire clk_100;
     wire clk_20k3b;
     wire clk_30k3b;
@@ -69,42 +77,43 @@ module task_selector(
     //Declare test function
 //    wire [11:0]extra_speaker;
 //    project_extra ex(CLK, btn, MIC_in, extra_speaker);
+   
+   
     
     always @(posedge CLK) begin
-        if (sw[2]) begin
-            // Assigns 3b speaker and seven-segment value to speaker
-            speaker_inter <= mpthreeOut;
-            // Default turns off LED
-            led_inter <= 16'b0;
-            an_inter <= 4'b1111;
-            seg_inter <= 7'b1111111;
-            dp_inter <= 1;
-        end 
-        else if (sw[1]) begin
-            // Assigns 2b LED and seven-segment values
-            led_inter <= led_twobout;
-            an_inter <= antwobout;
-            seg_inter <= segtwobout;
-            dp_inter <= 1;
-            // Default turns off speaker
-            speaker_inter <= 0;
-        end
-        else if (sw[0]) begin
-            // Assigns 1 LED values
-            led_inter <= led_oneout;
-            speaker_inter <= speaker_oneout;
-            // Default turns off speaker and seven-segment
-            an_inter <= 4'b1111;
-            seg_inter <= 7'b1111111;
-            dp_inter <= 1;
-        end
-        else begin
-            speaker_inter <= 0;
-            led_inter <= 0;
-            an_inter <= 4'b1111;
-            seg_inter <= 7'b1111111;
-            dp_inter <= 1;
-        end
+        case (state)
+            TASK_THREE_B : begin
+                // Assigns 3b speaker and seven-segment value to speaker
+                speaker_inter <= mpthreeOut;
+                // Default turns off LED
+                led_inter <= 16'b0;
+                an_inter <= 4'b1111;
+                seg_inter <= 7'b1111111;
+                dp_inter <= 1;
+            end TASK_TWO_B : begin
+                // Assigns 2b LED and seven-segment values
+                led_inter <= led_twobout;
+                an_inter <= antwobout;
+                seg_inter <= segtwobout;
+                dp_inter <= 1;
+                // Default turns off speaker
+                speaker_inter <= 0;
+            end TASK_ONE : begin
+                // Assigns 1 LED values
+                led_inter <= led_oneout;
+                speaker_inter <= speaker_oneout;
+                // Default turns off speaker and seven-segment
+                an_inter <= 4'b1111;
+                seg_inter <= 7'b1111111;
+                dp_inter <= 1;
+            end default : begin
+                speaker_inter <= 0;
+                led_inter <= 0;
+                an_inter <= 4'b1111;
+                seg_inter <= 7'b1111111;
+                dp_inter <= 1;
+            end
+       endcase
     end
     
     assign speaker_selected = speaker_inter;
