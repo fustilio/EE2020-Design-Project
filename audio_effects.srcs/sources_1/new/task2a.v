@@ -22,7 +22,7 @@
 
 module task2a(
     input CLK,
-    input [15:0] sw,
+    input [11:0] sw,
     input [4:0] btn,
     output [15:0] led,
     output [3:0] an,

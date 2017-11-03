@@ -1,10 +1,10 @@
-// Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-// Date        : Thu Nov 02 20:03:40 2017
-// Host        : acer running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+// Date        : Fri Nov  3 22:53:22 2017
+// Host        : Lee running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.v
+//               C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.v
 // Design      : dist_mem_gen_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

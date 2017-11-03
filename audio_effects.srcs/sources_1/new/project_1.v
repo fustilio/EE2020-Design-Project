@@ -23,9 +23,16 @@
 module project_1(
     input [11:0]MIC_in,
     input CLK,
-    output [15:0]led_oneout,
+    output reg [15:0]led_oneout,
     output [11:0]speaker_oneout
     );
-    assign led_oneout[11:0] = MIC_in;
+    
+    wire clk_viewable;
+    FlexiClock ccview(25,CLK,clk_viewable);
+    
+    always @ (posedge clk_viewable) begin
+        led_oneout[11:0] = MIC_in;
+    end
     assign speaker_oneout = MIC_in; 
+    
 endmodule

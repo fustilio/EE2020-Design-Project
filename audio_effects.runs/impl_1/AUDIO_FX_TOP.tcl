@@ -111,7 +111,7 @@ set rc [catch {
   write_checkpoint -force AUDIO_FX_TOP_placed.dcp
   create_report "impl_1_place_report_io_0" "report_io -file AUDIO_FX_TOP_io_placed.rpt"
   create_report "impl_1_place_report_utilization_0" "report_utilization -file AUDIO_FX_TOP_utilization_placed.rpt -pb AUDIO_FX_TOP_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -file AUDIO_FX_TOP_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -132,7 +132,7 @@ set rc [catch {
   create_report "impl_1_route_report_methodology_0" "report_methodology -file AUDIO_FX_TOP_methodology_drc_routed.rpt -pb AUDIO_FX_TOP_methodology_drc_routed.pb -rpx AUDIO_FX_TOP_methodology_drc_routed.rpx"
   create_report "impl_1_route_report_power_0" "report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx"
   create_report "impl_1_route_report_route_status_0" "report_route_status -file AUDIO_FX_TOP_route_status.rpt -pb AUDIO_FX_TOP_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file AUDIO_FX_TOP_timing_summary_routed.rpt -warn_on_violation  -rpx AUDIO_FX_TOP_timing_summary_routed.rpx"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -file AUDIO_FX_TOP_timing_summary_routed.rpt -warn_on_violation  -rpx AUDIO_FX_TOP_timing_summary_routed.rpx"
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file AUDIO_FX_TOP_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file AUDIO_FX_TOP_clock_utilization_routed.rpt"
   close_msg_db -file route_design.pb
@@ -143,24 +143,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force AUDIO_FX_TOP.mmi }
-  write_bitstream -force AUDIO_FX_TOP.bit 
-  catch {write_debug_probes -quiet -force AUDIO_FX_TOP}
-  catch {file copy -force AUDIO_FX_TOP.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
