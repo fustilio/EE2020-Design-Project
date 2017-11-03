@@ -59,6 +59,20 @@ module AUDIO_FX_TOP(
       wire [11:0]speaker_out;
       task_selector ts(CLK, MIC_in, sw, btn, led, an, seg, dp, speaker_out);
       
+      wire slow_clock;
+      FlexiClock fc0(5, CLK, slow_clock);
+      reg [4:0] count1 = 0;
+      reg [4:0] count2 = 1;
+      reg [4:0] count3 = 2;
+      reg [4:0] count4 = 3;
+      always @(posedge slow_clock) begin
+        count1 <= (count1 == 7) ? 0 : count1 + 1; 
+        count2 <= (count2 == 7) ? 0 : count2 + 1; 
+        count3 <= (count3 == 7) ? 0 : count3 + 1; 
+        count4 <= (count4 == 7) ? 0 : count4 + 1; 
+      end
+      
+      
     /////////////////////////////////////////////////////////////////////////////////////
     //DAC Module: Digital-to-Analog Conversion
     //Do not change the codes in this area        
