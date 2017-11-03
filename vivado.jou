@@ -2,101 +2,407 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Nov 03 12:53:01 2017
-# Process ID: 7572
-# Current directory: C:/Users/s9539968a/Desktop/Design_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7484 C:\Users\s9539968a\Desktop\Design_Project\audio_effects.xpr
-# Log file: C:/Users/s9539968a/Desktop/Design_Project/vivado.log
-# Journal file: C:/Users/s9539968a/Desktop/Design_Project\vivado.jou
+# Start of session at: Fri Nov 03 21:14:22 2017
+# Process ID: 9512
+# Current directory: C:/Users/s9539968a/Desktop/Design_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11008 C:\Users\s9539968a\Desktop\Design_project\design_project.xpr
+# Log file: C:/Users/s9539968a/Desktop/Design_project/vivado.log
+# Journal file: C:/Users/s9539968a/Desktop/Design_project\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/s9539968a/Desktop/Design_Project/audio_effects.xpr
+open_project C:/Users/s9539968a/Desktop/Design_project/design_project.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_extra.v w ]
-add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_extra.v
+close [ open C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/seven_segment_jeremy.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/seven_segment_jeremy.v
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/seven_segment_jeremy.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run dist_mem_gen_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+reset_run dist_mem_gen_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property -dict [list CONFIG.coefficient_file {C:/Users/s9539968a/Desktop/Design_project/hello_data.coe}] [get_ips dist_mem_gen_0]
+generate_target all [get_files  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -force -quiet
+reset_run dist_mem_gen_0_synth_1
+launch_run -jobs 2 dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory C:/Users/s9539968a/Desktop/Design_project/design_project.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/s9539968a/Desktop/Design_project/design_project.ip_user_files -ipstatic_source_dir C:/Users/s9539968a/Desktop/Design_project/design_project.ip_user_files/ipstatic -force -quiet
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-close_hw
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
 close_hw
-close_project
-open_project C:/Users/s9539968a/Desktop/Design_Project/audio_effects.xpr
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-update_compile_order -fileset sources_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 current_hw_device [lindex [get_hw_devices] 0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
 close_hw
+close [ open C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/random_number_generator.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/random_number_generator.v
+update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 current_hw_device [lindex [get_hw_devices] 0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
-close_hw
-close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_frequency_3b.v w ]
-add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_frequency_3b.v
-update_compile_order -fileset sources_1
-remove_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_frequency_3b.v
-close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_30k_3b.v w ]
-add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_30k_3b.v
-close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_50k_3b.v w ]
-add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_50k_3b.v
-close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_20k_3b.v w ]
-add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_20k_3b.v
-update_compile_order -fileset sources_1
-remove_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_30k_3b.v
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_1.v w ]
-add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_1.v
-update_compile_order -fileset sources_1
+close_hw
 open_hw
 connect_hw_server
 open_hw_target
-disconnect_hw_server localhost:3121
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
 connect_hw_server
 open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+update_compile_order -fileset sources_1
+close [ open C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/randomizer.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/randomizer.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+close [ open C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/score_tracker.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/score_tracker.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+close [ open C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+close [ open C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task3a.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task3a.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw

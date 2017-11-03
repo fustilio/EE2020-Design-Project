@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Nov 03 21:11:17 2017
+# Process ID: 11828
+# Current directory: C:/Users/s9539968a/Desktop/Design_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3680 C:\Users\s9539968a\Desktop\Design_project\audio_effects.xpr
+# Log file: C:/Users/s9539968a/Desktop/Design_project/vivado.log
+# Journal file: C:/Users/s9539968a/Desktop/Design_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/s9539968a/Desktop/Design_project/audio_effects.xpr
+update_compile_order -fileset sources_1
+save_project_as design_project C:/Users/s9539968a/Desktop/Design_project -force
+import_files
