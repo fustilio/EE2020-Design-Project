@@ -14,9 +14,6 @@
 module AUDIO_FX_TOP(
     input CLK,            // 100MHz FPGA clock
     
-//    input lab1switch,
-//    input lab2switch,
-//    input lab3switch,
     input [15:0] sw,
     
     input [4:0] btn,

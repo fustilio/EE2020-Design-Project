@@ -34,7 +34,11 @@ module task_selector(
     
     parameter TASK_ONE = 4'b0001, TASK_TWO_A = 4'b0010, TASK_TWO_B = 4'b0011,
               TASK_THREE_A = 4'b0100, TASK_THREE_B = 4'b0101, TASK_FOUR = 4'b0110;
-    reg [3:0] state;
+    wire [3:0] state;
+    assign state[0] = sw[0];
+    assign state[1] = sw[1];
+    assign state[2] = sw[2];
+    assign state[3] = sw[3];
     
     wire clk_100;
     wire clk_20k3b;
@@ -59,13 +63,13 @@ module task_selector(
     project_1 mpo(MIC_in, CLK, led_oneout ,speaker_oneout);
     
     //Declare lab 2a values and module
-    wire [11:0] sw_in = sw[15:4];
-    wire [15:0] led_2a;
-    wire [3:0] an_2a;
-    wire [6:0] seg_2a;
-    wire dp_2a;
-    wire [11:0] speaker_2a;
-    task2a t2 (CLK, sw_in, btn, led_2a, an_2a, seg_2a, dp_2a, speaker_2a); 
+//    wire [11:0] sw_in = sw[15:4];
+//    wire [15:0] led_2a;
+//    wire [3:0] an_2a;
+//    wire [6:0] seg_2a;
+//    wire dp_2a;
+//    wire [11:0] speaker_2a;
+//    task2a t2 (CLK, sw_in, btn, led_2a, an_2a, seg_2a, dp_2a, speaker_2a); 
     
     //Declare lab 2b values and module
     wire [15:0] led_twobout;
@@ -89,8 +93,7 @@ module task_selector(
    
   
     
-    always @(*) begin
-        state = sw[3:0];
+    always @(posedge CLK) begin
         case (state)
             TASK_ONE : begin
                 // Assigns 1 LED values
@@ -100,12 +103,12 @@ module task_selector(
                 an_inter <= 4'b1111;
                 seg_inter <= 7'b1111111;
                 dp_inter <= 1;
-            end TASK_TWO_A : begin
-                led_inter <= led_2a;
-                speaker_inter <= speaker_2a;
-                an_inter <= an_2a;
-                seg_inter <= seg_2a;
-                dp_inter <= dp_2a;
+//            end TASK_TWO_A : begin
+//                led_inter <= led_2a;
+//                speaker_inter <= speaker_2a;
+//                an_inter <= an_2a;
+//                seg_inter <= seg_2a;
+//                dp_inter <= dp_2a;
             end TASK_TWO_B : begin
                 // Assigns 2b LED and seven-segment values
                 led_inter <= led_twobout;
