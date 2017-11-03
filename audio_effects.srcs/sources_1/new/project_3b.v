@@ -32,7 +32,7 @@ module project_3b(
     reg [12:0]bincounter20k = 13'b0;
     reg [12:0]bincounter30k = 13'b0;
     reg [12:0]bincounter50k = 13'b0;
-        
+    
     //Loop to increase memory address bit and extract data
     always @(posedge clk_20k3b) begin
           bincounter20k <= (bincounter20k == 13'b1111111111111) ? 13'b0 : bincounter20k + 1;

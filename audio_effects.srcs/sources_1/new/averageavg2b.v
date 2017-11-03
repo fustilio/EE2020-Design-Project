@@ -31,9 +31,9 @@ module averageavg2b(
     reg [13:0] sevensegment2b_l;
     integer count_l;
     
-    wire clk_1002bl;
+    wire clk_3002bl;
     wire clk_20k2bl;
-    FlexiClock cc2b100l(100,CLK,clk_1002bl);
+    FlexiClock cc2b100l(300,CLK,clk_3002bl);
     FlexiClock cc2b20kl(20000,CLK,clk_20k2bl);
     
    always @(posedge clk_20k2bl) begin
@@ -151,7 +151,7 @@ module averageavg2b(
     
     //LED displayer
     integer countlabtwo_l = 0;
-    always@ (posedge clk_1002bl) begin
+    always@ (posedge clk_3002bl) begin
         if (countlabtwo_l == 0) begin
              //Prints seven segment zero
              antwobout_l[0] <= 1'b0;

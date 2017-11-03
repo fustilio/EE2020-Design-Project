@@ -26,6 +26,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/averageoff2b.v
   C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_2b.v
   C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_3b.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_1.v
   C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/task_selector.v
   C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/SPI.v
   C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v

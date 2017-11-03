@@ -31,9 +31,9 @@ module averagehigh2b(
     reg [13:0] sevensegment2b_h;
     integer count_h;
     
-    wire clk_1002bh;
+    wire clk_3002bh;
     wire clk_20k2bh;
-    FlexiClock cc2b100h(100,CLK,clk_1002bh);
+    FlexiClock cc2b100h(300,CLK,clk_3002bh);
     FlexiClock cc2b20kh(20000,CLK,clk_20k2bh);
     
    always @(posedge clk_20k2bh) begin
@@ -145,15 +145,15 @@ module averagehigh2b(
          end
          else begin
              if (MIC_in > FINAL_MIC_h) begin
-                 FINAL_MIC_h = MIC_in;
+                 FINAL_MIC_h <= MIC_in;
              end
-             count_h = count_h + 1;
+             count_h <= count_h + 1;
          end
     end
     
     //LED displayer
     integer countlabtwo_h = 0;
-    always@ (posedge clk_1002bh) begin
+    always@ (posedge clk_3002bh) begin
         if (countlabtwo_h == 0) begin
              //Prints seven segment zero
              antwobout_h[0] <= 1'b0;
@@ -177,5 +177,4 @@ module averagehigh2b(
              countlabtwo_h <= 0;
          end
     end
-    
 endmodule

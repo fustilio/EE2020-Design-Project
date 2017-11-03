@@ -49,6 +49,11 @@ module task_selector(
     reg [6:0] seg_inter;
     reg dp_inter;
     
+    //Declare lab 1
+    wire [15:0] led_oneout;
+    wire [11:0] speaker_oneout;
+    project_1 mpo(MIC_in, CLK, led_oneout ,speaker_oneout);
+    
     //Declare lab 2b values and module
     wire [15:0] led_twobout;
     wire [3:0] antwobout;
@@ -57,13 +62,19 @@ module task_selector(
     
     //Declare lab 3b values and module
     wire [11:0] mpthreeOut;
+    wire [3:0]anthreeb;
+    wire [6:0]segthreeb;
     project_3b taskthreeb(CLK, clk_20k3b, clk_30k3b, clk_50k3b, btn, mpthreeOut);
+    
+    //Declare test function
+//    wire [11:0]extra_speaker;
+//    project_extra ex(CLK, btn, MIC_in, extra_speaker);
     
     always @(posedge CLK) begin
         if (sw[2]) begin
-            // Assigns 3b speaker value to speaker
+            // Assigns 3b speaker and seven-segment value to speaker
             speaker_inter <= mpthreeOut;
-            // Default turns off LED and seven-segment
+            // Default turns off LED
             led_inter <= 16'b0;
             an_inter <= 4'b1111;
             seg_inter <= 7'b1111111;
@@ -77,6 +88,15 @@ module task_selector(
             dp_inter <= 1;
             // Default turns off speaker
             speaker_inter <= 0;
+        end
+        else if (sw[0]) begin
+            // Assigns 1 LED values
+            led_inter <= led_oneout;
+            speaker_inter <= speaker_oneout;
+            // Default turns off speaker and seven-segment
+            an_inter <= 4'b1111;
+            seg_inter <= 7'b1111111;
+            dp_inter <= 1;
         end
         else begin
             speaker_inter <= 0;

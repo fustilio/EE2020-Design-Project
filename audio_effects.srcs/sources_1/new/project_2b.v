@@ -61,19 +61,19 @@ module project_2b(
             end
         end
         else begin
-            if (btn[0]) begin
+            if (btn[0] && !btn[3] && !btn[2]) begin
                 stats = 0;
                 led_display = 16'b0;
                 antwobout = chosen_an_off;
                 segtwobout = chosen_seg_off;
             end
-            else if (btn[2]) begin
+            else if (btn[2] && !btn[3] && !btn[0]) begin
                 stats = 1;
                 led_display = chosen_led_high;
                 antwobout = chosen_an_high;
                 segtwobout = chosen_seg_high;
             end
-            else if (btn[3]) begin
+            else if (btn[3] && ! btn[2] && !btn[0]) begin
                 stats = 2;
                 led_display = chosen_led_avg;
                 antwobout = chosen_an_avg;

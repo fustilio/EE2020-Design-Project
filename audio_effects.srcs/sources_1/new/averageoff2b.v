@@ -25,12 +25,12 @@ module averageoff2b(
     output reg [3:0] antwobout_off,
     output reg [6:0] segtwobout_off
     );
-    wire clk_1002boff;
-    FlexiClock cc2b100off(100,CLK,clk_1002boff);
+    wire clk_3002boff;
+    FlexiClock cc2b300off(300,CLK,clk_3002boff);
     
     //LED displayer
     integer countlabtwo_off = 0;
-    always@ (posedge clk_1002boff) begin
+    always@ (posedge clk_3002boff) begin
         if (countlabtwo_off == 0) begin
              //Prints seven segment zero
              antwobout_off[0] <= 1'b0;
