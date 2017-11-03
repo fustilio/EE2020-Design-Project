@@ -10,29 +10,33 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/MyWork/audio_effects/audio_effects.cache/wt [current_project]
-set_property parent.project_path D:/MyWork/audio_effects/audio_effects.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/s9539968a/Desktop/Design_Project/audio_effects.cache/wt [current_project]
+set_property parent.project_path C:/Users/s9539968a/Desktop/Design_Project/audio_effects.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-add_files d:/MyWork/audio_effects/hello_data.coe
-add_files -quiet d:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
-set_property used_in_implementation false [get_files d:/MyWork/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
+add_files C:/Users/s9539968a/Desktop/Design_Project/hello_data.coe
+add_files -quiet c:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
+set_property used_in_implementation false [get_files c:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
 read_verilog -library xil_defaultlib {
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/m_to_clock.v
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/frequency_to_m.v
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/FlexiClock.v
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/project_3b.v
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/task_selector.v
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/SPI.v
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/project_2b.v
-  D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/imports/new/m_to_clock.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/imports/new/frequency_to_m.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/imports/new/FlexiClock.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/averagehigh2b.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/averageavg2b.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/averageoff2b.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_2b.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_3b.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_1.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/task_selector.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/SPI.v
+  C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v
 }
-read_vhdl -library xil_defaultlib D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd
+read_vhdl -library xil_defaultlib C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
-set_property used_in_implementation false [get_files D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+read_xdc C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 
 
 synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1

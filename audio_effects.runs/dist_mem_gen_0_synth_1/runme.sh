@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/MyWork/audio_effects/audio_effects.runs/dist_mem_gen_0_synth_1'
+HD_PWD='C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/dist_mem_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

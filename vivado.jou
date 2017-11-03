@@ -2,23 +2,18 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Oct 31 15:38:12 2017
-# Process ID: 5536
-# Current directory: D:/MyWork/audio_effects
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7088 D:\MyWork\audio_effects\audio_effects.xpr
-# Log file: D:/MyWork/audio_effects/vivado.log
-# Journal file: D:/MyWork/audio_effects\vivado.jou
+# Start of session at: Fri Nov 03 12:53:01 2017
+# Process ID: 7572
+# Current directory: C:/Users/s9539968a/Desktop/Design_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7484 C:\Users\s9539968a\Desktop\Design_Project\audio_effects.xpr
+# Log file: C:/Users/s9539968a/Desktop/Design_Project/vivado.log
+# Journal file: C:/Users/s9539968a/Desktop/Design_Project\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/MyWork/audio_effects/audio_effects.xpr
-set_property source_mgmt_mode None [current_project]
-set_property source_mgmt_mode All [current_project]
+open_project C:/Users/s9539968a/Desktop/Design_Project/audio_effects.xpr
 update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-remove_files D:/MyWork/EE2020proj/hello_data.coe
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
+close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_extra.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_extra.v
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
@@ -26,29 +21,82 @@ wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {D:/MyWork/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {D:/MyWork/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
 close_hw
-close [ open D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/task_selector.v w ]
-add_files D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/task_selector.v
+close_project
+open_project C:/Users/s9539968a/Desktop/Design_Project/audio_effects.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {D:/MyWork/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 current_hw_device [lindex [get_hw_devices] 0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {D:/MyWork/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_frequency_3b.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_frequency_3b.v
+update_compile_order -fileset sources_1
+remove_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_frequency_3b.v
+close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_30k_3b.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_30k_3b.v
+close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_50k_3b.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_50k_3b.v
+close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_20k_3b.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_20k_3b.v
+update_compile_order -fileset sources_1
+remove_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/display_30k_3b.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close [ open C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_1.v w ]
+add_files C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_1.v
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
