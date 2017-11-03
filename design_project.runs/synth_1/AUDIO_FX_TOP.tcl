@@ -19,10 +19,13 @@ add_files c:/Users/s9539968a/Desktop/Design_project/hello_data.coe
 add_files -quiet C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
 set_property used_in_implementation false [get_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
 read_verilog -library xil_defaultlib {
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sineLUT.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/frequency_to_m.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/m_to_clock.v
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/clockToSine8.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/deciToDigits.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/FlexiClock.v
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/generateSine.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/score_tracker.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/randomizer.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sevenseg.v
@@ -33,6 +36,8 @@ read_verilog -library xil_defaultlib {
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_1.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_2b.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_3b.v
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task3a.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/SPI.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task_selector.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v
