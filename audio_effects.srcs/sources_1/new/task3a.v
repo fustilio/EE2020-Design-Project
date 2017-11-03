@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Task3A(
+module task3a(
     input [11:0] IN,
     input clk, // assume 100Hz
     output [11:0] OUT
