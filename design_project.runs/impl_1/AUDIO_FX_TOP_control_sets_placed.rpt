@@ -1,0 +1,113 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Nov 04 03:31:08 2017
+| Host         : acer running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
+| Design       : AUDIO_FX_TOP
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    60 |
+| Unused register locations in slices containing registers |   122 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             303 |          146 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             746 |          201 |
+| Yes          | No                    | No                     |              67 |           28 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              50 |           22 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+------------------------------------+-----------------------------------------+------------------+----------------+
+|           Clock Signal          |            Enable Signal           |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++---------------------------------+------------------------------------+-----------------------------------------+------------------+----------------+
+|  ts/cc3b20k/mtc/clk_20k3b       |                                    |                                         |                1 |              1 |
+|  cc2/mtc/clk_50M                |                                    |                                         |                1 |              1 |
+|  ts/cc3b30k/mtc/clk_30k3b       |                                    |                                         |                1 |              1 |
+|  ts/cc3b50k/mtc/clk_50k3b       |                                    |                                         |                1 |              1 |
+|  u2/CLK                         |                                    |                                         |                1 |              2 |
+|  u2/CLK                         | u2/shiftCounter[3]_i_1_n_0         | u2/temp1[15]_i_1_n_0                    |                1 |              4 |
+|  u2/CLK                         | u2/temp2                           | u2/temp1[15]_i_1_n_0                    |                1 |              4 |
+|  ts/mpt/ah2/cc2b100h/mtc/CLK    |                                    |                                         |                2 |              5 |
+|  ts/mpt/al2/cc2b100l/mtc/CLK    |                                    |                                         |                2 |              5 |
+|  ts/mpt/ao2/cc2b300off/mtc/CLK  |                                    |                                         |                2 |              6 |
+|  ts/mpt/al2/cc2b100l/mtc/CLK    | ts/mpt/al2/segtwobout_l[6]_i_2_n_0 | ts/mpt/al2/segtwobout_l0                |                2 |              7 |
+|  ts/mpt/ah2/cc2b100h/mtc/CLK    | ts/mpt/ah2/segtwobout_h[6]_i_2_n_0 | ts/mpt/ah2/segtwobout_h0                |                2 |              7 |
+|  mpt/al2/clk_20k2bl             | ts/mpt/al2/sel0[16]                |                                         |                4 |              8 |
+|  CLK_IBUF_BUFG                  |                                    | ts/t2/inter[7]_i_1_n_0                  |                3 |              8 |
+|  mpt/ah2/clk_20k2bh             | ts/mpt/ah2/sel0[16]                |                                         |                3 |              8 |
+|  CLK_IBUF_BUFG                  | ts/mpt/antwobout[3]_i_1_n_0        |                                         |                6 |             11 |
+|  CLK_IBUF_BUFG                  |                                    | ts/seg_inter[6]_i_1_n_0                 |                6 |             11 |
+|  u2/CLK                         | u2/temp2                           |                                         |                5 |             12 |
+|  cc20k/mtc/J_MIC3_Pin1_OBUF     |                                    |                                         |                6 |             12 |
+| ~u1/J_MIC3_Pin4_OBUF            |                                    |                                         |                6 |             12 |
+|  ts/cc3b20k/mtc/clk_20k3b       |                                    | ts/taskthreeb/bincounter20k[12]_i_1_n_0 |                3 |             12 |
+|  ts/cc3b30k/mtc/clk_30k3b       |                                    | ts/taskthreeb/bincounter30k[12]_i_1_n_0 |                3 |             12 |
+|  ts/cc3b50k/mtc/clk_50k3b       |                                    | ts/taskthreeb/bincounter50k[12]_i_1_n_0 |                3 |             12 |
+|  ts/mpo/ccview/mtc/CLK          |                                    |                                         |                9 |             12 |
+|  CLK_IBUF_BUFG                  |                                    | cc20k/mtc/J_MIC3_Pin1_OBUF              |                3 |             12 |
+|  mpt/ah2/clk_20k2bh             | u1/E[0]                            | ts/mpt/ah2/sel0[16]                     |                4 |             12 |
+|  CLK_IBUF_BUFG                  | ts/taskthreeb/p_0_in               |                                         |                6 |             13 |
+|  ex/clk_1rr                     | ts/ex/rng/score_holder_reg[14]     |                                         |                4 |             15 |
+|  ts/t2/gs38/fc/mtc/output_clock |                                    |                                         |                6 |             16 |
+|  ts/t2/gs40/fc/mtc/output_clock |                                    |                                         |                5 |             16 |
+|  ts/t2/gs42/fc/mtc/output_clock |                                    |                                         |                4 |             16 |
+|  ts/t2/gs43/fc/mtc/output_clock |                                    |                                         |                5 |             16 |
+|  ts/t2/gs45/fc/mtc/output_clock |                                    |                                         |                4 |             16 |
+|  CLK_IBUF_BUFG                  | ts/mpt/led_display[15]_i_2_n_0     | ts/mpt/led_display[15]_i_1_n_0          |               12 |             16 |
+|  ex/clk_1rr                     |                                    |                                         |                4 |             16 |
+|  mpt/ah2/clk_20k2bh             |                                    |                                         |               12 |             16 |
+|  mpt/al2/clk_20k2bl             |                                    |                                         |               13 |             16 |
+|  CLK_IBUF_BUFG                  |                                    | sw_IBUF[3]                              |               16 |             28 |
+|  CLK_IBUF_BUFG                  |                                    | cc2/mtc/clear                           |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/mpo/ccview/mtc/clear                 |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/mpt/al2/cc2b100l/mtc/clear           |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/mpt/al2/cc2b20kl/mtc/clear           |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/mpt/ah2/cc2b100h/mtc/clear           |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/t2/gs38/fc/mtc/clear                 |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/t2/gs40/fc/mtc/clear                 |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/t2/gs42/fc/mtc/clear                 |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/t2/gs43/fc/mtc/clear                 |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/t2/gs45/fc/mtc/clear                 |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/cc3b20k/mtc/clear                    |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/cc100/mtc/clear                      |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/cc3b50k/mtc/clear                    |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/mpt/ao2/cc2b300off/mtc/clear         |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/cc3b30k/mtc/clear                    |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/ex/cc1rr/mtc/clear                   |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | ts/mpt/ah2/cc2b20kh/mtc/clear           |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                                    | cc20k/mtc/clear                         |                8 |             32 |
+|  mpt/ah2/clk_20k2bh             |                                    | ts/mpt/ah2/sel0[16]                     |                8 |             32 |
+|  mpt/al2/clk_20k2bl             |                                    | ts/mpt/al2/sel0[16]                     |               12 |             43 |
+|  CLK_IBUF_BUFG                  |                                    |                                         |               42 |             81 |
+|  clk_10k                        |                                    |                                         |              256 |            984 |
++---------------------------------+------------------------------------+-----------------------------------------+------------------+----------------+
+
+
