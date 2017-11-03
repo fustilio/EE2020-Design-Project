@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Fri Nov 03 18:03:56 2017
+| Date         : Fri Nov 03 20:05:35 2017
 | Host         : acer running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
 | Design       : AUDIO_FX_TOP
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    42 |
-| Unused register locations in slices containing registers |   109 |
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |   112 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              91 |           49 |
+| No           | No                    | No                     |             104 |           53 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             482 |          123 |
-| Yes          | No                    | No                     |              52 |           17 |
+| No           | Yes                   | No                     |             514 |          132 |
+| Yes          | No                    | No                     |              52 |           21 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              50 |           18 |
+| Yes          | Yes                   | No                     |              50 |           19 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -52,42 +52,44 @@ Table of Contents
 |  ts/cc3b20k/mtc/clk_20k3b               |                                    |                                         |                1 |              1 |
 |  ts/cc3b30k/mtc/clk_30k3b               |                                    |                                         |                1 |              1 |
 |  ts/cc3b50k/mtc/clk_50k3b               |                                    |                                         |                1 |              1 |
-|  u2/J_DA2_Pin4_OBUF                     |                                    |                                         |                1 |              2 |
-|  u2/J_DA2_Pin4_OBUF                     | u2/shiftCounter[3]_i_1_n_0         | u2/temp1[15]_i_1_n_0                    |                2 |              4 |
-|  u2/J_DA2_Pin4_OBUF                     | u2/temp2                           | u2/temp1[15]_i_1_n_0                    |                1 |              4 |
+|  u2/CLK                                 |                                    |                                         |                1 |              2 |
+|  u2/CLK                                 | u2/shiftCounter[3]_i_1_n_0         | u2/temp1[15]_i_1_n_0                    |                1 |              4 |
+|  u2/CLK                                 | u2/temp2                           | u2/temp1[15]_i_1_n_0                    |                1 |              4 |
 |  ts/mpt/al2/cc2b100l/mtc/CLK            |                                    |                                         |                1 |              5 |
 |  ts/mpt/ah2/cc2b100h/mtc/CLK            |                                    |                                         |                1 |              5 |
 |  ts/mpt/ao2/cc2b300off/mtc/clk_3002boff |                                    |                                         |                2 |              6 |
-|  ts/mpt/al2/cc2b100l/mtc/CLK            | ts/mpt/al2/segtwobout_l[6]_i_2_n_0 | ts/mpt/al2/segtwobout_l0                |                2 |              7 |
+|  ts/mpt/al2/cc2b100l/mtc/CLK            | ts/mpt/al2/segtwobout_l[6]_i_2_n_0 | ts/mpt/al2/segtwobout_l0                |                1 |              7 |
 |  ts/mpt/ah2/cc2b100h/mtc/CLK            | ts/mpt/ah2/segtwobout_h[6]_i_2_n_0 | ts/mpt/ah2/segtwobout_h0                |                2 |              7 |
-|  mpt/al2/clk_20k2bl                     | ts/mpt/al2/sel0[16]                |                                         |                3 |              8 |
+|  mpt/al2/clk_20k2bl                     | ts/mpt/al2/sel0[16]                |                                         |                4 |              8 |
 |  mpt/ah2/clk_20k2bh                     | ts/mpt/ah2/sel0[16]                |                                         |                3 |              8 |
-|  CLK_IBUF_BUFG                          | ts/mpt/antwobout[3]_i_1_n_0        |                                         |                3 |             11 |
-|  u2/J_DA2_Pin4_OBUF                     | u2/temp2                           |                                         |                3 |             12 |
-|  cc20k/mtc/J_MIC3_Pin1_OBUF             |                                    |                                         |                3 |             12 |
-| ~u1/J_MIC3_Pin4_OBUF                    |                                    |                                         |                4 |             12 |
+|  CLK_IBUF_BUFG                          | ts/mpt/antwobout[3]_i_1_n_0        |                                         |                4 |             11 |
+|  u2/CLK                                 | u2/temp2                           |                                         |                4 |             12 |
+|  cc20k/mtc/J_MIC3_Pin1_OBUF             |                                    |                                         |                4 |             12 |
+| ~u1/J_MIC3_Pin4_OBUF                    |                                    |                                         |                3 |             12 |
 |  ts/cc3b20k/mtc/clk_20k3b               |                                    | ts/taskthreeb/bincounter20k[12]_i_1_n_0 |                3 |             12 |
 |  ts/cc3b30k/mtc/clk_30k3b               |                                    | ts/taskthreeb/bincounter30k[12]_i_1_n_0 |                3 |             12 |
 |  ts/cc3b50k/mtc/clk_50k3b               |                                    | ts/taskthreeb/bincounter50k[12]_i_1_n_0 |                3 |             12 |
+|  ts/mpo/ccview/mtc/CLK                  |                                    |                                         |                5 |             12 |
 |  CLK_IBUF_BUFG                          |                                    | ts/speaker_inter[11]_i_1_n_0            |                4 |             12 |
 |  CLK_IBUF_BUFG                          |                                    | cc20k/mtc/J_MIC3_Pin1_OBUF              |                3 |             12 |
-|  mpt/ah2/clk_20k2bh                     | u1/E[0]                            | ts/mpt/ah2/sel0[16]                     |                4 |             12 |
-|  CLK_IBUF_BUFG                          |                                    |                                         |               13 |             13 |
-|  CLK_IBUF_BUFG                          | ts/taskthreeb/p_0_in               |                                         |                5 |             13 |
-|  CLK_IBUF_BUFG                          | ts/mpt/led_display[15]_i_2_n_0     | ts/mpt/led_display[15]_i_1_n_0          |                7 |             16 |
+|  mpt/ah2/clk_20k2bh                     | u1/E[0]                            | ts/mpt/ah2/sel0[16]                     |                5 |             12 |
+|  CLK_IBUF_BUFG                          | ts/taskthreeb/p_0_in               |                                         |                6 |             13 |
+|  CLK_IBUF_BUFG                          |                                    |                                         |               12 |             14 |
+|  CLK_IBUF_BUFG                          | ts/mpt/led_display[15]_i_2_n_0     | ts/mpt/led_display[15]_i_1_n_0          |                9 |             16 |
 |  mpt/ah2/clk_20k2bh                     |                                    |                                         |               10 |             16 |
 |  mpt/al2/clk_20k2bl                     |                                    |                                         |               10 |             16 |
-|  CLK_IBUF_BUFG                          |                                    | sw_IBUF[2]                              |                7 |             27 |
+|  CLK_IBUF_BUFG                          |                                    | sw_IBUF[2]                              |                8 |             27 |
+|  CLK_IBUF_BUFG                          |                                    | ts/mpt/ao2/cc2b300off/mtc/clear         |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | cc2/mtc/clear                           |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | ts/cc3b20k/mtc/clear                    |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | ts/cc3b30k/mtc/clear                    |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | ts/cc3b50k/mtc/clear                    |                8 |             32 |
+|  CLK_IBUF_BUFG                          |                                    | ts/mpo/ccview/mtc/clear                 |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | ts/mpt/al2/cc2b100l/mtc/clear           |                8 |             32 |
-|  CLK_IBUF_BUFG                          |                                    | ts/mpt/al2/cc2b20kl/mtc/clear           |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | cc20k/mtc/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                          |                                    | ts/mpt/al2/cc2b20kl/mtc/clear           |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | ts/mpt/ah2/cc2b20kh/mtc/clear           |                8 |             32 |
 |  CLK_IBUF_BUFG                          |                                    | ts/mpt/ah2/cc2b100h/mtc/clear           |                8 |             32 |
-|  CLK_IBUF_BUFG                          |                                    | ts/mpt/ao2/cc2b300off/mtc/clear         |                8 |             32 |
 |  mpt/ah2/clk_20k2bh                     |                                    | ts/mpt/ah2/sel0[16]                     |                8 |             32 |
 |  mpt/al2/clk_20k2bl                     |                                    | ts/mpt/al2/sel0[16]                     |               12 |             43 |
 +-----------------------------------------+------------------------------------+-----------------------------------------+------------------+----------------+

@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7252 
+INFO: Helper process launched with PID 11868 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 272.215 ; gain = 65.637
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 272.465 ; gain = 65.957
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 INFO: [Synth 8-638] synthesizing module 'FlexiClock' [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/imports/new/FlexiClock.v:23]
@@ -39,8 +39,8 @@ INFO: [Synth 8-638] synthesizing module 'averageoff2b' [C:/Users/s9539968a/Deskt
 INFO: [Synth 8-256] done synthesizing module 'averageoff2b' (8#1) [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/averageoff2b.v:23]
 INFO: [Synth 8-256] done synthesizing module 'project_2b' (9#1) [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_2b.v:23]
 INFO: [Synth 8-638] synthesizing module 'project_3b' [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_3b.v:23]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-6132-acer/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (10#1) [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-6132-acer/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-11548-acer/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (10#1) [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-11548-acer/realtime/dist_mem_gen_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'project_3b' (11#1) [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_3b.v:23]
 INFO: [Synth 8-256] done synthesizing module 'task_selector' (12#1) [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/task_selector.v:23]
 INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
@@ -50,11 +50,6 @@ WARNING: [Synth 8-3331] design project_3b has unconnected port btn[3]
 WARNING: [Synth 8-3331] design project_3b has unconnected port btn[2]
 WARNING: [Synth 8-3331] design project_2b has unconnected port btn[4]
 WARNING: [Synth 8-3331] design project_2b has unconnected port btn[1]
-WARNING: [Synth 8-3331] design project_1 has unconnected port led_oneout[15]
-WARNING: [Synth 8-3331] design project_1 has unconnected port led_oneout[14]
-WARNING: [Synth 8-3331] design project_1 has unconnected port led_oneout[13]
-WARNING: [Synth 8-3331] design project_1 has unconnected port led_oneout[12]
-WARNING: [Synth 8-3331] design project_1 has unconnected port CLK
 WARNING: [Synth 8-3331] design task_selector has unconnected port sw[15]
 WARNING: [Synth 8-3331] design task_selector has unconnected port sw[14]
 WARNING: [Synth 8-3331] design task_selector has unconnected port sw[13]
@@ -69,7 +64,7 @@ WARNING: [Synth 8-3331] design task_selector has unconnected port sw[5]
 WARNING: [Synth 8-3331] design task_selector has unconnected port sw[4]
 WARNING: [Synth 8-3331] design task_selector has unconnected port sw[3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 309.664 ; gain = 103.086
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 309.918 ; gain = 103.410
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -91,7 +86,7 @@ WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/s
 WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
 WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 309.664 ; gain = 103.086
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 309.918 ; gain = 103.410
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'ts/taskthreeb/dmg' [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/sources_1/new/project_3b.v:68]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
@@ -99,8 +94,8 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-6132-acer/dcp/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
-Finished Parsing XDC File [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-6132-acer/dcp/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
+Parsing XDC File [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-11548-acer/dcp/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
+Finished Parsing XDC File [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.runs/synth_1/.Xil/Vivado-11548-acer/dcp/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
 Parsing XDC File [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 Finished Parsing XDC File [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/s9539968a/Desktop/Design_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
@@ -110,22 +105,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 604.734 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 606.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "antwobout_h0" won't be mapped to RAM because it is too sparse
@@ -162,31 +157,39 @@ INFO: [Synth 8-3354] encoded FSM with state register 'countlabtwo_off_reg' using
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:18 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |FlexiClock         |          12|      3864|
+|2     |reg__3             |           1|        12|
+|3     |averagehigh2b__GC0 |           1|      1840|
+|4     |averageavg2b__GC0  |           1|      2196|
+|5     |averageoff2b__GC0  |           1|        21|
+|6     |project_2b__GC0    |           1|       733|
+|7     |task_selector__GC0 |           1|       823|
+|8     |AUDIO_FX_TOP__GC0  |           1|       529|
++------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 11    
+	   2 Input     32 Bit       Adders := 12    
 	   2 Input     13 Bit       Adders := 3     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 2     
-	               16 Bit    Registers := 6     
+	               16 Bit    Registers := 7     
 	               14 Bit    Registers := 2     
 	               13 Bit    Registers := 4     
 	               12 Bit    Registers := 3     
 	                7 Bit    Registers := 5     
 	                4 Bit    Registers := 7     
-	                1 Bit    Registers := 13    
+	                1 Bit    Registers := 14    
 +---Muxes : 
 	  17 Input     16 Bit        Muxes := 2     
 	  18 Input     16 Bit        Muxes := 2     
@@ -204,7 +207,7 @@ Detailed RTL Component Info :
 	   3 Input      2 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 25    
+	   2 Input      1 Bit        Muxes := 26    
 	   4 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
@@ -224,11 +227,10 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module SPI 
+Module project_1 
 Detailed RTL Component Info : 
 +---Registers : 
-	               12 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
 Module averagehigh2b 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -311,6 +313,11 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
+Module SPI 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 Module DA2RefComp 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -336,189 +343,106 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 604.734 ; gain = 398.156
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "countlabtwo_h1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout_h" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "antwobout_h0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "segtwobout_h0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "countlabtwo_l1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout_l" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "antwobout_l0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "segtwobout_l0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "cc2b300off/mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "led_display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "O130" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "O30" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3331] design project_3b has unconnected port btn[3]
-WARNING: [Synth 8-3331] design project_3b has unconnected port btn[2]
-WARNING: [Synth 8-3331] design FlexiClock has unconnected port FREQ[31]
-WARNING: [Synth 8-3331] design project_2b has unconnected port btn[4]
-WARNING: [Synth 8-3331] design project_2b has unconnected port btn[1]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[15]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[14]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[13]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[12]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[11]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[10]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[9]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[8]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[7]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[6]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[5]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[4]
-WARNING: [Synth 8-3331] design task_selector has unconnected port sw[3]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[15]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[14]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[13]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[12]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[11]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[10]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[9]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[8]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[7]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[6]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[5]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[4]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[3]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Parallel Reinference  : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 606.391 ; gain = 399.883
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |FlexiClock         |          12|      3864|
+|2     |reg__3             |           1|        12|
+|3     |averagehigh2b__GC0 |           1|      1216|
+|4     |averageavg2b__GC0  |           1|      1821|
+|5     |averageoff2b__GC0  |           1|        21|
+|6     |project_2b__GC0    |           1|       764|
+|7     |task_selector__GC0 |           1|       877|
+|8     |AUDIO_FX_TOP__GC0  |           1|       568|
++------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ts/mpt/ah2/\sevensegment2b_h_reg[13] )
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ah2/sevensegment2b_h_reg[12]' (FDE) to 'ts/mpt/ah2/sevensegment2b_h_reg[7]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ah2/sevensegment2b_h_reg[7]' (FDE) to 'ts/mpt/ah2/sevensegment2b_h_reg[10]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ah2/sevensegment2b_h_reg[11]' (FDE) to 'ts/mpt/ah2/sevensegment2b_h_reg[10]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ah2/sevensegment2b_h_reg[9]' (FDE) to 'ts/mpt/ah2/sevensegment2b_h_reg[8]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ts/mpt/ah2/\sevensegment2b_h_reg[8] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ts/mpt/al2/\sevensegment2b_l_reg[13] )
-INFO: [Synth 8-3886] merging instance 'ts/mpt/al2/sevensegment2b_l_reg[12]' (FDE) to 'ts/mpt/al2/sevensegment2b_l_reg[7]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/al2/sevensegment2b_l_reg[7]' (FDE) to 'ts/mpt/al2/sevensegment2b_l_reg[10]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/al2/sevensegment2b_l_reg[11]' (FDE) to 'ts/mpt/al2/sevensegment2b_l_reg[10]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/al2/sevensegment2b_l_reg[9]' (FDE) to 'ts/mpt/al2/sevensegment2b_l_reg[8]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ts/mpt/al2/\sevensegment2b_l_reg[8] )
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ao2/segtwobout_off_reg[0]' (FDSE) to 'ts/mpt/ao2/segtwobout_off_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ao2/segtwobout_off_reg[1]' (FDSE) to 'ts/mpt/ao2/segtwobout_off_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ao2/segtwobout_off_reg[2]' (FDSE) to 'ts/mpt/ao2/segtwobout_off_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ao2/segtwobout_off_reg[3]' (FDSE) to 'ts/mpt/ao2/segtwobout_off_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ts/mpt/ao2/segtwobout_off_reg[4]' (FDSE) to 'ts/mpt/ao2/segtwobout_off_reg[5]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ts/mpt/\ao2/segtwobout_off_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ts/mpt/\ao2/segtwobout_off_reg[6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ts/mpt/ah2/\antwobout_h_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ts/mpt/al2/\antwobout_l_reg[2] )
-INFO: [Synth 8-3886] merging instance 'ts/mpt/stats_reg[2]' (FDE) to 'ts/mpt/stats_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ts/mpt/\stats_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (ts/dp_inter_reg)
-WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[15]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[14]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[13]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[12]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_h_reg[13]) is unused and will be removed from module averagehigh2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_h_reg[12]) is unused and will be removed from module averagehigh2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_h_reg[11]) is unused and will be removed from module averagehigh2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_h_reg[9]) is unused and will be removed from module averagehigh2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_h_reg[8]) is unused and will be removed from module averagehigh2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_h_reg[7]) is unused and will be removed from module averagehigh2b.
-WARNING: [Synth 8-3332] Sequential element (antwobout_h_reg[2]) is unused and will be removed from module averagehigh2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_l_reg[13]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_l_reg[12]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_l_reg[11]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_l_reg[9]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_l_reg[8]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (sevensegment2b_l_reg[7]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (antwobout_l_reg[2]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (ao2/segtwobout_off_reg[6]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (ao2/segtwobout_off_reg[5]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (ao2/segtwobout_off_reg[4]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (ao2/segtwobout_off_reg[3]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (ao2/segtwobout_off_reg[2]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (ao2/segtwobout_off_reg[1]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (ao2/segtwobout_off_reg[0]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (stats_reg[3]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (stats_reg[2]) is unused and will be removed from module project_2b.
-WARNING: [Synth 8-3332] Sequential element (dp_inter_reg) is unused and will be removed from module task_selector.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[3]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[4]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[5]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[6]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[12]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[13]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[14]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[15]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[16]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[17]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[18]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[19]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[20]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[21]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[22]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[23]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[24]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[25]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[26]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[27]) is unused and will be removed from module AUDIO_FX_TOP.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (ts/mpt/al2/\FINAL_MIC_l_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (FINAL_MIC_l_reg[0]) is unused and will be removed from module averageavg2b.
-WARNING: [Synth 8-3332] Sequential element (mtc/OUTPUT_CLOCK_reg) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[0]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[1]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[2]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[3]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[4]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[5]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[6]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[7]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[8]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[9]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[10]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[11]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[12]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[13]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[14]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[15]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[16]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[17]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[18]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[19]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[20]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[21]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[22]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[23]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[24]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[25]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[26]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[27]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[28]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[29]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[30]) is unused and will be removed from module FlexiClock__8.
-WARNING: [Synth 8-3332] Sequential element (mtc/COUNT_reg[31]) is unused and will be removed from module FlexiClock__8.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ah2i_1/\sevensegment2b_h_reg[13] )
+INFO: [Synth 8-3886] merging instance 'ah2i_1/sevensegment2b_h_reg[12]' (FDE) to 'ah2i_1/sevensegment2b_h_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ah2i_1/sevensegment2b_h_reg[7]' (FDE) to 'ah2i_1/sevensegment2b_h_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ah2i_1/sevensegment2b_h_reg[11]' (FDE) to 'ah2i_1/sevensegment2b_h_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ah2i_1/sevensegment2b_h_reg[9]' (FDE) to 'ah2i_1/sevensegment2b_h_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ah2i_1/\sevensegment2b_h_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ah2i_1/\antwobout_h_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (al2i_2/\sevensegment2b_l_reg[13] )
+INFO: [Synth 8-3886] merging instance 'al2i_2/sevensegment2b_l_reg[12]' (FDE) to 'al2i_2/sevensegment2b_l_reg[7]'
+INFO: [Synth 8-3886] merging instance 'al2i_2/sevensegment2b_l_reg[7]' (FDE) to 'al2i_2/sevensegment2b_l_reg[10]'
+INFO: [Synth 8-3886] merging instance 'al2i_2/sevensegment2b_l_reg[11]' (FDE) to 'al2i_2/sevensegment2b_l_reg[10]'
+INFO: [Synth 8-3886] merging instance 'al2i_2/sevensegment2b_l_reg[9]' (FDE) to 'al2i_2/sevensegment2b_l_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (al2i_2/\sevensegment2b_l_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (al2i_2/\antwobout_l_reg[2] )
+INFO: [Synth 8-3886] merging instance 'ao2i_3/segtwobout_off_reg[0]' (FDSE) to 'ao2i_3/segtwobout_off_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ao2i_3/segtwobout_off_reg[1]' (FDSE) to 'ao2i_3/segtwobout_off_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ao2i_3/segtwobout_off_reg[2]' (FDSE) to 'ao2i_3/segtwobout_off_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ao2i_3/segtwobout_off_reg[3]' (FDSE) to 'ao2i_3/segtwobout_off_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ao2i_3/segtwobout_off_reg[4]' (FDSE) to 'ao2i_3/segtwobout_off_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ao2i_3/\segtwobout_off_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ao2i_3/\segtwobout_off_reg[6] )
+INFO: [Synth 8-3886] merging instance 'mpti_4/stats_reg[2]' (FDE) to 'mpti_4/stats_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mpti_4/\stats_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (tsi_5/dp_inter_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (al2i_2/\FINAL_MIC_l_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:39 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:25 ; elapsed = 00:01:39 . Memory (MB): peak = 606.391 ; gain = 399.883
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |FlexiClock         |           4|       102|
+|2     |reg__3             |           1|        12|
+|3     |averagehigh2b__GC0 |           1|       518|
+|4     |averageavg2b__GC0  |           1|       802|
+|5     |averageoff2b__GC0  |           1|        13|
+|6     |project_2b__GC0    |           1|       163|
+|7     |task_selector__GC0 |           1|       307|
+|8     |AUDIO_FX_TOP__GC0  |           1|       304|
+|9     |FlexiClock__1      |           1|       101|
+|10    |FlexiClock__2      |           1|       102|
+|11    |FlexiClock__3      |           1|       100|
+|12    |FlexiClock__4      |           1|       101|
+|13    |FlexiClock__5      |           3|       102|
++------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -526,17 +450,30 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:09 ; elapsed = 00:02:25 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 604.734 ; gain = 398.156
+Finished Timing Optimization : Time (s): cpu = 00:02:10 ; elapsed = 00:02:26 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |FlexiClock         |           4|       102|
+|2     |reg__3             |           1|        12|
+|3     |averagehigh2b__GC0 |           1|       518|
+|4     |averageavg2b__GC0  |           1|       802|
+|5     |averageoff2b__GC0  |           1|        13|
+|6     |project_2b__GC0    |           1|       163|
+|7     |task_selector__GC0 |           1|       307|
+|8     |AUDIO_FX_TOP__GC0  |           1|       304|
+|9     |FlexiClock__1      |           1|       101|
+|10    |FlexiClock__2      |           1|       102|
+|11    |FlexiClock__3      |           1|       100|
+|12    |FlexiClock__4      |           1|       101|
+|13    |FlexiClock__5      |           3|       102|
++------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
@@ -551,18 +488,22 @@ WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[4]) is unused and will 
 WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[3]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[15]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[14]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[13]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[12]) is unused and will be removed from module AUDIO_FX_TOP.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:02:29 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:13 ; elapsed = 00:02:29 . Memory (MB): peak = 606.391 ; gain = 399.883
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:13 ; elapsed = 00:02:29 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -579,7 +520,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished IO Insertion : Time (s): cpu = 00:02:15 ; elapsed = 00:02:31 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -592,7 +533,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:15 ; elapsed = 00:02:31 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -604,25 +545,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:16 ; elapsed = 00:02:32 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:16 ; elapsed = 00:02:32 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:16 ; elapsed = 00:02:33 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:17 ; elapsed = 00:02:33 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -641,14 +582,14 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |dist_mem_gen_0 |     1|
 |2     |BUFG           |     3|
-|3     |CARRY4         |   179|
-|4     |LUT1           |   454|
-|5     |LUT2           |   174|
-|6     |LUT3           |   146|
+|3     |CARRY4         |   190|
+|4     |LUT1           |   486|
+|5     |LUT2           |   175|
+|6     |LUT3           |   157|
 |7     |LUT4           |   138|
 |8     |LUT5           |    69|
-|9     |LUT6           |   182|
-|10    |FDRE           |   658|
+|9     |LUT6           |   188|
+|10    |FDRE           |   703|
 |11    |FDSE           |    17|
 |12    |IBUF           |    10|
 |13    |OBUF           |    34|
@@ -658,44 +599,47 @@ Report Instance Areas:
 +------+-------------------+--------------+------+
 |      |Instance           |Module        |Cells |
 +------+-------------------+--------------+------+
-|1     |top                |              |  2076|
+|1     |top                |              |  2182|
 |2     |  cc2              |FlexiClock    |    94|
-|3     |    mtc            |m_to_clock_17 |    94|
+|3     |    mtc            |m_to_clock_19 |    94|
 |4     |  cc20k            |FlexiClock_0  |    94|
-|5     |    mtc            |m_to_clock_16 |    94|
-|6     |  ts               |task_selector |  1591|
-|7     |    cc3b20k        |FlexiClock_1  |    94|
-|8     |      mtc          |m_to_clock_15 |    94|
-|9     |    cc3b30k        |FlexiClock_2  |    94|
-|10    |      mtc          |m_to_clock_14 |    94|
-|11    |    cc3b50k        |FlexiClock_3  |    94|
-|12    |      mtc          |m_to_clock_13 |    94|
-|13    |    mpt            |project_2b    |  1122|
-|14    |      ah2          |averagehigh2b |   427|
-|15    |        cc2b100h   |FlexiClock_9  |    94|
-|16    |          mtc      |m_to_clock_12 |    94|
-|17    |        cc2b20kh   |FlexiClock_10 |    94|
-|18    |          mtc      |m_to_clock_11 |    94|
-|19    |      al2          |averageavg2b  |   518|
-|20    |        cc2b100l   |FlexiClock_5  |    94|
-|21    |          mtc      |m_to_clock_8  |    94|
-|22    |        cc2b20kl   |FlexiClock_6  |    94|
-|23    |          mtc      |m_to_clock_7  |    94|
-|24    |      ao2          |averageoff2b  |   110|
-|25    |        cc2b300off |FlexiClock_4  |    94|
-|26    |          mtc      |m_to_clock    |    94|
-|27    |    taskthreeb     |project_3b    |   147|
-|28    |  u1               |SPI           |   184|
-|29    |  u2               |DA2RefComp    |    48|
+|5     |    mtc            |m_to_clock_18 |    94|
+|6     |  ts               |task_selector |  1697|
+|7     |    cc3b20k        |FlexiClock_1  |    93|
+|8     |      mtc          |m_to_clock_17 |    93|
+|9     |    cc3b30k        |FlexiClock_2  |    93|
+|10    |      mtc          |m_to_clock_16 |    93|
+|11    |    cc3b50k        |FlexiClock_3  |    93|
+|12    |      mtc          |m_to_clock_15 |    93|
+|13    |    mpo            |project_1     |   106|
+|14    |      ccview       |FlexiClock_13 |    93|
+|15    |        mtc        |m_to_clock_14 |    93|
+|16    |    mpt            |project_2b    |  1122|
+|17    |      ah2          |averagehigh2b |   427|
+|18    |        cc2b100h   |FlexiClock_9  |    93|
+|19    |          mtc      |m_to_clock_12 |    93|
+|20    |        cc2b20kh   |FlexiClock_10 |    93|
+|21    |          mtc      |m_to_clock_11 |    93|
+|22    |      al2          |averageavg2b  |   518|
+|23    |        cc2b100l   |FlexiClock_5  |    93|
+|24    |          mtc      |m_to_clock_8  |    93|
+|25    |        cc2b20kl   |FlexiClock_6  |    93|
+|26    |          mtc      |m_to_clock_7  |    93|
+|27    |      ao2          |averageoff2b  |   110|
+|28    |        cc2b300off |FlexiClock_4  |    93|
+|29    |          mtc      |m_to_clock    |    93|
+|30    |    taskthreeb     |project_3b    |   147|
+|31    |  u1               |SPI           |   184|
+|32    |  u2               |DA2RefComp    |    48|
 +------+-------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:17 ; elapsed = 00:02:33 . Memory (MB): peak = 606.391 ; gain = 399.883
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 123 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 605.004 ; gain = 103.355
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 605.004 ; gain = 398.426
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:30 ; elapsed = 00:01:54 . Memory (MB): peak = 606.391 ; gain = 103.410
+Synthesis Optimization Complete : Time (s): cpu = 00:02:17 ; elapsed = 00:02:33 . Memory (MB): peak = 606.391 ; gain = 399.883
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 189 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
@@ -703,8 +647,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-106 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered.
+95 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 605.004 ; gain = 398.426
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 605.004 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 03 18:03:12 2017...
+synth_design: Time (s): cpu = 00:02:16 ; elapsed = 00:02:25 . Memory (MB): peak = 606.391 ; gain = 399.883
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 606.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 03 20:03:01 2017...
