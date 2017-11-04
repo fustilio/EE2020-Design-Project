@@ -87,10 +87,12 @@ module task_selector(
     wire [6:0]segthreeb;
     project_3b taskthreeb(CLK, clk_20k3b, clk_30k3b, clk_50k3b, btn, mpthreeOut);
     
-    //Declare test function
+    //Declare extra feature values and module
     wire [3:0]an_extra;
     wire [6:0]seg_extra;
-    project_extra ex(CLK, sw, btn, an_extra, seg_extra);
+    wire [15:0]led_extra;
+    wire [11:0]speaker_extra;
+    project_extra ex(CLK, sw, btn, an_extra, seg_extra, led_extra, speaker_extra);
    
    
     
@@ -99,9 +101,8 @@ module task_selector(
             TASK_FOUR : begin
                 an_inter <= an_extra;
                 seg_inter <= seg_extra;
-                // Default turns off speaker, LED, dp
-                led_inter <= 16'b0;
-                speaker_inter <= 0;
+                led_inter <= led_extra;
+                speaker_inter <= speaker_extra;
                 dp_inter <= 1;
             end TASK_THREE_B : begin
                 // Assigns 3b speaker and seven-segment value to speaker
