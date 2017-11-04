@@ -3467,3 +3467,71 @@ dismissDialog("Bitstream Generation Completed"); // ah (cl)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task2a.v", 5); // k (j, cl)
 selectCodeEditor("task2a.v", 321, 130); // cd (w, cl)
 selectCodeEditor("task2a.v", 277, 190); // cd (w, cl)
+// Elapsed time: 47 seconds
+selectCodeEditor("task2a.v", 541, 232); // cd (w, cl)
+selectCodeEditor("task2a.v", 105, 118); // cd (w, cl)
+selectCodeEditor("task2a.v", 106, 128); // cd (w, cl)
+selectCodeEditor("task2a.v", 478, 198); // cd (w, cl)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+selectCodeEditor("task2a.v", 141, 46); // cd (w, cl)
+selectCodeEditor("task2a.v", 326, 176); // cd (w, cl)
+selectCodeEditor("task2a.v", 271, 134); // cd (w, cl)
+selectCodeEditor("task2a.v", 142, 42); // cd (w, cl)
+typeControlKey((HResource) null, "task2a.v", 'c'); // cd (w, cl)
+selectCodeEditor("task2a.v", 149, 38); // cd (w, cl)
+typeControlKey((HResource) null, "task2a.v", 'v'); // cd (w, cl)
+selectCodeEditor("task2a.v", 161, 40); // cd (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("task2a.v", 313, 212); // cd (w, cl)
+selectCodeEditor("task2a.v", 414, 176); // cd (w, cl)
+selectCodeEditor("task2a.v", 449, 160); // cd (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("task2a.v", 459, 228); // cd (w, cl)
+selectCodeEditor("task2a.v", 151, 128); // cd (w, cl)
+selectCodeEditor("task2a.v", 403, 222); // cd (w, cl)
+selectCodeEditor("task2a.v", 474, 120); // cd (w, cl)
+selectCodeEditor("task2a.v", 566, 166); // cd (w, cl)
+selectCodeEditor("task2a.v", 251, 74); // cd (w, cl)
+selectCodeEditor("task2a.v", 366, 126); // cd (w, cl)
+selectCodeEditor("task2a.v", 355, 124); // cd (w, cl)
+selectCodeEditor("task2a.v", 337, 114); // cd (w, cl)
+selectCodeEditor("task2a.v", 331, 164, true, false, false, false, false); // cd (w, cl) - Shift Key
+selectCodeEditor("task2a.v", 325, 212); // cd (w, cl)
+typeControlKey((HResource) null, "task2a.v", 'c'); // cd (w, cl)
+selectCodeEditor("task2a.v", 202, 50); // cd (w, cl)
+typeControlKey((HResource) null, "task2a.v", 'v'); // cd (w, cl)
+typeControlKey((HResource) null, "task2a.v", 'v'); // cd (w, cl)
+selectCodeEditor("task2a.v", 253, 46); // cd (w, cl)
+selectCodeEditor("task2a.v", 299, 254); // cd (w, cl)
+selectCodeEditor("task2a.v", 329, 260); // cd (w, cl)
+selectCodeEditor("task2a.v", 315, 240); // cd (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("task2a.v", 253, 250); // cd (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("task2a.v", 215, 222); // cd (w, cl)
+selectCodeEditor("task2a.v", 293, 128); // cd (w, cl)
+selectCodeEditor("task2a.v", 318, 112); // cd (w, cl)
+selectCodeEditor("task2a.v", 217, 120); // cd (w, cl)
+// Elapsed time: 34 seconds
+selectCodeEditor("task2a.v", 110, 250); // cd (w, cl)
+selectCodeEditor("task2a.v", 321, 206); // cd (w, cl)
+selectCodeEditor("task2a.v", 321, 206, false, false, false, false, true); // cd (w, cl) - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "task2a.v", 'v'); // cd (w, cl)
+selectCodeEditor("task2a.v", 1, 282); // cd (w, cl)
+typeControlKey((HResource) null, "task2a.v", 'v'); // cd (w, cl)
+selectCodeEditor("task2a.v", 337, 102); // cd (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("task2a.v", 301, 70); // cd (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("task2a.v", 223, 198); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 50 seconds
+selectCodeEditor("task2a.v", 407, 82); // cd (w, cl)
+typeControlKey((HResource) null, "task2a.v", 'c'); // cd (w, cl)
+selectCodeEditor("task2a.v", 335, 64); // cd (w, cl)
