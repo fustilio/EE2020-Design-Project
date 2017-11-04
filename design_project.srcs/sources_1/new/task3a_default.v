@@ -24,7 +24,7 @@ module task3a_default(
     input [11:0] IN,
     input clk, // assume 10kHz
     output [11:0] OUT
-    );
+    );  
         // for clk duration is 1/10000 seconds, we need 0.25 * 10000 ticks 
         localparam N = 2500; //N represents size of buffer
        

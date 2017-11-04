@@ -30,7 +30,10 @@ module task3a(
     wire [11:0] default_output;
     wire [11:0] circular_output;
     
-    task3a_default df (IN, CLK, default_output);
+    wire clk_10k;
+    FlexiClock fc0 (10000, CLK, clk_10k);
+    
+    task3a_default df (IN, clk_10k, default_output);
     task3a_circular circ (IN, CLK, circular_output);
     
     reg [11:0] inter_output;
