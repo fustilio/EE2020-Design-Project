@@ -1,89 +1,110 @@
 #-----------------------------------------------------------
-# Vivado v2016.2 (64-bit)
-# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
-# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Nov 04 03:24:32 2017
-# Process ID: 8108
-# Current directory: C:/Users/s9539968a/Desktop/Design_project/design_project.runs/synth_1
-# Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
-# Log file: C:/Users/s9539968a/Desktop/Design_project/design_project.runs/synth_1/AUDIO_FX_TOP.vds
-# Journal file: C:/Users/s9539968a/Desktop/Design_project/design_project.runs/synth_1\vivado.jou
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Nov  4 14:49:30 2017
+# Process ID: 19240
+# Current directory: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1
+# Command line: vivado.exe -log AUDIO_FX_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
+# Log file: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/AUDIO_FX_TOP.vds
+# Journal file: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source AUDIO_FX_TOP.tcl -notrace
 Command: synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
 Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci
+
+INFO: [IP_Flow 19-2162] IP 'dist_mem_gen_0' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'dist_mem_gen_0' (customized with software release 2016.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2504 
+INFO: Helper process launched with PID 20316 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 272.691 ; gain = 66.191
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 355.000 ; gain = 95.070
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
-INFO: [Synth 8-638] synthesizing module 'FlexiClock' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/FlexiClock.v:23]
-INFO: [Synth 8-638] synthesizing module 'frequency_to_m' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/frequency_to_m.v:23]
-INFO: [Synth 8-256] done synthesizing module 'frequency_to_m' (1#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/frequency_to_m.v:23]
-INFO: [Synth 8-638] synthesizing module 'm_to_clock' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/m_to_clock.v:23]
-INFO: [Synth 8-256] done synthesizing module 'm_to_clock' (2#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/m_to_clock.v:23]
-INFO: [Synth 8-256] done synthesizing module 'FlexiClock' (3#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/FlexiClock.v:23]
-INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/SPI.v:20]
-INFO: [Synth 8-256] done synthesizing module 'SPI' (4#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/SPI.v:20]
-INFO: [Synth 8-638] synthesizing module 'task_selector' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task_selector.v:23]
+INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'FlexiClock' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/FlexiClock.v:23]
+INFO: [Synth 8-638] synthesizing module 'frequency_to_m' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/frequency_to_m.v:23]
+INFO: [Synth 8-256] done synthesizing module 'frequency_to_m' (1#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/frequency_to_m.v:23]
+INFO: [Synth 8-638] synthesizing module 'm_to_clock' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/m_to_clock.v:23]
+INFO: [Synth 8-256] done synthesizing module 'm_to_clock' (2#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/m_to_clock.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FlexiClock' (3#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/FlexiClock.v:23]
+INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (4#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-638] synthesizing module 'task_selector' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task_selector.v:23]
 	Parameter TASK_ONE bound to: 4'b0001 
 	Parameter TASK_TWO_A bound to: 4'b0010 
 	Parameter TASK_TWO_B bound to: 4'b0011 
 	Parameter TASK_THREE_A bound to: 4'b0100 
 	Parameter TASK_THREE_B bound to: 4'b0101 
 	Parameter TASK_FOUR bound to: 4'b0110 
-INFO: [Synth 8-638] synthesizing module 'project_1' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_1.v:23]
-INFO: [Synth 8-256] done synthesizing module 'project_1' (5#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_1.v:23]
-INFO: [Synth 8-638] synthesizing module 'task2a' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:23]
-INFO: [Synth 8-638] synthesizing module 'generateSine' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/generateSine.v:23]
-INFO: [Synth 8-638] synthesizing module 'clockToSine8' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/clockToSine8.v:23]
-INFO: [Synth 8-638] synthesizing module 'sineLUT' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sineLUT.v:22]
-INFO: [Synth 8-256] done synthesizing module 'sineLUT' (6#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sineLUT.v:22]
-WARNING: [Synth 8-689] width (9) of port connection 'count' does not match port width (8) of module 'sineLUT' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/clockToSine8.v:34]
-WARNING: [Synth 8-689] width (9) of port connection 'OUTPUT' does not match port width (8) of module 'sineLUT' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/clockToSine8.v:34]
-INFO: [Synth 8-256] done synthesizing module 'clockToSine8' (7#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/clockToSine8.v:23]
-WARNING: [Synth 8-689] width (12) of port connection 'OUT' does not match port width (9) of module 'clockToSine8' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/generateSine.v:33]
-INFO: [Synth 8-256] done synthesizing module 'generateSine' (8#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/generateSine.v:23]
-WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:79]
-WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:81]
-WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:83]
-WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:84]
-WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:86]
-INFO: [Synth 8-638] synthesizing module 'deciToDigits' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/deciToDigits.v:23]
-INFO: [Synth 8-256] done synthesizing module 'deciToDigits' (9#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/deciToDigits.v:23]
-INFO: [Synth 8-638] synthesizing module 'sevenseg' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sevenseg.v:5]
+INFO: [Synth 8-638] synthesizing module 'project_1' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'project_1' (5#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'task2a' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:23]
+INFO: [Synth 8-638] synthesizing module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/generateSine.v:23]
+INFO: [Synth 8-638] synthesizing module 'clockToSine8' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:23]
+INFO: [Synth 8-638] synthesizing module 'sineLUT' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sineLUT.v:22]
+INFO: [Synth 8-256] done synthesizing module 'sineLUT' (6#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sineLUT.v:22]
+WARNING: [Synth 8-689] width (9) of port connection 'count' does not match port width (8) of module 'sineLUT' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:34]
+WARNING: [Synth 8-689] width (9) of port connection 'OUTPUT' does not match port width (8) of module 'sineLUT' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:34]
+INFO: [Synth 8-256] done synthesizing module 'clockToSine8' (7#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'OUT' does not match port width (9) of module 'clockToSine8' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/generateSine.v:33]
+INFO: [Synth 8-256] done synthesizing module 'generateSine' (8#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/generateSine.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:79]
+WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:81]
+WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:83]
+WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:84]
+WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:86]
+INFO: [Synth 8-638] synthesizing module 'deciToDigits' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/deciToDigits.v:23]
+INFO: [Synth 8-256] done synthesizing module 'deciToDigits' (9#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/deciToDigits.v:23]
+INFO: [Synth 8-638] synthesizing module 'sevenseg' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:5]
 	Parameter N bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'sevenseg' (10#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sevenseg.v:5]
-WARNING: [Synth 8-3848] Net led in module/entity task2a does not have driver. [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:27]
-INFO: [Synth 8-256] done synthesizing module 'task2a' (11#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task2a.v:23]
-INFO: [Synth 8-638] synthesizing module 'project_2b' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_2b.v:23]
-INFO: [Synth 8-638] synthesizing module 'averagehigh2b' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averagehigh2b.v:23]
-INFO: [Synth 8-256] done synthesizing module 'averagehigh2b' (12#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averagehigh2b.v:23]
-INFO: [Synth 8-638] synthesizing module 'averageavg2b' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averageavg2b.v:23]
-INFO: [Synth 8-256] done synthesizing module 'averageavg2b' (13#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averageavg2b.v:23]
-INFO: [Synth 8-638] synthesizing module 'averageoff2b' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averageoff2b.v:23]
-INFO: [Synth 8-256] done synthesizing module 'averageoff2b' (14#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averageoff2b.v:23]
-INFO: [Synth 8-256] done synthesizing module 'project_2b' (15#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_2b.v:23]
-INFO: [Synth 8-638] synthesizing module 'task3a' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task3a.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sevenseg' (10#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:5]
+WARNING: [Synth 8-3848] Net led in module/entity task2a does not have driver. [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:27]
+INFO: [Synth 8-256] done synthesizing module 'task2a' (11#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:23]
+INFO: [Synth 8-638] synthesizing module 'project_2b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_2b.v:23]
+INFO: [Synth 8-638] synthesizing module 'averagehigh2b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averagehigh2b.v:23]
+INFO: [Synth 8-256] done synthesizing module 'averagehigh2b' (12#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averagehigh2b.v:23]
+INFO: [Synth 8-638] synthesizing module 'averageavg2b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averageavg2b.v:23]
+INFO: [Synth 8-256] done synthesizing module 'averageavg2b' (13#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averageavg2b.v:23]
+INFO: [Synth 8-638] synthesizing module 'averageoff2b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averageoff2b.v:23]
+INFO: [Synth 8-256] done synthesizing module 'averageoff2b' (14#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averageoff2b.v:23]
+INFO: [Synth 8-256] done synthesizing module 'project_2b' (15#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_2b.v:23]
+INFO: [Synth 8-638] synthesizing module 'task3a' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a.v:23]
+INFO: [Synth 8-638] synthesizing module 'task3a_default' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_default.v:23]
 	Parameter N bound to: 2500 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'task3a' (16#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task3a.v:23]
-INFO: [Synth 8-638] synthesizing module 'project_3b' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_3b.v:23]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/s9539968a/Desktop/Design_project/design_project.runs/synth_1/.Xil/Vivado-8108-acer/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (17#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.runs/synth_1/.Xil/Vivado-8108-acer/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'project_3b' (18#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_3b.v:23]
-INFO: [Synth 8-638] synthesizing module 'project_extra' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_extra.v:23]
-INFO: [Synth 8-638] synthesizing module 'randomizer' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/randomizer.v:23]
-INFO: [Synth 8-256] done synthesizing module 'randomizer' (19#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/randomizer.v:23]
-INFO: [Synth 8-638] synthesizing module 'score_tracker' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/score_tracker.v:23]
-INFO: [Synth 8-256] done synthesizing module 'score_tracker' (20#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/score_tracker.v:23]
-INFO: [Synth 8-256] done synthesizing module 'project_extra' (21#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_extra.v:23]
-INFO: [Synth 8-256] done synthesizing module 'task_selector' (22#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/task_selector.v:23]
-INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (23#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (24#1) [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+WARNING: [Synth 8-6014] Unused sequential element fifo_reg[0] was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_default.v:35]
+INFO: [Synth 8-256] done synthesizing module 'task3a_default' (16#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_default.v:23]
+INFO: [Synth 8-638] synthesizing module 'task3a_circular' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:23]
+	Parameter N bound to: 2500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'task3a_circular' (17#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:23]
+WARNING: [Synth 8-567] referenced signal 'circular_output' should be on the sensitivity list [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a.v:37]
+WARNING: [Synth 8-567] referenced signal 'default_output' should be on the sensitivity list [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a.v:37]
+INFO: [Synth 8-256] done synthesizing module 'task3a' (18#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a.v:23]
+INFO: [Synth 8-638] synthesizing module 'project_3b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_3b.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-19240-Lee/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (19#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-19240-Lee/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'project_3b' (20#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_3b.v:23]
+INFO: [Synth 8-638] synthesizing module 'project_extra' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_extra.v:23]
+INFO: [Synth 8-638] synthesizing module 'randomizer' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/randomizer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'randomizer' (21#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/randomizer.v:23]
+INFO: [Synth 8-638] synthesizing module 'score_tracker' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:23]
+INFO: [Synth 8-256] done synthesizing module 'score_tracker' (22#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:23]
+INFO: [Synth 8-256] done synthesizing module 'project_extra' (23#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_extra.v:23]
+INFO: [Synth 8-256] done synthesizing module 'task_selector' (24#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task_selector.v:23]
+INFO: [Synth 8-638] synthesizing module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:23]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'OutputRowCol' (25#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'in0' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-689] width (5) of port connection 'in1' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-689] width (5) of port connection 'in2' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-689] width (5) of port connection 'in3' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (26#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (27#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 WARNING: [Synth 8-3331] design score_tracker has unconnected port sw[11]
 WARNING: [Synth 8-3331] design score_tracker has unconnected port sw[10]
 WARNING: [Synth 8-3331] design score_tracker has unconnected port sw[9]
@@ -126,7 +147,7 @@ WARNING: [Synth 8-3331] design task2a has unconnected port btn[2]
 WARNING: [Synth 8-3331] design task2a has unconnected port btn[1]
 WARNING: [Synth 8-3331] design task2a has unconnected port btn[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 349.551 ; gain = 143.051
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 481.621 ; gain = 221.691
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -135,69 +156,84 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 349.551 ; gain = 143.051
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 481.621 ; gain = 221.691
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'ts/taskthreeb/dmg' [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/project_3b.v:68]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/s9539968a/Desktop/Design_project/design_project.runs/synth_1/.Xil/Vivado-8108-acer/dcp/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
-Finished Parsing XDC File [C:/Users/s9539968a/Desktop/Design_project/design_project.runs/synth_1/.Xil/Vivado-8108-acer/dcp/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
-Parsing XDC File [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
+Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-19240-Lee/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
+Finished Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-19240-Lee/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
+Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 668.598 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.955 . Memory (MB): peak = 863.574 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 668.598 ; gain = 462.098
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 863.574 ; gain = 603.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 668.598 ; gain = 462.098
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 863.574 ; gain = 603.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ts/taskthreeb/dmg. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 668.598 ; gain = 462.098
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 863.574 ; gain = 603.645
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element COUNT_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/m_to_clock.v:32]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/SPI.v:40]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:31]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:22]
 INFO: [Synth 8-5546] ROM "antwobout_h0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "antwobout_h" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_h_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averagehigh2b.v:40]
 INFO: [Synth 8-5546] ROM "antwobout_h0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "antwobout_h" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "antwobout_l0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "antwobout_l" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_l_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averageavg2b.v:40]
 INFO: [Synth 8-5546] ROM "antwobout_l0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "antwobout_l" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'countlabtwo_off_reg' in module 'averageoff2b'
 INFO: [Synth 8-5545] ROM "led_display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fifo_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "out_temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "read" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "size" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element size_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:43]
+WARNING: [Synth 8-6014] Unused sequential element score_holder_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:41]
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
 INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clk_counter_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element shiftCounter_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:138]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -219,72 +255,81 @@ INFO: [Synth 8-3354] encoded FSM with state register 'countlabtwo_off_reg' using
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 668.598 ; gain = 462.098
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:45 ; elapsed = 00:03:55 . Memory (MB): peak = 863.574 ; gain = 603.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+-------------------+------------+----------+
-|      |RTL Partition      |Replication |Instances |
-+------+-------------------+------------+----------+
-|1     |FlexiClock         |          14|      3864|
-|2     |reg__3             |           1|        12|
-|3     |clockToSine8       |           1|        89|
-|4     |task2a__GC0        |           1|      9419|
-|5     |averagehigh2b__GC0 |           1|      1840|
-|6     |averageavg2b__GC0  |           1|      2196|
-|7     |averageoff2b__GC0  |           1|        21|
-|8     |project_2b__GC0    |           1|       733|
-|9     |project_extra__GC0 |           1|      9342|
-|10    |task_selector__GC0 |           1|     30995|
-|11    |AUDIO_FX_TOP__GC0  |           1|       529|
-+------+-------------------+------------+----------+
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |FlexiClock           |          15|      3864|
+|2     |reg__3               |           1|        12|
+|3     |clockToSine8         |           1|        89|
+|4     |task2a__GC0          |           1|      8616|
+|5     |averagehigh2b__GC0   |           1|      1573|
+|6     |averageavg2b__GC0    |           1|      1929|
+|7     |averageoff2b__GC0    |           1|        21|
+|8     |project_2b__GC0      |           1|       328|
+|9     |task3a_circular__GB0 |           1|     32809|
+|10    |task3a_circular__GB1 |           1|      3900|
+|11    |task3a_circular__GB2 |           1|      6336|
+|12    |task3a_circular__GB3 |           1|     10776|
+|13    |task3a_circular__GB4 |           1|     10349|
+|14    |task3a__GC0          |           1|     30000|
+|15    |project_extra__GC0   |           1|      8541|
+|16    |task_selector__GC0   |           1|      1008|
+|17    |AUDIO_FX_TOP__GC0    |           1|       817|
++------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 44    
+	   2 Input     32 Bit       Adders := 47    
 	   3 Input     32 Bit       Adders := 6     
 	   2 Input     13 Bit       Adders := 3     
 	   2 Input      9 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 7     
 +---Registers : 
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
 	               16 Bit    Registers := 7     
 	               15 Bit    Registers := 1     
 	               14 Bit    Registers := 2     
 	               13 Bit    Registers := 4     
-	               12 Bit    Registers := 2503  
+	               12 Bit    Registers := 5004  
 	                9 Bit    Registers := 5     
 	                7 Bit    Registers := 5     
+	                5 Bit    Registers := 4     
 	                4 Bit    Registers := 15    
-	                1 Bit    Registers := 20    
+	                1 Bit    Registers := 21    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 26    
+	   2 Input     32 Bit        Muxes := 27    
 	  17 Input     16 Bit        Muxes := 2     
 	  18 Input     16 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 7     
 	   7 Input     16 Bit        Muxes := 1     
 	  17 Input     14 Bit        Muxes := 2     
 	   2 Input     13 Bit        Muxes := 5     
-	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
 	   2 Input      9 Bit        Muxes := 1     
 	   6 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 5     
-	  11 Input      7 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 6     
+	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 6     
 	   3 Input      7 Bit        Muxes := 1     
 	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
 	   2 Input      4 Bit        Muxes := 15    
-	   4 Input      4 Bit        Muxes := 5     
-	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 3     
 	   7 Input      4 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 36    
+	   2 Input      1 Bit        Muxes := 41    
 	   4 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 9     
 	   7 Input      1 Bit        Muxes := 1     
@@ -295,6 +340,14 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module AUDIO_FX_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	                5 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 4     
 Module frequency_to_m 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -322,16 +375,15 @@ Detailed RTL Component Info :
 Module deciToDigits__1 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 13    
 	   3 Input     32 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 11    
 	   2 Input      4 Bit       Adders := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     32 Bit        Muxes := 11    
 	   2 Input      4 Bit        Muxes := 1     
 Module sevenseg__1 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  11 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 Module task2a 
 Detailed RTL Component Info : 
@@ -356,6 +408,7 @@ Detailed RTL Component Info :
 	  18 Input     16 Bit        Muxes := 1     
 	  17 Input     14 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
@@ -374,6 +427,7 @@ Detailed RTL Component Info :
 	  18 Input     16 Bit        Muxes := 1     
 	  17 Input     14 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
@@ -394,7 +448,7 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 4     
 	   3 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 4     
@@ -403,6 +457,24 @@ Detailed RTL Component Info :
 	   3 Input      2 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 8     
 	   3 Input      1 Bit        Muxes := 1     
+Module task3a_circular 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 2501  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+Module task3a_default 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2499  
+Module task3a 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
 Module randomizer 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -414,11 +486,11 @@ Detailed RTL Component Info :
 Module deciToDigits 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 13    
 	   3 Input     32 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 11    
 	   2 Input      4 Bit       Adders := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     32 Bit        Muxes := 11    
 	   2 Input      4 Bit        Muxes := 1     
 Module score_tracker 
 Detailed RTL Component Info : 
@@ -427,7 +499,6 @@ Detailed RTL Component Info :
 Module sevenseg 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  11 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 Module project_extra 
 Detailed RTL Component Info : 
@@ -435,10 +506,6 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 4     
-Module task3a 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 2499  
 Module project_3b 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -470,6 +537,12 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
+Module OutputRowCol 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
 Module DA2RefComp 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -495,64 +568,41 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 668.598 ; gain = 462.098
 ---------------------------------------------------------------------------------
-Start Cross Boundary Optimization
+Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element mtc/COUNT_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/m_to_clock.v:32]
+WARNING: [Synth 8-6040] Register 0®ƒ9ž driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:31]
 INFO: [Synth 8-5587] ROM size for "p_1_out0" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-6014] Unused sequential element ss/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:22]
 INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "countlabtwo_h1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout_h" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "antwobout_h0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "segtwobout_h0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_h_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averagehigh2b.v:40]
 INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "countlabtwo_l1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout_l" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "antwobout_l0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "segtwobout_l0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_l_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averageavg2b.v:40]
 INFO: [Synth 8-5545] ROM "led_display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "O50" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "O70" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
----------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 668.598 ; gain = 462.098
----------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 668.598 ; gain = 462.098
-
-Report RTL Partitions: 
-+------+-------------------+------------+----------+
-|      |RTL Partition      |Replication |Instances |
-+------+-------------------+------------+----------+
-|1     |FlexiClock         |          18|      3864|
-|2     |reg__3             |           1|        12|
-|3     |clockToSine8       |           5|       282|
-|4     |task2a__GC0        |           1|     31208|
-|5     |averagehigh2b__GC0 |           1|      1216|
-|6     |averageavg2b__GC0  |           1|      1821|
-|7     |averageoff2b__GC0  |           1|        21|
-|8     |project_2b__GC0    |           1|       764|
-|9     |project_extra__GC0 |           1|     31176|
-|10    |task_selector__GC0 |           1|     31036|
-|11    |AUDIO_FX_TOP__GC0  |           1|       568|
-+------+-------------------+------------+----------+
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-ROM:
-+-------------+------------+---------------+----------------+
-|Module Name  | RTL Object | Depth x Width | Implemented As | 
-+-------------+------------+---------------+----------------+
-|sineLUT      | OUTPUT     | 256x8         | LUT            | 
-|clockToSine8 | sl/OUTPUT  | 256x8         | LUT            | 
-+-------------+------------+---------------+----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Area Optimization
----------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "fifo_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "out_temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "read" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "size" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element size_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:43]
+WARNING: [Synth 8-6014] Unused sequential element st/score_holder_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:40]
+WARNING: [Synth 8-6014] Unused sequential element ss2/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:22]
+WARNING: [Synth 8-6014] Unused sequential element u1/count2_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/SPI.v:40]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line81/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:41]
+WARNING: [Synth 8-6014] Unused sequential element u2/clk_counter_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element u2/shiftCounter_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:138]
 WARNING: [Synth 8-3332] Sequential element (count_reg[8]) is unused and will be removed from module clockToSine8.
 WARNING: [Synth 8-3332] Sequential element (count_reg_rep[8]) is unused and will be removed from module clockToSine8.
 INFO: [Synth 8-3886] merging instance 't2i_1/display_reg[0]' (FD) to 't2i_1/display_reg[4]'
@@ -585,100 +635,144 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (ao2i_4/\s
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ao2i_4/\segtwobout_off_reg[6] )
 INFO: [Synth 8-3886] merging instance 'mpti_5/stats_reg[2]' (FDE) to 'mpti_5/stats_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mpti_5/\stats_reg[3] )
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[28]' (FDE) to 'circi_10/read_reg[12]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[29]' (FDE) to 'circi_10/read_reg[12]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[30]' (FDE) to 'circi_10/read_reg[12]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[31]' (FDE) to 'circi_10/read_reg[12]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[12]' (FDE) to 'circi_10/read_reg[13]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[13]' (FDE) to 'circi_10/read_reg[14]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[14]' (FDE) to 'circi_10/read_reg[15]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[15]' (FDE) to 'circi_10/read_reg[16]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[16]' (FDE) to 'circi_10/read_reg[17]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[17]' (FDE) to 'circi_10/read_reg[18]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[18]' (FDE) to 'circi_10/read_reg[19]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[19]' (FDE) to 'circi_10/read_reg[20]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[20]' (FDE) to 'circi_10/read_reg[21]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[21]' (FDE) to 'circi_10/read_reg[22]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[22]' (FDE) to 'circi_10/read_reg[23]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[23]' (FDE) to 'circi_10/read_reg[24]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[24]' (FDE) to 'circi_10/read_reg[25]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[25]' (FDE) to 'circi_10/read_reg[26]'
+INFO: [Synth 8-3886] merging instance 'circi_10/read_reg[26]' (FDE) to 'circi_10/read_reg[27]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (al2i_3/\FINAL_MIC_l_reg[0] )
 INFO: [Synth 8-3886] merging instance 't2i_1/inter_reg[8]' (FD) to 't2i_1/inter_reg[11]'
 INFO: [Synth 8-3886] merging instance 't2i_1/inter_reg[9]' (FD) to 't2i_1/inter_reg[11]'
 INFO: [Synth 8-3886] merging instance 't2i_1/inter_reg[10]' (FD) to 't2i_1/inter_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (t2i_1/\inter_reg[11] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (tsi_7/dp_inter_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (tsi_13/dp_inter_reg)
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:03:07 ; elapsed = 00:03:12 . Memory (MB): peak = 668.598 ; gain = 462.098
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:23 ; elapsed = 00:07:36 . Memory (MB): peak = 863.574 ; gain = 603.645
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:03:07 ; elapsed = 00:03:12 . Memory (MB): peak = 668.598 ; gain = 462.098
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|sineLUT      | OUTPUT     | 256x8         | LUT            | 
+|clockToSine8 | sl/OUTPUT  | 256x8         | LUT            | 
++-------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+-------------------+------------+----------+
-|      |RTL Partition      |Replication |Instances |
-+------+-------------------+------------+----------+
-|1     |FlexiClock         |           4|       102|
-|2     |reg__3             |           1|        12|
-|3     |clockToSine8       |           5|       262|
-|4     |task2a__GC0        |           1|      8657|
-|5     |averagehigh2b__GC0 |           1|       518|
-|6     |averageavg2b__GC0  |           1|       802|
-|7     |averageoff2b__GC0  |           1|        13|
-|8     |project_2b__GC0    |           1|       163|
-|9     |project_extra__GC0 |           1|      9842|
-|10    |task_selector__GC0 |           1|     30477|
-|11    |AUDIO_FX_TOP__GC0  |           1|       304|
-|12    |FlexiClock__1      |           1|       101|
-|13    |FlexiClock__2      |           1|        99|
-|14    |FlexiClock__3      |           1|       102|
-|15    |FlexiClock__4      |           1|       100|
-|16    |FlexiClock__5      |           1|       101|
-|17    |FlexiClock__6      |           1|       101|
-|18    |FlexiClock__7      |           3|       102|
-|19    |FlexiClock__8      |           1|       100|
-|20    |FlexiClock__9      |           1|       101|
-|21    |FlexiClock__10     |           1|       101|
-|22    |FlexiClock__11     |           1|        98|
-|23    |FlexiClock__12     |           1|       101|
-+------+-------------------+------------+----------+
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |FlexiClock           |           4|       102|
+|2     |reg__3               |           1|        12|
+|3     |clockToSine8         |           5|       262|
+|4     |task2a__GC0          |           1|      8024|
+|5     |averagehigh2b__GC0   |           1|       534|
+|6     |averageavg2b__GC0    |           1|       822|
+|7     |averageoff2b__GC0    |           1|        13|
+|8     |project_2b__GC0      |           1|       161|
+|9     |task3a_circular__GB0 |           1|     32809|
+|10    |task3a_circular__GB1 |           1|      3900|
+|11    |task3a_circular__GB2 |           1|      6336|
+|12    |task3a_circular__GB3 |           1|     10776|
+|13    |task3a_circular__GB4 |           1|      8773|
+|14    |task3a__GC0          |           1|     30024|
+|15    |project_extra__GC0   |           1|      9464|
+|16    |task_selector__GC0   |           1|       488|
+|17    |AUDIO_FX_TOP__GC0    |           1|       399|
+|18    |FlexiClock__1        |           1|       101|
+|19    |FlexiClock__2        |           1|        99|
+|20    |FlexiClock__3        |           1|       102|
+|21    |FlexiClock__4        |           1|       100|
+|22    |FlexiClock__5        |           1|       101|
+|23    |FlexiClock__6        |           1|       101|
+|24    |FlexiClock__7        |           3|       102|
+|25    |FlexiClock__8        |           1|       100|
+|26    |FlexiClock__9        |           1|       100|
+|27    |FlexiClock__10       |           1|       101|
+|28    |FlexiClock__11       |           1|       101|
+|29    |FlexiClock__12       |           1|        98|
+|30    |FlexiClock__13       |           1|       101|
++------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:20 ; elapsed = 00:03:25 . Memory (MB): peak = 702.512 ; gain = 496.012
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:39 ; elapsed = 00:07:52 . Memory (MB): peak = 931.586 ; gain = 671.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:00 ; elapsed = 00:04:05 . Memory (MB): peak = 800.363 ; gain = 593.863
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:08:01 ; elapsed = 00:08:14 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+-------------------+------------+----------+
-|      |RTL Partition      |Replication |Instances |
-+------+-------------------+------------+----------+
-|1     |FlexiClock         |           4|       102|
-|2     |reg__3             |           1|        12|
-|3     |clockToSine8       |           5|       262|
-|4     |averagehigh2b__GC0 |           1|       518|
-|5     |averageavg2b__GC0  |           1|       802|
-|6     |averageoff2b__GC0  |           1|        13|
-|7     |project_2b__GC0    |           1|       163|
-|8     |project_extra__GC0 |           1|      9842|
-|9     |AUDIO_FX_TOP__GC0  |           1|       304|
-|10    |FlexiClock__1      |           1|       101|
-|11    |FlexiClock__2      |           1|        99|
-|12    |FlexiClock__3      |           1|       102|
-|13    |FlexiClock__4      |           1|       100|
-|14    |FlexiClock__5      |           1|       101|
-|15    |FlexiClock__6      |           1|       101|
-|16    |FlexiClock__7      |           3|       102|
-|17    |FlexiClock__8      |           1|       100|
-|18    |FlexiClock__9      |           1|       101|
-|19    |FlexiClock__10     |           1|       101|
-|20    |FlexiClock__11     |           1|        98|
-|21    |FlexiClock__12     |           1|       101|
-|22    |AUDIO_FX_TOP_GT0   |           1|     20616|
-|23    |AUDIO_FX_TOP_GT1   |           1|     18541|
-+------+-------------------+------------+----------+
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |FlexiClock           |           4|       102|
+|2     |reg__3               |           1|        12|
+|3     |clockToSine8         |           5|       262|
+|4     |averagehigh2b__GC0   |           1|       534|
+|5     |averageavg2b__GC0    |           1|       822|
+|6     |averageoff2b__GC0    |           1|        13|
+|7     |project_2b__GC0      |           1|       161|
+|8     |task3a_circular__GB0 |           1|     32809|
+|9     |task3a_circular__GB1 |           1|      3900|
+|10    |task3a_circular__GB2 |           1|      6336|
+|11    |task3a_circular__GB3 |           1|     10776|
+|12    |task3a_circular__GB4 |           1|      8773|
+|13    |task3a__GC0          |           1|     30024|
+|14    |project_extra__GC0   |           1|      9464|
+|15    |AUDIO_FX_TOP__GC0    |           1|       399|
+|16    |FlexiClock__1        |           1|       101|
+|17    |FlexiClock__2        |           1|        99|
+|18    |FlexiClock__3        |           1|       102|
+|19    |FlexiClock__4        |           1|       100|
+|20    |FlexiClock__5        |           1|       101|
+|21    |FlexiClock__6        |           1|       101|
+|22    |FlexiClock__7        |           3|       102|
+|23    |FlexiClock__8        |           1|       100|
+|24    |FlexiClock__9        |           1|       100|
+|25    |FlexiClock__10       |           1|       101|
+|26    |FlexiClock__11       |           1|       101|
+|27    |FlexiClock__12       |           1|        98|
+|28    |FlexiClock__13       |           1|       101|
+|29    |AUDIO_FX_TOP_GT0     |           1|      8501|
++------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:09 ; elapsed = 00:04:14 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished Technology Mapping : Time (s): cpu = 00:08:37 ; elapsed = 00:08:52 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:04:09 ; elapsed = 00:04:14 . Memory (MB): peak = 800.363 ; gain = 593.863
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:09 ; elapsed = 00:04:14 . Memory (MB): peak = 800.363 ; gain = 593.863
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -695,7 +789,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:10 ; elapsed = 00:04:16 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished IO Insertion : Time (s): cpu = 00:08:42 ; elapsed = 00:08:57 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -708,7 +802,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:10 ; elapsed = 00:04:16 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:43 ; elapsed = 00:08:58 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -720,37 +814,36 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:12 ; elapsed = 00:04:18 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:51 ; elapsed = 00:09:09 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:13 ; elapsed = 00:04:19 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:53 ; elapsed = 00:09:11 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:14 ; elapsed = 00:04:19 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:54 ; elapsed = 00:09:12 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:14 ; elapsed = 00:04:19 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:55 ; elapsed = 00:09:12 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+-----------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name      | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+-----------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|AUDIO_FX_TOP_GT0 | ts/t3/fifo_reg[2499][11] | 1718   | 12    | NO           | YES                | YES               | 0      | 648     | 
-|AUDIO_FX_TOP_GT1 | ts/t3/fifo_reg[781][11]  | 781    | 12    | NO           | NO                 | YES               | 0      | 300     | 
-+-----------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|task3a__GC0 | df/fifo_reg[2499][11] | 2499   | 12    | NO           | YES                | YES               | 0      | 948     | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -772,115 +865,123 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |dist_mem_gen_0 |     1|
 |2     |BUFG           |     5|
-|3     |CARRY4         |  1397|
-|4     |LUT1           |  1218|
-|5     |LUT2           |   729|
-|6     |LUT3           |  1726|
-|7     |LUT4           |  1051|
-|8     |LUT5           |   933|
-|9     |LUT6           |  3118|
-|10    |MUXF7          |    64|
-|11    |MUXF8          |    31|
+|3     |CARRY4         |  1489|
+|4     |LUT1           |   306|
+|5     |LUT2           |   713|
+|6     |LUT3           |  1713|
+|7     |LUT4           |  1069|
+|8     |LUT5           |  1032|
+|9     |LUT6           | 11442|
+|10    |MUXF7          |  4044|
+|11    |MUXF8          |  2022|
 |12    |SRLC32E        |   948|
-|13    |FDRE           |  1149|
+|13    |FDRE           | 31361|
 |14    |FDSE           |    17|
 |15    |IBUF           |    23|
-|16    |OBUF           |    34|
+|16    |OBUF           |    46|
 +------+---------------+------+
 
 Report Instance Areas: 
 +------+-------------------+----------------+------+
 |      |Instance           |Module          |Cells |
 +------+-------------------+----------------+------+
-|1     |top                |                | 12455|
-|2     |  cc2              |FlexiClock      |    94|
-|3     |    mtc            |m_to_clock_47   |    94|
-|4     |  cc20k            |FlexiClock_0    |    94|
-|5     |    mtc            |m_to_clock_46   |    94|
-|6     |  ts               |task_selector   |  8196|
-|7     |    cc100          |FlexiClock_1    |    86|
-|8     |      mtc          |m_to_clock_45   |    86|
-|9     |    cc3b20k        |FlexiClock_2    |    84|
-|10    |      mtc          |m_to_clock_44   |    84|
-|11    |    cc3b30k        |FlexiClock_3    |    84|
-|12    |      mtc          |m_to_clock_43   |    84|
-|13    |    cc3b50k        |FlexiClock_4    |    86|
-|14    |      mtc          |m_to_clock_42   |    86|
-|15    |    ex             |project_extra   |   896|
-|16    |      cc1rr        |FlexiClock_38   |    88|
-|17    |        mtc        |m_to_clock_41   |    88|
-|18    |      rng          |randomizer      |    51|
-|19    |      ss2          |sevenseg_39     |    56|
-|20    |      st           |score_tracker   |   673|
-|21    |        dd2        |deciToDigits_40 |   413|
-|22    |    mpo            |project_1       |   118|
-|23    |      ccview       |FlexiClock_36   |    87|
-|24    |        mtc        |m_to_clock_37   |    87|
-|25    |    mpt            |project_2b      |  1107|
-|26    |      ah2          |averagehigh2b   |   430|
-|27    |        cc2b100h   |FlexiClock_32   |    85|
-|28    |          mtc      |m_to_clock_35   |    85|
-|29    |        cc2b20kh   |FlexiClock_33   |    84|
-|30    |          mtc      |m_to_clock_34   |    84|
-|31    |      al2          |averageavg2b    |   518|
-|32    |        cc2b100l   |FlexiClock_28   |    85|
-|33    |          mtc      |m_to_clock_31   |    85|
-|34    |        cc2b20kl   |FlexiClock_29   |    84|
-|35    |          mtc      |m_to_clock_30   |    84|
-|36    |      ao2          |averageoff2b    |   110|
-|37    |        cc2b300off |FlexiClock_26   |    85|
-|38    |          mtc      |m_to_clock_27   |    85|
-|39    |    t2             |task2a          |  4502|
-|40    |      dtd          |deciToDigits    |  3382|
-|41    |      gs38         |generateSine    |   174|
-|42    |        cs         |clockToSine8_22 |    80|
-|43    |          sl       |sineLUT_25      |    47|
-|44    |        fc         |FlexiClock_23   |    84|
-|45    |          mtc      |m_to_clock_24   |    84|
-|46    |      gs40         |generateSine_5  |   166|
-|47    |        cs         |clockToSine8_18 |    72|
-|48    |          sl       |sineLUT_21      |    47|
-|49    |        fc         |FlexiClock_19   |    85|
-|50    |          mtc      |m_to_clock_20   |    85|
-|51    |      gs42         |generateSine_6  |   166|
-|52    |        cs         |clockToSine8_14 |    72|
-|53    |          sl       |sineLUT_17      |    47|
-|54    |        fc         |FlexiClock_15   |    86|
-|55    |          mtc      |m_to_clock_16   |    86|
-|56    |      gs43         |generateSine_7  |   174|
-|57    |        cs         |clockToSine8_10 |    80|
-|58    |          sl       |sineLUT_13      |    47|
-|59    |        fc         |FlexiClock_11   |    84|
-|60    |          mtc      |m_to_clock_12   |    84|
-|61    |      gs45         |generateSine_8  |   166|
-|62    |        cs         |clockToSine8    |    72|
-|63    |          sl       |sineLUT         |    47|
-|64    |        fc         |FlexiClock_9    |    85|
-|65    |          mtc      |m_to_clock      |    85|
-|66    |      ss           |sevenseg        |    70|
-|67    |    t3             |task3a          |   984|
-|68    |    taskthreeb     |project_3b      |   147|
-|69    |  u1               |SPI             |   184|
-|70    |  u2               |DA2RefComp      |    48|
+|1     |top                |                | 56242|
+|2     |  cc2              |FlexiClock      |    63|
+|3     |    mtc            |m_to_clock_49   |    63|
+|4     |  cc20k            |FlexiClock_0    |    63|
+|5     |    mtc            |m_to_clock_48   |    63|
+|6     |  fc0              |FlexiClock_1    |    63|
+|7     |    mtc            |m_to_clock_47   |    63|
+|8     |  nolabel_line81   |OutputRowCol    |    39|
+|9     |  ts               |task_selector   | 51820|
+|10    |    cc100          |FlexiClock_2    |    63|
+|11    |      mtc          |m_to_clock_46   |    55|
+|12    |    cc3b20k        |FlexiClock_3    |    63|
+|13    |      mtc          |m_to_clock_45   |    53|
+|14    |    cc3b30k        |FlexiClock_4    |    63|
+|15    |      mtc          |m_to_clock_44   |    53|
+|16    |    cc3b50k        |FlexiClock_5    |    63|
+|17    |      mtc          |m_to_clock_43   |    55|
+|18    |    ex             |project_extra   |   441|
+|19    |      cc1rr        |FlexiClock_39   |    63|
+|20    |        mtc        |m_to_clock_42   |    57|
+|21    |      rng          |randomizer      |    47|
+|22    |      ss2          |sevenseg_40     |    39|
+|23    |      st           |score_tracker   |   268|
+|24    |        dd2        |deciToDigits_41 |   237|
+|25    |    mpo            |project_1       |    75|
+|26    |      ccview       |FlexiClock_37   |    63|
+|27    |        mtc        |m_to_clock_38   |    56|
+|28    |    mpt            |project_2b      |   882|
+|29    |      ah2          |averagehigh2b   |   332|
+|30    |        cc2b100h   |FlexiClock_33   |    63|
+|31    |          mtc      |m_to_clock_36   |    54|
+|32    |        cc2b20kh   |FlexiClock_34   |    63|
+|33    |          mtc      |m_to_clock_35   |    53|
+|34    |      al2          |averageavg2b    |   410|
+|35    |        cc2b100l   |FlexiClock_29   |    63|
+|36    |          mtc      |m_to_clock_32   |    54|
+|37    |        cc2b20kl   |FlexiClock_30   |    63|
+|38    |          mtc      |m_to_clock_31   |    53|
+|39    |      ao2          |averageoff2b    |    79|
+|40    |        cc2b300off |FlexiClock_27   |    63|
+|41    |          mtc      |m_to_clock_28   |    54|
+|42    |    t2             |task2a          |  3978|
+|43    |      dtd          |deciToDigits    |  3194|
+|44    |      gs38         |generateSine    |   143|
+|45    |        cs         |clockToSine8_23 |    80|
+|46    |          sl       |sineLUT_26      |    47|
+|47    |        fc         |FlexiClock_24   |    63|
+|48    |          mtc      |m_to_clock_25   |    53|
+|49    |      gs40         |generateSine_6  |   135|
+|50    |        cs         |clockToSine8_19 |    72|
+|51    |          sl       |sineLUT_22      |    47|
+|52    |        fc         |FlexiClock_20   |    63|
+|53    |          mtc      |m_to_clock_21   |    54|
+|54    |      gs42         |generateSine_7  |   135|
+|55    |        cs         |clockToSine8_15 |    72|
+|56    |          sl       |sineLUT_18      |    47|
+|57    |        fc         |FlexiClock_16   |    63|
+|58    |          mtc      |m_to_clock_17   |    55|
+|59    |      gs43         |generateSine_8  |   143|
+|60    |        cs         |clockToSine8_11 |    80|
+|61    |          sl       |sineLUT_14      |    47|
+|62    |        fc         |FlexiClock_12   |    63|
+|63    |          mtc      |m_to_clock_13   |    53|
+|64    |      gs45         |generateSine_9  |   135|
+|65    |        cs         |clockToSine8    |    72|
+|66    |          sl       |sineLUT         |    47|
+|67    |        fc         |FlexiClock_10   |    63|
+|68    |          mtc      |m_to_clock      |    54|
+|69    |      ss           |sevenseg        |    54|
+|70    |    t3             |task3a          | 46029|
+|71    |      circ         |task3a_circular | 45057|
+|72    |      df           |task3a_default  |   972|
+|73    |    taskthreeb     |project_3b      |   111|
+|74    |  u1               |SPI             |   169|
+|75    |  u2               |DA2RefComp      |    48|
 +------+-------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:14 ; elapsed = 00:04:19 . Memory (MB): peak = 800.363 ; gain = 593.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:55 ; elapsed = 00:09:12 . Memory (MB): peak = 1068.602 ; gain = 808.672
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:56 ; elapsed = 00:04:07 . Memory (MB): peak = 800.363 ; gain = 274.816
-Synthesis Optimization Complete : Time (s): cpu = 00:04:14 ; elapsed = 00:04:20 . Memory (MB): peak = 800.363 ; gain = 593.863
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:24 ; elapsed = 00:08:55 . Memory (MB): peak = 1068.602 ; gain = 426.719
+Synthesis Optimization Complete : Time (s): cpu = 00:08:55 ; elapsed = 00:09:12 . Memory (MB): peak = 1068.602 ; gain = 808.672
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1420 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 7578 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'AUDIO_FX_TOP' is not ideal for floorplanning, since the cellview 'task3a_circular' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 12 instances were transformed.
-  SRLC32E => SRL16E: 12 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-127 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+161 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:18 ; elapsed = 00:04:22 . Memory (MB): peak = 800.363 ; gain = 593.863
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 800.363 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 04 03:29:04 2017...
+synth_design: Time (s): cpu = 00:09:11 ; elapsed = 00:09:30 . Memory (MB): peak = 1068.602 ; gain = 815.441
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/AUDIO_FX_TOP.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1068.602 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file AUDIO_FX_TOP_utilization_synth.rpt -pb AUDIO_FX_TOP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.625 . Memory (MB): peak = 1068.602 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  4 14:59:20 2017...

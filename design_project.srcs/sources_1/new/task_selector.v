@@ -79,7 +79,7 @@ module task_selector(
     
     //Declare lab 3a values and module
     wire [11:0] delayed;
-    task3a t3 (MIC_in, clk_10k, delayed);
+    task3a t3 (MIC_in, clk_10k, sw[15], delayed);
     
     //Declare lab 3b values and module
     wire [11:0] mpthreeOut;

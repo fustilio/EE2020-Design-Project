@@ -1,10 +1,10 @@
--- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
--- Date        : Fri Nov 03 22:09:20 2017
--- Host        : acer running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+-- Date        : Sat Nov  4 13:59:43 2017
+-- Host        : Lee running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl
+--               C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl
 -- Design      : dist_mem_gen_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23805,8 +23805,6 @@ architecture STRUCTURE of dist_mem_gen_0 is
   attribute C_QUALIFY_WE of U0 : label is 0;
   attribute C_REG_DPRA_INPUT : integer;
   attribute C_REG_DPRA_INPUT of U0 : label is 0;
-  attribute KEEP_HIERARCHY : string;
-  attribute KEEP_HIERARCHY of U0 : label is "true";
   attribute c_addr_width : integer;
   attribute c_addr_width of U0 : label is 13;
   attribute c_default_data : string;

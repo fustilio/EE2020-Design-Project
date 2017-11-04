@@ -1,8 +1,8 @@
-Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Sat Nov 04 03:33:16 2017
-| Host             : acer running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date             : Sat Nov  4 15:07:18 2017
+| Host             : Lee running 64-bit major release  (build 9200)
 | Command          : report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx
 | Design           : AUDIO_FX_TOP
 | Device           : xc7a35tcpg236-1
@@ -29,18 +29,21 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 0.236 |
-| Dynamic (W)              | 0.164 |
-| Device Static (W)        | 0.072 |
-| Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 83.8  |
-| Junction Temperature (C) | 26.2  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.266        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.194        |
+| Device Static (W)        | 0.072        |
+| Effective TJA (C/W)      | 5.0          |
+| Max Ambient (C)          | 83.7         |
+| Junction Temperature (C) | 26.3         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
 1.1 On-Chip Components
@@ -49,19 +52,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.006 |        3 |       --- |             --- |
-| Slice Logic             |     0.059 |    13449 |       --- |             --- |
-|   LUT as Logic          |     0.055 |     8324 |     20800 |           40.02 |
-|   CARRY4                |     0.004 |     1397 |      8150 |           17.14 |
-|   F7/F8 Muxes           |    <0.001 |      721 |     32600 |            2.21 |
-|   Register              |    <0.001 |     1166 |     41600 |            2.80 |
+| Clocks                  |     0.007 |        3 |       --- |             --- |
+| Slice Logic             |     0.063 |    58208 |       --- |             --- |
+|   LUT as Logic          |     0.058 |    16837 |     20800 |           80.95 |
+|   CARRY4                |     0.004 |     1489 |      8150 |           18.27 |
+|   F7/F8 Muxes           |    <0.001 |     6692 |     32600 |           20.53 |
+|   Register              |    <0.001 |    31379 |     41600 |           75.43 |
 |   BUFG                  |     0.000 |        4 |        32 |           12.50 |
-|   Others                |     0.000 |       84 |       --- |             --- |
-|   LUT as Shift Register |     0.000 |      944 |      9600 |            9.83 |
-| Signals                 |     0.078 |     9685 |       --- |             --- |
-| I/O                     |     0.021 |       57 |       106 |           53.77 |
+|   Others                |     0.000 |       89 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |      948 |      9600 |            9.88 |
+| Signals                 |     0.091 |    42474 |       --- |             --- |
+| I/O                     |     0.033 |       69 |       106 |           65.09 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.236 |          |           |                 |
+| Total                   |     0.266 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.153 |       0.143 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
+| Vccint    |       1.000 |     0.171 |       0.161 |      0.010 |
+| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,12 +143,15 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| AUDIO_FX_TOP       |     0.164 |
+| AUDIO_FX_TOP       |     0.194 |
 |   cc2              |    <0.001 |
 |     mtc            |    <0.001 |
 |   cc20k            |    <0.001 |
 |     mtc            |    <0.001 |
-|   ts               |     0.136 |
+|   fc0              |    <0.001 |
+|     mtc            |    <0.001 |
+|   nolabel_line81   |    <0.001 |
+|   ts               |     0.150 |
 |     cc100          |    <0.001 |
 |       mtc          |    <0.001 |
 |     cc3b20k        |    <0.001 |
@@ -178,8 +184,8 @@ Table of Contents
 |       ao2          |    <0.001 |
 |         cc2b300off |    <0.001 |
 |           mtc      |    <0.001 |
-|     t2             |     0.114 |
-|       dtd          |     0.108 |
+|     t2             |     0.121 |
+|       dtd          |     0.117 |
 |       gs38         |    <0.001 |
 |         cs         |    <0.001 |
 |           sl       |     0.000 |
@@ -206,10 +212,12 @@ Table of Contents
 |         fc         |    <0.001 |
 |           mtc      |    <0.001 |
 |       ss           |    <0.001 |
-|     t3             |     0.000 |
-|     taskthreeb     |     0.014 |
-|       dmg          |     0.011 |
-|         U0         |     0.011 |
+|     t3             |     0.005 |
+|       circ         |     0.005 |
+|       df           |     0.000 |
+|     taskthreeb     |     0.015 |
+|       dmg          |     0.012 |
+|         U0         |     0.012 |
 |   u1               |    <0.001 |
 |   u2               |    <0.001 |
 +--------------------+-----------+
