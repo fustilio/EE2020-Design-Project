@@ -40,12 +40,12 @@ module task_selector(
     assign state[2] = sw[2];
     assign state[3] = sw[3];
     
-    wire clk_10k;
     wire clk_20k3b;
     wire clk_30k3b;
     wire clk_50k3b;
-
-    FlexiClock cc100(10000,CLK,clk_10k);
+    wire clk_10k;
+        
+    FlexiClock fc0 (10000, CLK, clk_10k);
     FlexiClock cc3b20k(20000,CLK,clk_20k3b);
     FlexiClock cc3b30k(30000,CLK,clk_30k3b);
     FlexiClock cc3b50k(50000,CLK,clk_50k3b);
@@ -79,7 +79,7 @@ module task_selector(
     
     //Declare lab 3a values and module
     wire [11:0] delayed;
-    task3a t3 (MIC_in, clk_10k, delayed);
+    task3a t3 (MIC_in, CLK, sw[15], delayed);
     
     //Declare lab 3b values and module
     wire [11:0] mpthreeOut;
