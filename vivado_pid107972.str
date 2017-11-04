@@ -3731,3 +3731,430 @@ selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
 dismissDialog("Close Hardware Target"); // n (cl)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task3a.v", 1); // k (j, cl)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_selector.v", 0); // k (j, cl)
+// Elapsed time: 191 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cl): Confirm Close: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (N, x): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+dismissDialog("Confirm Close"); // x (cl)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bs (cl):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bs (cl)
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "project_extra"); // X (N, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: ''project_extra.v' already exists. Please enter another name. (Create Source File)'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("CANCEL", "Cancel"); // JButton (h, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t2 : task2a (task2a.v)]", 11); // B (D, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v)]", 15); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v)]", 15, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v)]", 15, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+typeControlKey((HResource) null, "project_extra.v", 'v'); // cd (w, cl)
+typeControlKey((HResource) null, "project_extra.v", 'v'); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("project_extra.v", 209, 122); // cd (w, cl)
+selectCodeEditor("project_extra.v", 113, 100); // cd (w, cl)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "game_module"); // X (N, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Tcl Message: close [ open C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v w ] 
+// bs (cl):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v 
+// I (cl): Define Module: addNotify
+dismissDialog("Add Sources"); // bs (cl)
+applyEnter(PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, "game_module"); // X (N, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2); // B (D, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2); // B (D, cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_module (game_module.v)]", 25, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_module (game_module.v)]", 25, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_module (game_module.v)]", 25, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_module (game_module.v)]", 25, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_module (game_module.v)]", 25, false); // B (D, cl)
+selectCodeEditor("game_module.v", 205, 126); // cd (w, cl)
+typeControlKey((HResource) null, "game_module.v", 'v'); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_extra.v", 7); // k (j, cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("project_extra.v", 13, 2); // cd (w, cl)
+selectCodeEditor("project_extra.v", 523, 116); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_module.v", 8); // k (j, cl)
+selectCodeEditor("game_module.v", 524, 146); // cd (w, cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("game_module.v", 161, 28); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("game_module.v", 49, 0); // cd (w, cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("game_module.v", 277, 124); // cd (w, cl)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "randomizer"); // X (N, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "randomizer"); // X (N, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: ''randomizer.v' already exists. Please enter another name. (Create Source File)'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("CANCEL", "Cancel"); // JButton (h, c)
+// 'h' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v)]", 15); // B (D, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v)]", 20); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), rng : randomizer (randomizer.v)]", 22, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), rng : randomizer (randomizer.v)]", 22, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectCodeEditor("randomizer.v", 153, 211); // cd (w, cl)
+typeControlKey((HResource) null, "randomizer.v", 'v'); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("randomizer.v", 5, 7); // cd (w, cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("randomizer.v", 81, 111); // cd (w, cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), sld : xil_defaultlib.score_led_display]", 24, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), sld : xil_defaultlib.score_led_display]", 24, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), sld : xil_defaultlib.score_led_display]", 24, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), st : score_tracker (score_tracker.v)]", 23, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), st : score_tracker (score_tracker.v)]", 23, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), st : score_tracker (score_tracker.v), dd2 : deciToDigits (deciToDigits.v)]", 24, false); // B (D, cl)
+selectCodeEditor("score_tracker.v", 81, 122); // cd (w, cl)
+typeControlKey((HResource) null, "score_tracker.v", 'v'); // cd (w, cl)
+selectCodeEditor("score_tracker.v", 45, 50); // cd (w, cl)
+typeControlKey((HResource) null, "score_tracker.v", 'v'); // cd (w, cl)
+selectCodeEditor("score_tracker.v", 2, 15); // cd (w, cl)
+selectCodeEditor("score_tracker.v", 116, 138); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 6); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_module.v", 8); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_selector.v", 2); // k (j, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Task3A (Task3A.v)]", 34, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Task3A (Task3A.v), task3a_circular (task3a_circular.v)]", 37, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 13, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v), df : task3a_default (task3a_default.v)]", 15, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectCodeEditor("task3a.v", 157, 178); // cd (w, cl)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Task3A (Task3A.v)]", 37, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Task3A (Task3A.v)]", 37, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task3a.v", 9); // k (j, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("task3a.v", 124, 216); // cd (w, cl)
+selectCodeEditor("task3a.v", 124, 216, false, false, false, false, true); // cd (w, cl) - Double Click
+selectCodeEditor("task3a.v", 131, 243); // cd (w, cl)
+selectCodeEditor("task3a.v", 131, 243); // cd (w, cl)
+selectCodeEditor("task3a.v", 131, 243, false, false, false, false, true); // cd (w, cl) - Double Click
+selectCodeEditor("task3a.v", 209, 274); // cd (w, cl)
+// Elapsed time: 58 seconds
+selectCodeEditor("task3a.v", 96, 46); // cd (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("task3a.v", 228, 188); // cd (w, cl)
+selectCodeEditor("task3a.v", 228, 188, false, false, false, false, true); // cd (w, cl) - Double Click
+selectCodeEditor("task3a.v", 277, 188); // cd (w, cl)
+selectCodeEditor("task3a.v", 245, 195); // cd (w, cl)
+selectCodeEditor("task3a.v", 245, 195, false, false, false, false, true); // cd (w, cl) - Double Click
+selectCodeEditor("task3a.v", 163, 180); // cd (w, cl)
+selectCodeEditor("task3a.v", 151, 52); // cd (w, cl)
+selectCodeEditor("task3a.v", 163, 36); // cd (w, cl)
+selectCodeEditor("task3a.v", 329, 238); // cd (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Task3A.v", 8); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 3); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_selector.v", 2); // k (j, cl)
+selectCodeEditor("task_selector.v", 254, 203); // cd (w, cl)
+selectCodeEditor("task_selector.v", 294, 202); // cd (w, cl)
+selectCodeEditor("task_selector.v", 229, 72); // cd (w, cl)
+selectCodeEditor("task_selector.v", 206, 56); // cd (w, cl)
+typeControlKey((HResource) null, "task_selector.v", 'v'); // cd (w, cl)
+selectCodeEditor("task_selector.v", 38, 135); // cd (w, cl)
+selectCodeEditor("task_selector.v", 190, 86); // cd (w, cl)
+selectCodeEditor("task_selector.v", 177, 64); // cd (w, cl)
+selectCodeEditor("task_selector.v", 177, 78); // cd (w, cl)
+selectCodeEditor("task_selector.v", 50, 79); // cd (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task3a.v", 7); // k (j, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cl):  Save Constraints : addNotify
+// x (cl): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cl):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'ct' command handler elapsed time: 8 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// bs (cl):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov  5 03:30:23 2017] Launched synth_1... Run output will be captured here: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/runme.log [Sun Nov  5 03:30:24 2017] Launched impl_1... Run output will be captured here: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cl)
+// TclEventType: RUN_FAILED
+// ah (cl): Synthesis Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,356 MB. GUI used memory: 98 MB. Current time: 11/5/17 3:43:31 AM GMT+08:00
+// Elapsed time: 1411 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+// Elapsed time: 15 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "source_led_display"); // X (N, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Tcl Message: close [ open C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/source_led_display.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/source_led_display.v 
+// I (cl): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 11 seconds
+selectCodeEditor("task3a.v", 87, 98); // cd (w, cl)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("task3a.v", 8, 10); // cd (w, cl)
+selectCodeEditor("task3a.v", 232, 62); // cd (w, cl)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, source_led_display (source_led_display.v)]", 42, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, source_led_display (source_led_display.v)]", 42, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectCodeEditor("source_led_display.v", 8, 10); // cd (w, cl)
+selectCodeEditor("source_led_display.v", 8, 4); // cd (w, cl)
+selectCodeEditor("source_led_display.v", 8, 4, false, false, false, false, true); // cd (w, cl) - Double Click
+selectCodeEditor("source_led_display.v", 8, 6); // cd (w, cl)
+selectCodeEditor("source_led_display.v", 8, 6); // cd (w, cl)
+typeControlKey((HResource) null, "source_led_display.v", 'v'); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cl): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (N, x): FALSE
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'ct' command handler elapsed time: 4 seconds
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Launch Runs"); // f (cl)
+// bs (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov  5 03:55:10 2017] Launched synth_1... Run output will be captured here: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/runme.log [Sun Nov  5 03:55:10 2017] Launched impl_1... Run output will be captured here: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 609 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bs (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bs (cl)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bs (cl):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.3   **** Build date : Oct  4 2017-20:12:17     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714215A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cl): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/AUDIO_FX_TOP.bit"); // ag (af, bA)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cl)
+// Elapsed time: 77 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_selector.v", 2); // k (j, cl)

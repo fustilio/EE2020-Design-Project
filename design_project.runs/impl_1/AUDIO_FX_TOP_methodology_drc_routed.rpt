@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Sun Nov  5 01:54:07 2017
+| Date         : Sun Nov  5 04:03:17 2017
 | Host         : Lee running 64-bit major release  (build 9200)
 | Command      : report_methodology -file AUDIO_FX_TOP_methodology_drc_routed.rpt -pb AUDIO_FX_TOP_methodology_drc_routed.pb -rpx AUDIO_FX_TOP_methodology_drc_routed.rpx
 | Design       : AUDIO_FX_TOP
@@ -23,28 +23,17 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1096
-+-----------+----------+--------------------------------------------+------------+
-| Rule      | Severity | Description                                | Violations |
-+-----------+----------+--------------------------------------------+------------+
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 2          |
-| TIMING-17 | Warning  | Non-clocked sequential cell                | 1000       |
-| TIMING-18 | Warning  | Missing input or output delay              | 62         |
-| TIMING-20 | Warning  | Non-clocked latch                          | 32         |
-+-----------+----------+--------------------------------------------+------------+
+             Violations found: 1094
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 1000       |
+| TIMING-18 | Warning  | Missing input or output delay | 62         |
+| TIMING-20 | Warning  | Non-clocked latch             | 32         |
++-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-SYNTH-6#1 Warning
-Timing of a block RAM might be sub-optimal  
-The timing for the instance ts/t3/circ/fifo_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
-Related violations: <none>
-
-SYNTH-6#2 Warning
-Timing of a block RAM might be sub-optimal  
-The timing for the instance ts/t3/circ/fifo_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
-Related violations: <none>
-
 TIMING-17#1 Warning
 Non-clocked sequential cell  
 The clock pin count1_reg[0]/C is not reached by a timing clock
@@ -107,157 +96,157 @@ Related violations: <none>
 
 TIMING-17#13 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/first_rand_reg[0]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/first_rand_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/first_rand_reg[1]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/first_rand_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/first_rand_reg[2]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/first_rand_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/first_rand_reg[3]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/first_rand_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/fourth_rand_reg[0]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/fourth_rand_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/fourth_rand_reg[1]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/fourth_rand_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/fourth_rand_reg[2]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/fourth_rand_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/fourth_rand_reg[3]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/fourth_rand_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/second_rand_reg[0]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/second_rand_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/second_rand_reg[1]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/second_rand_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/second_rand_reg[2]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/second_rand_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/second_rand_reg[3]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/second_rand_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/third_rand_reg[0]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/third_rand_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/third_rand_reg[1]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/third_rand_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/third_rand_reg[2]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/third_rand_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/rng/third_rand_reg[3]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/rng/third_rand_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[0]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[10]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[11]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[12]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[13]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[14]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[1]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#36 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[2]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#37 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[3]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#38 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[4]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#39 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[5]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#40 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[6]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#41 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[7]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#42 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[8]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#43 Warning
 Non-clocked sequential cell  
-The clock pin ts/ex/st/score_holder_reg[9]/C is not reached by a timing clock
+The clock pin ts/ex/nolabel_line48/st/score_holder_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Warning

@@ -43,7 +43,9 @@ module task_selector(
     wire clk_20k3b;
     wire clk_30k3b;
     wire clk_50k3b;
-
+    wire clk_10k;
+        
+    FlexiClock fc0 (10000, CLK, clk_10k);
     FlexiClock cc3b20k(20000,CLK,clk_20k3b);
     FlexiClock cc3b30k(30000,CLK,clk_30k3b);
     FlexiClock cc3b50k(50000,CLK,clk_50k3b);

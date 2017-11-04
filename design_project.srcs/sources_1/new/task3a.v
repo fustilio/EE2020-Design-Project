@@ -22,6 +22,7 @@
 
 module task3a(
     input [11:0] IN,
+    input clk_10k,
     input CLK,
     input switch,
     output [11:0] OUT
@@ -29,9 +30,6 @@ module task3a(
     
     wire [11:0] default_output;
     wire [11:0] circular_output;
-    
-    wire clk_10k;
-    FlexiClock fc0 (10000, CLK, clk_10k);
     
     task3a_default df (IN, clk_10k, default_output);
     task3a_circular circ (IN, CLK, circular_output);
