@@ -1,0 +1,112 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 93108
+License: Customer
+
+Current time: 	Sat Nov 04 04:30:40 GMT+08:00 2017
+Time zone: 	GMT+08:00 (GMT+08:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 41 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	Francis
+User home directory: C:/Users/Francis
+User working directory: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.3
+RDI_DATADIR: C:/Xilinx/Vivado/2017.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.3/bin
+
+User preferences location: C:/Users/Francis/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Francis/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/Francis/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/vivado.log
+Vivado journal file location: 	C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/vivado.jou
+Engine tmp dir: 	C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/.Xil/Vivado-93108-Lee
+
+GUI allocated memory:	135 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 528 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 39 MB (+38410kb) [00:00:21]
+// [Engine Memory]: 497 MB (+369854kb) [00:00:21]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Francis\Desktop\EE2020_FINAL\EE2020_Design_Project\audio_effects.xpr. Version: Vivado v2017.3 
+// bs (cl):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/audio_effects.xpr 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// [GUI Memory]: 53 MB (+12773kb) [00:00:24]
+// [Engine Memory]: 534 MB (+12303kb) [00:00:24]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 65 MB (+9590kb) [00:00:26]
+// [Engine Memory]: 567 MB (+7057kb) [00:00:26]
+// [GUI Memory]: 68 MB (+251kb) [00:00:27]
+// [GUI Memory]: 72 MB (+511kb) [00:00:28]
+// Tcl Message: open_project C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/audio_effects.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'. 
+// [Engine Memory]: 596 MB (+372kb) [00:00:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 38 MB. Current time: 11/4/17 4:30:46 AM GMT+08:00
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 756.172 ; gain = 32.844 
+// Project name: audio_effects; location: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (AUDIO_FX_TOP.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 2, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc2 : FlexiClock (FlexiClock.v)]", 4, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k : FlexiClock (FlexiClock.v)]", 3, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k : FlexiClock (FlexiClock.v)]", 3, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), cc20k : FlexiClock (FlexiClock.v)]", 3); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v)]", 2, true); // B (D, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v)]", 6); // B (D, cl)
+// Elapsed time: 96 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (N, cl)
+// bs (cl):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_OUT_OF_CONTEXT_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run dist_mem_gen_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs (cl)

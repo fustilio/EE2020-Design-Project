@@ -4092,3 +4092,13 @@ dismissDialog("Program Device"); // aW:ak (cv:JFrame)
 // Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
 // Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
 dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 752 MB. GUI used memory: 47 MB. Current time: 11/5/17 2:18:22 AM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 669 seconds
+selectCodeEditor("score_tracker.v", 253, 302); // bH:N (JPanel:JComponent, cv:JFrame)
