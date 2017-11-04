@@ -15,20 +15,22 @@ set_property parent.project_path C:/Users/s9539968a/Desktop/Design_project/desig
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 add_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/Design_project/hello_data.coe
-add_files c:/Users/s9539968a/Desktop/Design_project/hello_data.coe
-add_files -quiet C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
-set_property used_in_implementation false [get_files C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
+add_files C:/Users/s9539968a/Desktop/Design_project/hello_data.coe
+add_files -quiet c:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
+set_property used_in_implementation false [get_files c:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
 read_verilog -library xil_defaultlib {
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sineLUT.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/frequency_to_m.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/m_to_clock.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/clockToSine8.v
-  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/deciToDigits.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/FlexiClock.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/generateSine.v
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/deciToDigits.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/score_tracker.v
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/score_led_display.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/randomizer.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/imports/new/sevenseg.v
+  C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/game_module.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averageavg2b.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averagehigh2b.v
   C:/Users/s9539968a/Desktop/Design_project/design_project.srcs/sources_1/new/averageoff2b.v

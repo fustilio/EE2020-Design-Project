@@ -23,53 +23,70 @@
 module project_extra(
     input CLK,
     input [15:0] sw,
-    input [4:0]btn,
-    output [3:0]an_e,
-    output [6:0]seg_e
+    input [4:0] btn,
+    output [3:0] an_e,
+    output [6:0] seg_e,
+    output [15:0] led_e,
+    output [11:0] speaker_e
     );
 
-    //Define game clock
-    wire clk_1rr;
-    FlexiClock cc1rr(1,CLK,clk_1rr);
+    //Define respective difficulties' game clock
+    wire clk_level1;
+    wire clk_level2;
+    wire clk_level3;
+    wire clk_debugging;
+    FlexiClock clvl1(1,CLK,clk_level1);
+    FlexiClock clvl2(2,CLK,clk_level2);
+    FlexiClock clvl3(4,CLK,clk_level3);
+    FlexiClock cdebug(1000,CLK,clk_debugging);
     
-    //Outputs the randomized 4 values 
-    wire [3:0]first_rand;
-    wire [3:0]second_rand;
-    wire [3:0]third_rand;
-    wire [3:0]fourth_rand;
-    randomizer rng(clk_1rr, first_rand, second_rand, third_rand, fourth_rand);
-   
-    //Score module - Checks game state and outputs score in digits form
-    wire [3:0]first_score;
-    wire [3:0]second_score;
-    wire [3:0]third_score;
-    wire [3:0]fourth_score;
-    score_tracker st(clk_1rr, first_rand, second_rand, third_rand, fourth_rand , sw, first_score, second_score, third_score, fourth_score);
+    // Integer to store the game difficulty
+    integer game_difficulty = 0;
     
-        
-    //Displays LED
-    reg [14:0] LED_displayed;
-    wire useless;
-    reg [3:0] first;
-    reg [3:0] second;
-    reg [3:0] third;
-    reg [3:0] fourth;
-    
-    sevenseg ss2(CLK, 0, fourth, third, second, first, seg_e[0], seg_e[1], seg_e[2], seg_e[3],
-        seg_e[4], seg_e[5], seg_e[6], useless, an_e);
-    
-    always @(posedge CLK) begin
-        if (btn[0]) begin
-            first = first_score;
-            second = second_score;
-            third = third_score;
-            fourth = fourth_score;
-        end 
+    // Instantiation of game module
+    wire game_speed;
+    game_module (CLK, game_speed, sw, btn, an_e, seg_e, led_e, speaker_e);
+
+    // btn[2] -> Left button -> Easiest difficulty 1 sec refresh rate
+    // btn[3] -> Right button -> Intermediate difficulty 0.5 sec refresh rate
+    // btn[4] -> Down button -> Difficult difficulty 0.25 sec refresh rate
+    // Default -> Easiest difficulty
+    // Pressing a button refreshes the 
+    reg game_speed_inter;
+    always@(posedge CLK) begin
+        if(!btn[2] && !btn[3] && !btn[4]) begin
+            case (game_difficulty)
+            0: begin
+                game_speed_inter = clk_level1;
+            end 
+            1: begin 
+                game_speed_inter = clk_level2;
+            end 
+            2: begin
+                game_speed_inter = clk_level3;
+            end
+            default: begin
+                game_speed_inter = clk_debugging;
+            end
+            endcase
+        end
         else begin
-            first = first_rand;
-            second = second_rand;
-            third = third_rand;
-            fourth = fourth_rand;
+            if(btn[2] && !btn[3] && !btn[4]) begin
+                game_difficulty = 0;
+                game_speed_inter = clk_level1;
+            end
+            else if (!btn[2] && !btn[3] && btn[4]) begin
+                game_difficulty = 1;
+                game_speed_inter = clk_level2;
+            end
+            else if (!btn[2] && btn[3] && !btn[4]) begin
+                game_difficulty = 2;
+                game_speed_inter =  clk_level3;
+            end
         end
     end
+    
+    // After determining game difficulty, push it to instantiated game module
+    assign game_speed = game_speed_inter;
+    
 endmodule
