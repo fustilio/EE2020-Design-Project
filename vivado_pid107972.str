@@ -3535,3 +3535,9 @@ selectCodeEditor("task2a.v", 223, 198); // cd (w, cl)
 selectCodeEditor("task2a.v", 407, 82); // cd (w, cl)
 typeControlKey((HResource) null, "task2a.v", 'c'); // cd (w, cl)
 selectCodeEditor("task2a.v", 335, 64); // cd (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("task2a.v", 261, 144); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("task2a.v", 270, 154); // cd (w, cl)
+selectCodeEditor("task2a.v", 429, 82); // cd (w, cl)

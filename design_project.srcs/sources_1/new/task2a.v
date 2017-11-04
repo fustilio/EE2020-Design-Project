@@ -259,7 +259,7 @@ module task2a(
         
         always @(btn) begin
             if (btn[1]) begin
-                state <= state == 5? 5 : state + 1;
+                state <= state == 7? 7 : state + 1;
             end else if (btn[4]) begin
                 state <= state == 0? 0 : state - 1;
             end 
