@@ -170,6 +170,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/my_random_generator.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/project_1.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/audio_effects.srcs/sources_1/new/project_1.v"/>
@@ -213,6 +220,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/score_led_display.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/score_tracker.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -233,13 +247,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../EE2020proj/integration/integration/integration.srcs/sources_1/new/sineLUT.v"/>
           <Attr Name="ImportTime" Val="1509210432"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/source_led_display.v">
-        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -299,14 +306,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/random_number_generator.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/m_value_getter.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -321,16 +320,6 @@
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/audio_effects.srcs/sources_1/new/get_frequency_from_m.v"/>
-          <Attr Name="ImportTime" Val="1509714318"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/custom_clock.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/audio_effects.srcs/sources_1/new/custom_clock.v"/>
           <Attr Name="ImportTime" Val="1509714318"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

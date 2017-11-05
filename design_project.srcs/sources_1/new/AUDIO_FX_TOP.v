@@ -61,24 +61,7 @@ module AUDIO_FX_TOP(
     // Please create modules to implement different features and instantiate them here   
             
       wire [11:0]speaker_out;
-      task_selector ts(CLK, MIC_in, sw, btn, led, an, seg, dp, speaker_out);
-      
-      
-      // The following is demo-usage of the OutputRowCol module, similar to sseg module
-      wire slow_clock;
-      FlexiClock fc0(5, CLK, slow_clock);
-      reg [4:0] count1 = 0;
-      reg [4:0] count2 = 1;
-      reg [4:0] count3 = 2;
-      reg [4:0] count4 = 3;
-      always @(posedge slow_clock) begin
-        count1 <= (count1 == 7) ? 0 : count1 + 1; 
-        count2 <= (count2 == 7) ? 0 : count2 + 1; 
-        count3 <= (count3 == 7) ? 0 : count3 + 1; 
-        count4 <= (count4 == 7) ? 0 : count4 + 1; 
-      end
-      
-      OutputRowCol(CLK, 0, count1, count2, count3, count4, row, col);
+      task_selector ts(CLK, MIC_in, sw, btn, led, an, seg, dp, speaker_out, row, col);
       
     /////////////////////////////////////////////////////////////////////////////////////
     //DAC Module: Digital-to-Analog Conversion

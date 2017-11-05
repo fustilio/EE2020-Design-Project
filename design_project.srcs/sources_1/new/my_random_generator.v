@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 21.10.2017 12:30:26
+// Create Date: 05.11.2017 05:24:53
 // Design Name: 
-// Module Name: custom_clock
+// Module Name: my_random_generator
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module custom_clock(
-    input [31:0]DESIRED_FREQ,
-    input CLK,
-    output FINAL_CLK
+module my_random_generator(
+    input clk, 
+    output [3:0]random_num
     );
-    wire [31:0]M_VALUE;
     
-    m_value_getter mvg(DESIRED_FREQ,CLK,M_VALUE);
-    get_frequency_from_m gffm(M_VALUE,CLK,FINAL_CLK);
+    reg [3:0] counter = 0;
+    
+    always@(posedge clk) begin
+        counter = (counter == 4'b1111) ? 0 : counter + 1;
+    end
+    
+    assign random_num = ((counter + 81007863) % 5 ) + 12;
     
 endmodule

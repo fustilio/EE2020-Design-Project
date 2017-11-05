@@ -81,14 +81,14 @@ module OutputRowCol(
     always @ (*)
      begin
       case(col_count)
-       4'd0 : row_temp = 8'b01111111; //to display 0
-       4'd1 : row_temp = 8'b10111111; //to display 1
-       4'd2 : row_temp = 8'b11011111; //to display 2
-       4'd3 : row_temp = 8'b11101111; //to display 3
-       4'd4 : row_temp = 8'b11110111; //to display 4
-       4'd5 : row_temp = 8'b11111011; //to display 5
-       4'd6 : row_temp = 8'b11111101; //to display 6
-       4'd7 : row_temp = 8'b11111110; //to display 7
+       4'd7 : row_temp = 8'b01111111; //to display 0
+       4'd6 : row_temp = 8'b10111111; //to display 1
+       4'd5 : row_temp = 8'b11011111; //to display 2
+       4'd4 : row_temp = 8'b11101111; //to display 3
+       4'd3 : row_temp = 8'b11110111; //to display 4
+       4'd2 : row_temp = 8'b11111011; //to display 5
+       4'd1 : row_temp = 8'b11111101; //to display 6
+       4'd0 : row_temp = 8'b11111110; //to display 7
 //       4'd8 : sseg_temp = 7'b0000000; //to display 8
 //       4'd9 : sseg_temp = 7'b0010000; //to display 9
        default : row_temp = 8'b11111111; //dash

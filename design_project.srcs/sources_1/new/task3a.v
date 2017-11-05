@@ -25,6 +25,7 @@ module task3a(
     input CLK,
     input switch,
     input [4:0] btn,
+    input [3:0] outside_state,
     output [11:0] OUT,
     output [3:0] an,
     output [6:0] seg
@@ -36,20 +37,20 @@ module task3a(
     wire [6:0] circular_seg;
     
     wire clk_10k;
-
-        
     FlexiClock fc0 (10000, CLK, clk_10k);
     
     task3a_default df (IN, clk_10k, default_output);
-    task3a_circular circ (IN, CLK, btn, circular_output, circular_an, circular_seg);
+    task3a_circular circ (IN, CLK, btn, outside_state, circular_output, circular_an, circular_seg);
     
     reg [11:0] inter_output;
     reg [3:0] inter_an;
     reg [6:0] inter_seg;
     
-    always @(posedge clk_10k) begin
+    always @(posedge CLK) begin
         if (switch) begin
             inter_output <= circular_output;
+            inter_an <= circular_an;
+            inter_seg <= circular_seg;
         end else begin
             inter_output <= default_output;
             inter_an <= 4'b1111;

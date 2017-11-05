@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Sun Nov  5 08:26:12 2017
-# Process ID: 104704
+# Start of session at: Sun Nov  5 17:44:17 2017
+# Process ID: 23748
 # Current directory: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1
 # Command line: vivado.exe -log AUDIO_FX_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
 # Log file: C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/AUDIO_FX_TOP.vds
@@ -21,9 +21,9 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 100456 
+INFO: Helper process launched with PID 49076 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 354.824 ; gain = 93.781
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 355.305 ; gain = 94.500
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 INFO: [Synth 8-638] synthesizing module 'FlexiClock' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/FlexiClock.v:23]
@@ -53,7 +53,6 @@ WARNING: [Synth 8-689] width (9) of port connection 'OUTPUT' does not match port
 INFO: [Synth 8-256] done synthesizing module 'clockToSine8' (7#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:23]
 WARNING: [Synth 8-689] width (12) of port connection 'OUT' does not match port width (9) of module 'clockToSine8' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/generateSine.v:33]
 INFO: [Synth 8-256] done synthesizing module 'generateSine' (8#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/generateSine.v:23]
-WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:47]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:48]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:49]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:50]
@@ -137,6 +136,7 @@ WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port 
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:128]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:129]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:130]
+WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:131]
 INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/debounce.v:23]
 INFO: [Synth 8-638] synthesizing module 'dff' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/dff.v:23]
 INFO: [Synth 8-256] done synthesizing module 'dff' (9#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/dff.v:23]
@@ -146,8 +146,7 @@ INFO: [Synth 8-256] done synthesizing module 'deciToDigits' (11#1) [C:/Users/Fra
 INFO: [Synth 8-638] synthesizing module 'sevenseg' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:5]
 	Parameter N bound to: 18 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'sevenseg' (12#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:5]
-WARNING: [Synth 8-5788] Register state_reg in module task2a is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:269]
-WARNING: [Synth 8-3848] Net led in module/entity task2a does not have driver. [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:27]
+WARNING: [Synth 8-3848] Net led in module/entity task2a does not have driver. [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:28]
 INFO: [Synth 8-256] done synthesizing module 'task2a' (13#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task2a.v:23]
 INFO: [Synth 8-638] synthesizing module 'project_2b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_2b.v:23]
 INFO: [Synth 8-638] synthesizing module 'averagehigh2b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averagehigh2b.v:23]
@@ -164,40 +163,40 @@ WARNING: [Synth 8-6014] Unused sequential element fifo_reg[0] was removed.  [C:/
 INFO: [Synth 8-256] done synthesizing module 'task3a_default' (18#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_default.v:23]
 INFO: [Synth 8-638] synthesizing module 'task3a_circular' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:23]
 	Parameter N bound to: 9999 - type: integer 
-WARNING: [Synth 8-689] width (32) of port connection 'INPUT' does not match port width (15) of module 'deciToDigits' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:91]
-WARNING: [Synth 8-5788] Register freq_reg in module task3a_circular is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:43]
+WARNING: [Synth 8-689] width (32) of port connection 'INPUT' does not match port width (15) of module 'deciToDigits' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:94]
 INFO: [Synth 8-256] done synthesizing module 'task3a_circular' (19#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:23]
 INFO: [Synth 8-256] done synthesizing module 'task3a' (20#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a.v:23]
 INFO: [Synth 8-638] synthesizing module 'project_3b' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_3b.v:23]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-104704-Lee/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (21#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-104704-Lee/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-23748-Lee/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (21#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-23748-Lee/realtime/dist_mem_gen_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'project_3b' (22#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_3b.v:23]
 INFO: [Synth 8-638] synthesizing module 'project_extra' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_extra.v:23]
 INFO: [Synth 8-638] synthesizing module 'game_module' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v:23]
 INFO: [Synth 8-638] synthesizing module 'randomizer' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/randomizer.v:23]
-INFO: [Synth 8-256] done synthesizing module 'randomizer' (23#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/randomizer.v:23]
+INFO: [Synth 8-638] synthesizing module 'my_random_generator' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/my_random_generator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'my_random_generator' (23#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/my_random_generator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'randomizer' (24#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/randomizer.v:23]
 INFO: [Synth 8-638] synthesizing module 'score_tracker' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:23]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:54]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:55]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:56]
 WARNING: [Synth 8-689] width (12) of port connection 'FREQ' does not match port width (32) of module 'generateSine' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:57]
-INFO: [Synth 8-256] done synthesizing module 'score_tracker' (24#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:23]
-INFO: [Synth 8-638] synthesizing module 'score_led_display' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/source_led_display.v:23]
-INFO: [Synth 8-256] done synthesizing module 'score_led_display' (25#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/source_led_display.v:23]
-INFO: [Synth 8-256] done synthesizing module 'game_module' (26#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v:23]
-INFO: [Synth 8-256] done synthesizing module 'project_extra' (27#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_extra.v:23]
-WARNING: [Synth 8-350] instance 'ex' of module 'project_extra' requires 7 connections, but only 5 given [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task_selector.v:93]
-INFO: [Synth 8-256] done synthesizing module 'task_selector' (28#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task_selector.v:23]
+INFO: [Synth 8-256] done synthesizing module 'score_tracker' (25#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:23]
+INFO: [Synth 8-638] synthesizing module 'score_led_display' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_led_display.v:23]
+INFO: [Synth 8-256] done synthesizing module 'score_led_display' (26#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_led_display.v:23]
 INFO: [Synth 8-638] synthesizing module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:23]
 	Parameter N bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'OutputRowCol' (29#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:23]
-WARNING: [Synth 8-689] width (5) of port connection 'in0' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
-WARNING: [Synth 8-689] width (5) of port connection 'in1' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
-WARNING: [Synth 8-689] width (5) of port connection 'in2' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
-WARNING: [Synth 8-689] width (5) of port connection 'in3' does not match port width (4) of module 'OutputRowCol' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+INFO: [Synth 8-256] done synthesizing module 'OutputRowCol' (27#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:23]
+WARNING: [Synth 8-6014] Unused sequential element count1_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v:96]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v:97]
+WARNING: [Synth 8-6014] Unused sequential element count3_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v:98]
+WARNING: [Synth 8-6014] Unused sequential element count4_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v:99]
+INFO: [Synth 8-256] done synthesizing module 'game_module' (28#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/game_module.v:23]
+INFO: [Synth 8-256] done synthesizing module 'project_extra' (29#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/project_extra.v:23]
+INFO: [Synth 8-256] done synthesizing module 'task_selector' (30#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task_selector.v:23]
 INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (30#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (31#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (31#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (32#1) [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 WARNING: [Synth 8-3331] design score_tracker has unconnected port sw[11]
 WARNING: [Synth 8-3331] design score_tracker has unconnected port sw[10]
 WARNING: [Synth 8-3331] design score_tracker has unconnected port sw[9]
@@ -239,7 +238,7 @@ WARNING: [Synth 8-3331] design task2a has unconnected port btn[3]
 WARNING: [Synth 8-3331] design task2a has unconnected port btn[2]
 WARNING: [Synth 8-3331] design task2a has unconnected port btn[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 436.984 ; gain = 175.941
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 437.465 ; gain = 176.660
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -248,28 +247,28 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:86]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 436.984 ; gain = 175.941
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 437.465 ; gain = 176.660
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-104704-Lee/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
-Finished Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-104704-Lee/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
+Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-23748-Lee/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
+Finished Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/.Xil/Vivado-23748-Lee/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'ts/taskthreeb/dmg'
 Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 Finished Parsing XDC File [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
@@ -279,23 +278,23 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 802.590 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 804.133 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 802.590 ; gain = 541.547
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:01:11 . Memory (MB): peak = 804.133 ; gain = 543.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 802.590 ; gain = 541.547
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:01:11 . Memory (MB): peak = 804.133 ; gain = 543.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for ts/taskthreeb/dmg. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 802.590 ; gain = 541.547
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:12 . Memory (MB): peak = 804.133 ; gain = 543.328
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element COUNT_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/m_to_clock.v:32]
@@ -316,9 +315,9 @@ INFO: [Synth 8-5545] ROM "antwobout_l" won't be mapped to RAM because address si
 INFO: [Synth 8-802] inferred FSM for state register 'countlabtwo_off_reg' in module 'averageoff2b'
 INFO: [Synth 8-5545] ROM "led_display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element write_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:48]
-WARNING: [Synth 8-6014] Unused sequential element read_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:54]
-WARNING: [Synth 8-6014] Unused sequential element read_reg_rep was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:54]
+WARNING: [Synth 8-6014] Unused sequential element write_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:47]
+WARNING: [Synth 8-6014] Unused sequential element read_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:53]
+WARNING: [Synth 8-6014] Unused sequential element read_reg_rep was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:53]
 WARNING: [Synth 8-6014] Unused sequential element score_holder_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:86]
 WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:41]
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
@@ -346,41 +345,42 @@ INFO: [Synth 8-3354] encoded FSM with state register 'countlabtwo_off_reg' using
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 802.590 ; gain = 541.547
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:04 ; elapsed = 00:02:43 . Memory (MB): peak = 804.133 ; gain = 543.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------+------------+----------+
 |      |RTL Partition        |Replication |Instances |
 +------+---------------------+------------+----------+
-|1     |FlexiClock           |          22|      3864|
+|1     |FlexiClock           |          25|      3864|
 |2     |reg__3               |           1|        12|
 |3     |clockToSine8         |           1|        89|
-|4     |task2a__GC0          |           1|     20572|
+|4     |task2a__GC0          |           1|     20459|
 |5     |averagehigh2b__GC0   |           1|      1573|
 |6     |averageavg2b__GC0    |           1|      1929|
 |7     |averageoff2b__GC0    |           1|        21|
 |8     |project_2b__GC0      |           1|       328|
-|9     |task3a_circular__GC0 |           1|     12212|
-|10    |task3a__GC0          |           1|     30024|
-|11    |score_tracker__GC0   |           1|      8303|
-|12    |game_module__GC0     |           1|       344|
-|13    |project_extra__GC0   |           1|        75|
-|14    |task_selector__GC0   |           1|      1014|
-|15    |AUDIO_FX_TOP__GC0    |           1|       817|
+|9     |task3a_circular__GC0 |           1|     12203|
+|10    |task3a__GC0          |           1|     30036|
+|11    |randomizer__GC0      |           1|      1122|
+|12    |score_tracker__GC0   |           1|      8303|
+|13    |game_module__GC0     |           1|       381|
+|14    |project_extra__GC0   |           1|        75|
+|15    |task_selector__GC0   |           1|      1055|
+|16    |AUDIO_FX_TOP__GC0    |           1|       529|
 +------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 150   
+	   2 Input     32 Bit       Adders := 154   
 	   3 Input     32 Bit       Adders := 9     
+	   2 Input     27 Bit       Adders := 4     
 	   2 Input     13 Bit       Adders := 3     
 	  12 Input     12 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 88    
-	   2 Input      5 Bit       Adders := 4     
-	   2 Input      4 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 16    
 +---Registers : 
 	               32 Bit    Registers := 3     
 	               16 Bit    Registers := 7     
@@ -389,29 +389,30 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 2506  
 	                9 Bit    Registers := 88    
 	                7 Bit    Registers := 6     
-	                5 Bit    Registers := 4     
-	                4 Bit    Registers := 17    
+	                4 Bit    Registers := 21    
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 120   
+	                1 Bit    Registers := 123   
 +---Multipliers : 
 	                 5x32  Multipliers := 1     
 +---RAMs : 
 	             117K Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 43    
+	   2 Input     32 Bit        Muxes := 37    
+	   4 Input     32 Bit        Muxes := 2     
 	  17 Input     16 Bit        Muxes := 2     
 	  18 Input     16 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 7     
-	   7 Input     16 Bit        Muxes := 1     
 	  17 Input     14 Bit        Muxes := 2     
-	   2 Input     13 Bit        Muxes := 5     
-	   2 Input     12 Bit        Muxes := 24    
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 25    
 	   2 Input      8 Bit        Muxes := 89    
 	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 7     
 	   3 Input      7 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 17    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 35    
 	   4 Input      4 Bit        Muxes := 9     
 	   3 Input      4 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 3     
@@ -421,7 +422,7 @@ Detailed RTL Component Info :
 	   3 Input      2 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 136   
+	   2 Input      1 Bit        Muxes := 141   
 	   4 Input      1 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 9     
 	   7 Input      1 Bit        Muxes := 1     
@@ -432,14 +433,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module AUDIO_FX_TOP 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      5 Bit       Adders := 4     
-+---Registers : 
-	                5 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input      5 Bit        Muxes := 4     
 Module frequency_to_m 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -501,10 +494,15 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 22    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module averagehigh2b 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -600,7 +598,7 @@ Detailed RTL Component Info :
 Module task3a_circular 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 7     
 +---Registers : 
 	               32 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
@@ -609,7 +607,12 @@ Detailed RTL Component Info :
 +---RAMs : 
 	             117K Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module task3a_default 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -622,6 +625,52 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module my_random_generator__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module my_random_generator__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module my_random_generator__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module my_random_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module randomizer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 12    
 Module deciToDigits 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -639,17 +688,19 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   5 Input      3 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 3     
-Module randomizer 
+Module score_led_display 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 4     
-+---Registers : 
-	                4 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 4     
 Module sevenseg 
 Detailed RTL Component Info : 
 +---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module OutputRowCol 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 Module game_module 
 Detailed RTL Component Info : 
@@ -684,7 +735,6 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   7 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
@@ -696,12 +746,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
-Module OutputRowCol 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-	   8 Input      8 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 2     
 Module DA2RefComp 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -732,7 +776,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "mtc/OUTPUT_CLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element mtc/COUNT_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/m_to_clock.v:32]
-WARNING: [Synth 8-6040] Register 0®†ö driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register 0®U%„ driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/clockToSine8.v:31]
 WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:22]
 INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -748,15 +792,16 @@ INFO: [Synth 8-5546] ROM "antwobout_l0" won't be mapped to RAM because it is too
 INFO: [Synth 8-5545] ROM "segtwobout_l0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element count_l_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/averageavg2b.v:40]
 INFO: [Synth 8-5545] ROM "led_display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "O80" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "O110" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "antwobout" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element ss/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:22]
-WARNING: [Synth 8-6014] Unused sequential element write_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:48]
-WARNING: [Synth 8-6014] Unused sequential element read_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:54]
+WARNING: [Synth 8-6014] Unused sequential element write_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:47]
+WARNING: [Synth 8-6014] Unused sequential element read_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/task3a_circular.v:53]
 WARNING: [Synth 8-6014] Unused sequential element score_holder_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/score_tracker.v:86]
 WARNING: [Synth 8-6014] Unused sequential element ss2/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/new/sevenseg.v:22]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line79/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:41]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line79/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:41]
 WARNING: [Synth 8-6014] Unused sequential element u1/count2_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/SPI.v:40]
-WARNING: [Synth 8-6014] Unused sequential element nolabel_line81/count_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/new/OutputRowCol.v:41]
 WARNING: [Synth 8-6014] Unused sequential element u2/clk_counter_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:110]
 WARNING: [Synth 8-6014] Unused sequential element u2/shiftCounter_reg was removed.  [C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:138]
 WARNING: [Synth 8-3332] Sequential element (count_reg[8]) is unused and will be removed from module clockToSine8.
@@ -784,38 +829,15 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (ao2i_4/\s
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ao2i_4/\segtwobout_off_reg[6] )
 INFO: [Synth 8-3886] merging instance 'mpti_5/stats_reg[2]' (FDE) to 'mpti_5/stats_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mpti_5/\stats_reg[3] )
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_seg_reg[0]' (FDSE) to 't3i_7/inter_an_reg[0]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_seg_reg[1]' (FDSE) to 't3i_7/inter_an_reg[0]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_seg_reg[2]' (FDSE) to 't3i_7/inter_an_reg[0]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_seg_reg[3]' (FDSE) to 't3i_7/inter_an_reg[0]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_seg_reg[4]' (FDSE) to 't3i_7/inter_an_reg[0]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_seg_reg[5]' (FDSE) to 't3i_7/inter_an_reg[0]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_seg_reg[6]' (FDSE) to 't3i_7/inter_an_reg[0]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_an_reg[0]' (FDSE) to 't3i_7/inter_an_reg[1]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_an_reg[1]' (FDSE) to 't3i_7/inter_an_reg[2]'
-INFO: [Synth 8-3886] merging instance 't3i_7/inter_an_reg[2]' (FDSE) to 't3i_7/inter_an_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (t3i_7/\inter_an_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (exi_10/\game_difficulty_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (exi_11/\game_difficulty_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (al2i_3/\FINAL_MIC_l_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (tsi_11/dp_inter_reg)
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[7]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[6]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[5]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[4]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[3]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[2]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[1]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg_rep[0]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[7]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[6]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[5]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[4]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[3]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[2]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[1]) is unused and will be removed from module clockToSine8.
-WARNING: [Synth 8-3332] Sequential element (count_reg[0]) is unused and will be removed from module clockToSine8.
+INFO: [Synth 8-3886] merging instance 'sti_9/inter_reg[8]' (FD) to 'sti_9/inter_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sti_9/inter_reg[9]' (FD) to 'sti_9/inter_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sti_9/inter_reg[10]' (FD) to 'sti_9/inter_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sti_9/\inter_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (tsi_12/dp_inter_reg)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:47 ; elapsed = 00:03:50 . Memory (MB): peak = 809.023 ; gain = 547.980
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:45 ; elapsed = 00:05:27 . Memory (MB): peak = 905.566 ; gain = 644.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -848,120 +870,125 @@ Report RTL Partitions:
 +------+---------------------+------------+----------+
 |1     |FlexiClock           |           4|       102|
 |2     |reg__3               |           1|        12|
-|3     |task2a__GC0          |           1|     10837|
-|4     |averagehigh2b__GC0   |           1|       534|
-|5     |averageavg2b__GC0    |           1|       822|
-|6     |averageoff2b__GC0    |           1|        13|
-|7     |project_2b__GC0      |           1|       161|
-|8     |task3a_circular__GC0 |           1|      1839|
-|9     |task3a__GC0          |           1|     30036|
-|10    |score_tracker__GC0   |           1|      9272|
-|11    |game_module__GC0     |           1|       210|
-|12    |project_extra__GC0   |           1|        41|
-|13    |task_selector__GC0   |           1|       496|
-|14    |AUDIO_FX_TOP__GC0    |           1|       399|
-|15    |FlexiClock__1        |           1|       101|
-|16    |FlexiClock__2        |           1|       102|
-|17    |FlexiClock__3        |           1|       100|
-|18    |FlexiClock__4        |           1|       101|
-|19    |FlexiClock__5        |           1|       101|
-|20    |FlexiClock__6        |           3|       104|
-|21    |FlexiClock__7        |           3|       102|
-|22    |FlexiClock__8        |           1|        99|
-|23    |FlexiClock__9        |           1|      1986|
-|24    |FlexiClock__10       |           1|       100|
-|25    |FlexiClock__11       |           1|       101|
-|26    |FlexiClock__12       |           1|        98|
-|27    |FlexiClock__14       |           1|       100|
-|28    |FlexiClock__15       |           1|       103|
-|29    |FlexiClock__16       |           1|       100|
-|30    |FlexiClock__17       |           1|       103|
-|31    |FlexiClock__18       |           1|        98|
-|32    |FlexiClock__19       |           1|       100|
-|33    |FlexiClock__20       |           1|       101|
-|34    |FlexiClock__21       |           1|       102|
-|35    |FlexiClock__22       |           1|       103|
-|36    |FlexiClock__23       |           1|       102|
-|37    |FlexiClock__24       |           1|       103|
-|38    |FlexiClock__25       |           1|       101|
-|39    |FlexiClock__26       |           1|       103|
-|40    |FlexiClock__27       |           1|       102|
-|41    |FlexiClock__28       |           1|       102|
-|42    |FlexiClock__29       |           1|       101|
-|43    |FlexiClock__30       |           1|       101|
-|44    |FlexiClock__31       |           1|       104|
-|45    |FlexiClock__32       |           1|       101|
-|46    |FlexiClock__33       |           1|       104|
-|47    |FlexiClock__34       |           1|       103|
-|48    |FlexiClock__35       |           1|       102|
-|49    |FlexiClock__36       |           1|       103|
-|50    |FlexiClock__37       |           1|       102|
-|51    |FlexiClock__38       |           1|       102|
-|52    |FlexiClock__39       |           1|       103|
-|53    |FlexiClock__40       |           1|       104|
-|54    |FlexiClock__41       |           1|       103|
-|55    |FlexiClock__42       |           1|       103|
-|56    |FlexiClock__43       |           1|       101|
-|57    |FlexiClock__44       |           1|       101|
-|58    |FlexiClock__45       |           1|       101|
-|59    |FlexiClock__46       |           1|       101|
-|60    |FlexiClock__47       |           1|       102|
-|61    |FlexiClock__48       |           1|       101|
-|62    |FlexiClock__49       |           1|       100|
-|63    |FlexiClock__50       |           1|       101|
-|64    |FlexiClock__51       |           1|       101|
-|65    |FlexiClock__52       |           1|        98|
-|66    |FlexiClock__53       |           1|        99|
-|67    |FlexiClock__54       |           1|       102|
-|68    |FlexiClock__55       |           1|       101|
-|69    |FlexiClock__56       |           1|       102|
-|70    |FlexiClock__57       |           1|       100|
-|71    |FlexiClock__58       |           1|       102|
-|72    |FlexiClock__59       |           1|       102|
-|73    |FlexiClock__60       |           1|       101|
-|74    |FlexiClock__61       |           1|       101|
-|75    |FlexiClock__62       |           1|       102|
-|76    |FlexiClock__63       |           1|       101|
-|77    |FlexiClock__64       |           1|       101|
-|78    |FlexiClock__65       |           1|       102|
-|79    |FlexiClock__66       |           1|       102|
-|80    |FlexiClock__67       |           1|       102|
-|81    |FlexiClock__68       |           1|       101|
-|82    |FlexiClock__69       |           1|       101|
-|83    |FlexiClock__70       |           1|       102|
-|84    |FlexiClock__71       |           1|       103|
-|85    |FlexiClock__72       |           1|       103|
-|86    |FlexiClock__73       |           1|       103|
-|87    |FlexiClock__74       |           1|       101|
-|88    |FlexiClock__75       |           1|       101|
-|89    |FlexiClock__76       |           1|       101|
-|90    |FlexiClock__77       |           1|       102|
-|91    |FlexiClock__78       |           1|       101|
-|92    |FlexiClock__79       |           1|       101|
-|93    |FlexiClock__80       |           1|       101|
-|94    |FlexiClock__81       |           1|       101|
-|95    |FlexiClock__82       |           1|       101|
-|96    |FlexiClock__83       |           1|       100|
-|97    |FlexiClock__84       |           1|        99|
-|98    |FlexiClock__85       |           1|       100|
-|99    |FlexiClock__86       |           1|       102|
-|100   |FlexiClock__87       |           1|       101|
-|101   |FlexiClock__88       |           1|       102|
-|102   |FlexiClock__89       |           1|       103|
-|103   |FlexiClock__90       |           1|       102|
-|104   |clockToSine8__1      |          77|       262|
+|3     |clockToSine8         |          81|       262|
+|4     |task2a__GC0          |           1|     10337|
+|5     |averagehigh2b__GC0   |           1|       534|
+|6     |averageavg2b__GC0    |           1|       822|
+|7     |averageoff2b__GC0    |           1|        13|
+|8     |project_2b__GC0      |           1|       161|
+|9     |task3a_circular__GC0 |           1|     10886|
+|10    |task3a__GC0          |           1|     30059|
+|11    |randomizer__GC0      |           1|      1179|
+|12    |score_tracker__GC0   |           1|     11540|
+|13    |game_module__GC0     |           1|       194|
+|14    |project_extra__GC0   |           1|        41|
+|15    |task_selector__GC0   |           1|       537|
+|16    |AUDIO_FX_TOP__GC0    |           1|       257|
+|17    |FlexiClock__1        |           1|       101|
+|18    |FlexiClock__2        |           1|       102|
+|19    |FlexiClock__3        |           1|       100|
+|20    |FlexiClock__4        |           1|       101|
+|21    |FlexiClock__5        |           2|       101|
+|22    |FlexiClock__6        |           3|       104|
+|23    |FlexiClock__7        |           3|       102|
+|24    |FlexiClock__8        |           1|        99|
+|25    |FlexiClock__9        |           1|      1936|
+|26    |FlexiClock__10       |           1|       100|
+|27    |FlexiClock__11       |           1|       101|
+|28    |FlexiClock__12       |           1|        98|
+|29    |FlexiClock__13       |           1|       102|
+|30    |FlexiClock__14       |           1|        98|
+|31    |FlexiClock__15       |           1|       101|
+|32    |FlexiClock__16       |           1|       101|
+|33    |FlexiClock__17       |           1|       100|
+|34    |FlexiClock__18       |           1|       103|
+|35    |FlexiClock__19       |           1|       100|
+|36    |FlexiClock__20       |           1|       103|
+|37    |FlexiClock__21       |           1|        98|
+|38    |FlexiClock__22       |           1|       100|
+|39    |FlexiClock__23       |           1|       101|
+|40    |FlexiClock__24       |           1|       102|
+|41    |FlexiClock__25       |           1|       103|
+|42    |FlexiClock__26       |           1|       102|
+|43    |FlexiClock__27       |           1|       103|
+|44    |FlexiClock__28       |           1|       101|
+|45    |FlexiClock__29       |           1|       103|
+|46    |FlexiClock__30       |           1|       102|
+|47    |FlexiClock__31       |           1|       102|
+|48    |FlexiClock__32       |           1|       101|
+|49    |FlexiClock__33       |           1|       101|
+|50    |FlexiClock__34       |           1|       104|
+|51    |FlexiClock__35       |           1|       101|
+|52    |FlexiClock__36       |           1|       104|
+|53    |FlexiClock__37       |           1|       103|
+|54    |FlexiClock__38       |           1|       102|
+|55    |FlexiClock__39       |           1|       103|
+|56    |FlexiClock__40       |           1|       102|
+|57    |FlexiClock__41       |           1|       102|
+|58    |FlexiClock__42       |           1|       103|
+|59    |FlexiClock__43       |           1|       104|
+|60    |FlexiClock__44       |           1|       103|
+|61    |FlexiClock__45       |           1|       103|
+|62    |FlexiClock__46       |           1|       101|
+|63    |FlexiClock__47       |           1|       101|
+|64    |FlexiClock__48       |           1|       101|
+|65    |FlexiClock__49       |           1|       101|
+|66    |FlexiClock__50       |           1|       102|
+|67    |FlexiClock__51       |           2|       101|
+|68    |FlexiClock__52       |           1|       100|
+|69    |FlexiClock__53       |           2|       101|
+|70    |FlexiClock__54       |           1|       101|
+|71    |FlexiClock__55       |           2|        98|
+|72    |FlexiClock__56       |           1|        99|
+|73    |FlexiClock__57       |           1|       102|
+|74    |FlexiClock__58       |           1|       101|
+|75    |FlexiClock__59       |           1|       102|
+|76    |FlexiClock__60       |           1|       100|
+|77    |FlexiClock__61       |           1|       102|
+|78    |FlexiClock__62       |           1|       102|
+|79    |FlexiClock__63       |           1|       101|
+|80    |FlexiClock__64       |           1|       101|
+|81    |FlexiClock__65       |           1|       102|
+|82    |FlexiClock__66       |           1|       101|
+|83    |FlexiClock__67       |           1|       101|
+|84    |FlexiClock__68       |           1|       102|
+|85    |FlexiClock__69       |           1|       102|
+|86    |FlexiClock__70       |           1|       102|
+|87    |FlexiClock__71       |           1|       101|
+|88    |FlexiClock__72       |           1|       101|
+|89    |FlexiClock__73       |           1|       102|
+|90    |FlexiClock__74       |           1|       103|
+|91    |FlexiClock__75       |           1|       103|
+|92    |FlexiClock__76       |           1|       103|
+|93    |FlexiClock__77       |           1|       101|
+|94    |FlexiClock__78       |           1|       101|
+|95    |FlexiClock__79       |           1|       101|
+|96    |FlexiClock__80       |           1|       102|
+|97    |FlexiClock__81       |           1|       101|
+|98    |FlexiClock__82       |           1|       101|
+|99    |FlexiClock__83       |           1|       101|
+|100   |FlexiClock__84       |           1|       101|
+|101   |FlexiClock__85       |           1|       101|
+|102   |FlexiClock__86       |           1|       100|
+|103   |FlexiClock__87       |           1|        99|
+|104   |FlexiClock__88       |           1|       100|
+|105   |FlexiClock__89       |           1|       102|
+|106   |FlexiClock__90       |           1|       101|
+|107   |FlexiClock__91       |           1|       102|
+|108   |FlexiClock__92       |           1|       103|
+|109   |FlexiClock__93       |           1|       102|
 +------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:59 ; elapsed = 00:04:04 . Memory (MB): peak = 853.914 ; gain = 592.871
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:59 ; elapsed = 00:05:43 . Memory (MB): peak = 946.453 ; gain = 685.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:07 ; elapsed = 00:04:12 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Timing Optimization : Time (s): cpu = 00:05:13 ; elapsed = 00:05:58 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -984,107 +1011,112 @@ Report RTL Partitions:
 +------+---------------------+------------+----------+
 |1     |FlexiClock           |           4|       102|
 |2     |reg__3               |           1|        12|
-|3     |averagehigh2b__GC0   |           1|       534|
-|4     |averageavg2b__GC0    |           1|       822|
-|5     |averageoff2b__GC0    |           1|        13|
-|6     |project_2b__GC0      |           1|       161|
-|7     |task3a_circular__GC0 |           1|      1839|
-|8     |task3a__GC0          |           1|     30036|
-|9     |score_tracker__GC0   |           1|      9272|
-|10    |game_module__GC0     |           1|       210|
-|11    |project_extra__GC0   |           1|        41|
-|12    |AUDIO_FX_TOP__GC0    |           1|       399|
-|13    |FlexiClock__1        |           1|       101|
-|14    |FlexiClock__2        |           1|       102|
-|15    |FlexiClock__3        |           1|       100|
-|16    |FlexiClock__4        |           1|       101|
-|17    |FlexiClock__5        |           1|       101|
-|18    |FlexiClock__6        |           3|       104|
-|19    |FlexiClock__7        |           3|       102|
-|20    |FlexiClock__8        |           1|        99|
-|21    |FlexiClock__9        |           1|      1986|
-|22    |FlexiClock__10       |           1|       100|
-|23    |FlexiClock__11       |           1|       101|
-|24    |FlexiClock__12       |           1|        98|
-|25    |FlexiClock__14       |           1|       100|
-|26    |FlexiClock__15       |           1|       103|
-|27    |FlexiClock__16       |           1|       100|
-|28    |FlexiClock__17       |           1|       103|
-|29    |FlexiClock__18       |           1|        98|
-|30    |FlexiClock__19       |           1|       100|
-|31    |FlexiClock__20       |           1|       101|
-|32    |FlexiClock__21       |           1|       102|
-|33    |FlexiClock__22       |           1|       103|
-|34    |FlexiClock__23       |           1|       102|
-|35    |FlexiClock__24       |           1|       103|
-|36    |FlexiClock__25       |           1|       101|
-|37    |FlexiClock__26       |           1|       103|
-|38    |FlexiClock__27       |           1|       102|
-|39    |FlexiClock__28       |           1|       102|
-|40    |FlexiClock__29       |           1|       101|
-|41    |FlexiClock__30       |           1|       101|
-|42    |FlexiClock__31       |           1|       104|
-|43    |FlexiClock__32       |           1|       101|
-|44    |FlexiClock__33       |           1|       104|
-|45    |FlexiClock__34       |           1|       103|
-|46    |FlexiClock__35       |           1|       102|
-|47    |FlexiClock__36       |           1|       103|
-|48    |FlexiClock__37       |           1|       102|
-|49    |FlexiClock__38       |           1|       102|
-|50    |FlexiClock__39       |           1|       103|
-|51    |FlexiClock__40       |           1|       104|
-|52    |FlexiClock__41       |           1|       103|
-|53    |FlexiClock__42       |           1|       103|
-|54    |FlexiClock__43       |           1|       101|
-|55    |FlexiClock__44       |           1|       101|
-|56    |FlexiClock__45       |           1|       101|
-|57    |FlexiClock__46       |           1|       101|
-|58    |FlexiClock__47       |           1|       102|
-|59    |FlexiClock__48       |           1|       101|
-|60    |FlexiClock__49       |           1|       100|
-|61    |FlexiClock__50       |           1|       101|
-|62    |FlexiClock__51       |           1|       101|
-|63    |FlexiClock__52       |           1|        98|
-|64    |FlexiClock__53       |           1|        99|
-|65    |FlexiClock__54       |           1|       102|
-|66    |FlexiClock__55       |           1|       101|
-|67    |FlexiClock__56       |           1|       102|
-|68    |FlexiClock__57       |           1|       100|
-|69    |FlexiClock__58       |           1|       102|
-|70    |FlexiClock__59       |           1|       102|
-|71    |FlexiClock__60       |           1|       101|
-|72    |FlexiClock__61       |           1|       101|
-|73    |FlexiClock__62       |           1|       102|
-|74    |FlexiClock__63       |           1|       101|
-|75    |FlexiClock__64       |           1|       101|
-|76    |FlexiClock__65       |           1|       102|
-|77    |FlexiClock__66       |           1|       102|
-|78    |FlexiClock__67       |           1|       102|
-|79    |FlexiClock__68       |           1|       101|
-|80    |FlexiClock__69       |           1|       101|
-|81    |FlexiClock__70       |           1|       102|
-|82    |FlexiClock__71       |           1|       103|
-|83    |FlexiClock__72       |           1|       103|
-|84    |FlexiClock__73       |           1|       103|
-|85    |FlexiClock__74       |           1|       101|
-|86    |FlexiClock__75       |           1|       101|
-|87    |FlexiClock__76       |           1|       101|
-|88    |FlexiClock__77       |           1|       102|
-|89    |FlexiClock__78       |           1|       101|
-|90    |FlexiClock__79       |           1|       101|
-|91    |FlexiClock__80       |           1|       101|
-|92    |FlexiClock__81       |           1|       101|
-|93    |FlexiClock__82       |           1|       101|
-|94    |FlexiClock__83       |           1|       100|
-|95    |FlexiClock__84       |           1|        99|
-|96    |FlexiClock__85       |           1|       100|
-|97    |FlexiClock__86       |           1|       102|
-|98    |FlexiClock__87       |           1|       101|
-|99    |FlexiClock__88       |           1|       102|
-|100   |FlexiClock__89       |           1|       103|
-|101   |FlexiClock__90       |           1|       102|
-|102   |clockToSine8__1      |          77|       262|
-|103   |AUDIO_FX_TOP_GT0     |           1|     11321|
+|3     |clockToSine8         |          81|       262|
+|4     |averagehigh2b__GC0   |           1|       534|
+|5     |averageavg2b__GC0    |           1|       822|
+|6     |averageoff2b__GC0    |           1|        13|
+|7     |project_2b__GC0      |           1|       161|
+|8     |task3a_circular__GC0 |           1|     10886|
+|9     |task3a__GC0          |           1|     30059|
+|10    |randomizer__GC0      |           1|      1179|
+|11    |score_tracker__GC0   |           1|     11540|
+|12    |game_module__GC0     |           1|       194|
+|13    |project_extra__GC0   |           1|        41|
+|14    |AUDIO_FX_TOP__GC0    |           1|       257|
+|15    |FlexiClock__1        |           1|       101|
+|16    |FlexiClock__2        |           1|       102|
+|17    |FlexiClock__3        |           1|       100|
+|18    |FlexiClock__4        |           1|       101|
+|19    |FlexiClock__5        |           2|       101|
+|20    |FlexiClock__6        |           3|       104|
+|21    |FlexiClock__7        |           3|       102|
+|22    |FlexiClock__8        |           1|        99|
+|23    |FlexiClock__9        |           1|      1936|
+|24    |FlexiClock__10       |           1|       100|
+|25    |FlexiClock__11       |           1|       101|
+|26    |FlexiClock__12       |           1|        98|
+|27    |FlexiClock__13       |           1|       102|
+|28    |FlexiClock__14       |           1|        98|
+|29    |FlexiClock__15       |           1|       101|
+|30    |FlexiClock__16       |           1|       101|
+|31    |FlexiClock__17       |           1|       100|
+|32    |FlexiClock__18       |           1|       103|
+|33    |FlexiClock__19       |           1|       100|
+|34    |FlexiClock__20       |           1|       103|
+|35    |FlexiClock__21       |           1|        98|
+|36    |FlexiClock__22       |           1|       100|
+|37    |FlexiClock__23       |           1|       101|
+|38    |FlexiClock__24       |           1|       102|
+|39    |FlexiClock__25       |           1|       103|
+|40    |FlexiClock__26       |           1|       102|
+|41    |FlexiClock__27       |           1|       103|
+|42    |FlexiClock__28       |           1|       101|
+|43    |FlexiClock__29       |           1|       103|
+|44    |FlexiClock__30       |           1|       102|
+|45    |FlexiClock__31       |           1|       102|
+|46    |FlexiClock__32       |           1|       101|
+|47    |FlexiClock__33       |           1|       101|
+|48    |FlexiClock__34       |           1|       104|
+|49    |FlexiClock__35       |           1|       101|
+|50    |FlexiClock__36       |           1|       104|
+|51    |FlexiClock__37       |           1|       103|
+|52    |FlexiClock__38       |           1|       102|
+|53    |FlexiClock__39       |           1|       103|
+|54    |FlexiClock__40       |           1|       102|
+|55    |FlexiClock__41       |           1|       102|
+|56    |FlexiClock__42       |           1|       103|
+|57    |FlexiClock__43       |           1|       104|
+|58    |FlexiClock__44       |           1|       103|
+|59    |FlexiClock__45       |           1|       103|
+|60    |FlexiClock__46       |           1|       101|
+|61    |FlexiClock__47       |           1|       101|
+|62    |FlexiClock__48       |           1|       101|
+|63    |FlexiClock__49       |           1|       101|
+|64    |FlexiClock__50       |           1|       102|
+|65    |FlexiClock__51       |           2|       101|
+|66    |FlexiClock__52       |           1|       100|
+|67    |FlexiClock__53       |           2|       101|
+|68    |FlexiClock__54       |           1|       101|
+|69    |FlexiClock__55       |           2|        98|
+|70    |FlexiClock__56       |           1|        99|
+|71    |FlexiClock__57       |           1|       102|
+|72    |FlexiClock__58       |           1|       101|
+|73    |FlexiClock__59       |           1|       102|
+|74    |FlexiClock__60       |           1|       100|
+|75    |FlexiClock__61       |           1|       102|
+|76    |FlexiClock__62       |           1|       102|
+|77    |FlexiClock__63       |           1|       101|
+|78    |FlexiClock__64       |           1|       101|
+|79    |FlexiClock__65       |           1|       102|
+|80    |FlexiClock__66       |           1|       101|
+|81    |FlexiClock__67       |           1|       101|
+|82    |FlexiClock__68       |           1|       102|
+|83    |FlexiClock__69       |           1|       102|
+|84    |FlexiClock__70       |           1|       102|
+|85    |FlexiClock__71       |           1|       101|
+|86    |FlexiClock__72       |           1|       101|
+|87    |FlexiClock__73       |           1|       102|
+|88    |FlexiClock__74       |           1|       103|
+|89    |FlexiClock__75       |           1|       103|
+|90    |FlexiClock__76       |           1|       103|
+|91    |FlexiClock__77       |           1|       101|
+|92    |FlexiClock__78       |           1|       101|
+|93    |FlexiClock__79       |           1|       101|
+|94    |FlexiClock__80       |           1|       102|
+|95    |FlexiClock__81       |           1|       101|
+|96    |FlexiClock__82       |           1|       101|
+|97    |FlexiClock__83       |           1|       101|
+|98    |FlexiClock__84       |           1|       101|
+|99    |FlexiClock__85       |           1|       101|
+|100   |FlexiClock__86       |           1|       100|
+|101   |FlexiClock__87       |           1|        99|
+|102   |FlexiClock__88       |           1|       100|
+|103   |FlexiClock__89       |           1|       102|
+|104   |FlexiClock__90       |           1|       101|
+|105   |FlexiClock__91       |           1|       102|
+|106   |FlexiClock__92       |           1|       103|
+|107   |FlexiClock__93       |           1|       102|
+|108   |AUDIO_FX_TOP_GT0     |           1|     10860|
 +------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -1096,7 +1128,7 @@ INFO: [Synth 8-4480] The timing for the instance ts/t3/circ/fifo_reg_3 (implemen
 INFO: [Synth 8-4480] The timing for the instance ts/t3/circ/fifo_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance ts/t3/circ/fifo_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:20 ; elapsed = 00:04:25 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Technology Mapping : Time (s): cpu = 00:05:32 ; elapsed = 00:06:19 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1120,7 +1152,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:22 ; elapsed = 00:04:28 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished IO Insertion : Time (s): cpu = 00:05:35 ; elapsed = 00:06:23 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1133,7 +1165,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:22 ; elapsed = 00:04:28 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:36 ; elapsed = 00:06:23 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1145,25 +1177,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:25 ; elapsed = 00:04:31 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:39 ; elapsed = 00:06:27 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:27 ; elapsed = 00:04:33 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:42 ; elapsed = 00:06:30 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:28 ; elapsed = 00:04:33 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:43 ; elapsed = 00:06:31 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:28 ; elapsed = 00:04:33 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:43 ; elapsed = 00:06:31 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1196,512 +1228,542 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |dist_mem_gen_0 |     1|
 |2     |BUFG           |     8|
-|3     |CARRY4         |  2584|
-|4     |LUT1           |   547|
-|5     |LUT2           |  1135|
-|6     |LUT3           |  3847|
-|7     |LUT4           |  1484|
-|8     |LUT5           |  1282|
-|9     |LUT6           |  5225|
-|10    |MUXF7          |   924|
-|11    |MUXF8          |   462|
+|3     |CARRY4         |  3288|
+|4     |LUT1           |   739|
+|5     |LUT2           |  1527|
+|6     |LUT3           |  4732|
+|7     |LUT4           |  2121|
+|8     |LUT5           |  2287|
+|9     |LUT6           |  6751|
+|10    |MUXF7          |  1014|
+|11    |MUXF8          |   490|
 |12    |RAMB36E1       |     6|
 |13    |SRLC32E        |   948|
-|14    |FDCE           |    64|
-|15    |FDPE           |    64|
-|16    |FDRE           |  5018|
-|17    |FDSE           |    22|
-|18    |LDC            |    64|
-|19    |IBUF           |    23|
-|20    |OBUF           |    46|
+|14    |FDRE           |  5431|
+|15    |FDSE           |    29|
+|16    |IBUF           |    23|
+|17    |OBUF           |    46|
 +------+---------------+------+
 
 Report Instance Areas: 
-+------+---------------------+-----------------+------+
-|      |Instance             |Module           |Cells |
-+------+---------------------+-----------------+------+
-|1     |top                  |                 | 23765|
-|2     |  cc2                |FlexiClock       |    63|
-|3     |    mtc              |m_to_clock_431   |    63|
-|4     |  cc20k              |FlexiClock_0     |    63|
-|5     |    mtc              |m_to_clock_430   |    63|
-|6     |  fc0                |FlexiClock_1     |    63|
-|7     |    mtc              |m_to_clock_429   |    63|
-|8     |  nolabel_line81     |OutputRowCol     |    39|
-|9     |  ts                 |task_selector    | 19423|
-|10    |    cc3b20k          |FlexiClock_2     |    63|
-|11    |      mtc            |m_to_clock_428   |    53|
-|12    |    cc3b30k          |FlexiClock_3     |    63|
-|13    |      mtc            |m_to_clock_427   |    53|
-|14    |    cc3b50k          |FlexiClock_4     |    63|
-|15    |      mtc            |m_to_clock_426   |    55|
-|16    |    ex               |project_extra    |   640|
-|17    |      cdebug         |FlexiClock_416   |    63|
-|18    |        mtc          |m_to_clock_425   |    56|
-|19    |      clvl1          |FlexiClock_417   |    64|
-|20    |        mtc          |m_to_clock_424   |    58|
-|21    |      clvl2          |FlexiClock_418   |    65|
-|22    |        mtc          |m_to_clock_423   |    59|
-|23    |      clvl3          |FlexiClock_419   |    63|
-|24    |        mtc          |m_to_clock_422   |    54|
-|25    |      nolabel_line48 |game_module      |   380|
-|26    |        rng          |randomizer       |    46|
-|27    |        ss2          |sevenseg_420     |    39|
-|28    |        st           |score_tracker    |   272|
-|29    |          dd2        |deciToDigits_421 |   216|
-|30    |    mpo              |project_1        |    75|
-|31    |      ccview         |FlexiClock_414   |    63|
-|32    |        mtc          |m_to_clock_415   |    56|
-|33    |    mpt              |project_2b       |   877|
-|34    |      ah2            |averagehigh2b    |   332|
-|35    |        cc2b100h     |FlexiClock_410   |    63|
-|36    |          mtc        |m_to_clock_413   |    54|
-|37    |        cc2b20kh     |FlexiClock_411   |    63|
-|38    |          mtc        |m_to_clock_412   |    53|
-|39    |      al2            |averageavg2b     |   410|
-|40    |        cc2b100l     |FlexiClock_406   |    63|
-|41    |          mtc        |m_to_clock_409   |    54|
-|42    |        cc2b20kl     |FlexiClock_407   |    63|
-|43    |          mtc        |m_to_clock_408   |    53|
-|44    |      ao2            |averageoff2b     |    79|
-|45    |        cc2b300off   |FlexiClock_404   |    63|
-|46    |          mtc        |m_to_clock_405   |    54|
-|47    |    t2               |task2a           | 14131|
-|48    |      db1            |debounce_14      |    66|
-|49    |        d0           |dff_402          |    65|
-|50    |        d1           |dff_403          |     1|
-|51    |      db2            |debounce_15      |     3|
-|52    |        d0           |dff_400          |     2|
-|53    |        d1           |dff_401          |     1|
-|54    |      dtd            |deciToDigits     |  2825|
-|55    |      fc1            |FlexiClock_16    |    63|
-|56    |        mtc          |m_to_clock_399   |    54|
-|57    |      gs10           |generateSine     |   135|
-|58    |        cs           |clockToSine8_395 |    72|
-|59    |          sl         |sineLUT_398      |    47|
-|60    |        fc           |FlexiClock_396   |    63|
-|61    |          mtc        |m_to_clock_397   |    53|
-|62    |      gs11           |generateSine_17  |   135|
-|63    |        cs           |clockToSine8_391 |    72|
-|64    |          sl         |sineLUT_394      |    47|
-|65    |        fc           |FlexiClock_392   |    63|
-|66    |          mtc        |m_to_clock_393   |    53|
-|67    |      gs12           |generateSine_18  |   135|
-|68    |        cs           |clockToSine8_387 |    72|
-|69    |          sl         |sineLUT_390      |    47|
-|70    |        fc           |FlexiClock_388   |    63|
-|71    |          mtc        |m_to_clock_389   |    52|
-|72    |      gs13           |generateSine_19  |   135|
-|73    |        cs           |clockToSine8_383 |    72|
-|74    |          sl         |sineLUT_386      |    47|
-|75    |        fc           |FlexiClock_384   |    63|
-|76    |          mtc        |m_to_clock_385   |    54|
-|77    |      gs14           |generateSine_20  |   135|
-|78    |        cs           |clockToSine8_379 |    72|
-|79    |          sl         |sineLUT_382      |    47|
-|80    |        fc           |FlexiClock_380   |    63|
-|81    |          mtc        |m_to_clock_381   |    53|
-|82    |      gs15           |generateSine_21  |   135|
-|83    |        cs           |clockToSine8_375 |    72|
-|84    |          sl         |sineLUT_378      |    47|
-|85    |        fc           |FlexiClock_376   |    63|
-|86    |          mtc        |m_to_clock_377   |    53|
-|87    |      gs16           |generateSine_22  |   135|
-|88    |        cs           |clockToSine8_371 |    72|
-|89    |          sl         |sineLUT_374      |    47|
-|90    |        fc           |FlexiClock_372   |    63|
-|91    |          mtc        |m_to_clock_373   |    53|
-|92    |      gs17           |generateSine_23  |   135|
-|93    |        cs           |clockToSine8_367 |    72|
-|94    |          sl         |sineLUT_370      |    47|
-|95    |        fc           |FlexiClock_368   |    63|
-|96    |          mtc        |m_to_clock_369   |    54|
-|97    |      gs18           |generateSine_24  |   135|
-|98    |        cs           |clockToSine8_363 |    72|
-|99    |          sl         |sineLUT_366      |    47|
-|100   |        fc           |FlexiClock_364   |    63|
-|101   |          mtc        |m_to_clock_365   |    53|
-|102   |      gs2            |generateSine_25  |   135|
-|103   |        cs           |clockToSine8_359 |    72|
-|104   |          sl         |sineLUT_362      |    47|
-|105   |        fc           |FlexiClock_360   |    63|
-|106   |          mtc        |m_to_clock_361   |    53|
-|107   |      gs20           |generateSine_26  |   135|
-|108   |        cs           |clockToSine8_355 |    72|
-|109   |          sl         |sineLUT_358      |    47|
-|110   |        fc           |FlexiClock_356   |    63|
-|111   |          mtc        |m_to_clock_357   |    52|
-|112   |      gs21           |generateSine_27  |   135|
-|113   |        cs           |clockToSine8_351 |    72|
-|114   |          sl         |sineLUT_354      |    47|
-|115   |        fc           |FlexiClock_352   |    63|
-|116   |          mtc        |m_to_clock_353   |    54|
-|117   |      gs22           |generateSine_28  |   135|
-|118   |        cs           |clockToSine8_347 |    72|
-|119   |          sl         |sineLUT_350      |    47|
-|120   |        fc           |FlexiClock_348   |    63|
-|121   |          mtc        |m_to_clock_349   |    52|
-|122   |      gs23           |generateSine_29  |   135|
-|123   |        cs           |clockToSine8_343 |    72|
-|124   |          sl         |sineLUT_346      |    47|
-|125   |        fc           |FlexiClock_344   |    63|
-|126   |          mtc        |m_to_clock_345   |    52|
-|127   |      gs24           |generateSine_30  |   135|
-|128   |        cs           |clockToSine8_339 |    72|
-|129   |          sl         |sineLUT_342      |    47|
-|130   |        fc           |FlexiClock_340   |    63|
-|131   |          mtc        |m_to_clock_341   |    52|
-|132   |      gs25           |generateSine_31  |   135|
-|133   |        cs           |clockToSine8_335 |    72|
-|134   |          sl         |sineLUT_338      |    47|
-|135   |        fc           |FlexiClock_336   |    63|
-|136   |          mtc        |m_to_clock_337   |    52|
-|137   |      gs26           |generateSine_32  |   162|
-|138   |        cs           |clockToSine8_331 |    99|
-|139   |          sl         |sineLUT_334      |    47|
-|140   |        fc           |FlexiClock_332   |    63|
-|141   |          mtc        |m_to_clock_333   |    54|
-|142   |      gs27           |generateSine_33  |   156|
-|143   |        cs           |clockToSine8_327 |    93|
-|144   |          sl         |sineLUT_330      |    47|
-|145   |        fc           |FlexiClock_328   |    63|
-|146   |          mtc        |m_to_clock_329   |    53|
-|147   |      gs28           |generateSine_34  |   168|
-|148   |        cs           |clockToSine8_323 |   105|
-|149   |          sl         |sineLUT_326      |    47|
-|150   |        fc           |FlexiClock_324   |    63|
-|151   |          mtc        |m_to_clock_325   |    53|
-|152   |      gs29           |generateSine_35  |   158|
-|153   |        cs           |clockToSine8_319 |    95|
-|154   |          sl         |sineLUT_322      |    47|
-|155   |        fc           |FlexiClock_320   |    63|
-|156   |          mtc        |m_to_clock_321   |    52|
-|157   |      gs3            |generateSine_36  |   135|
-|158   |        cs           |clockToSine8_315 |    72|
-|159   |          sl         |sineLUT_318      |    47|
-|160   |        fc           |FlexiClock_316   |    63|
-|161   |          mtc        |m_to_clock_317   |    55|
-|162   |      gs30           |generateSine_37  |   151|
-|163   |        cs           |clockToSine8_311 |    88|
-|164   |          sl         |sineLUT_314      |    47|
-|165   |        fc           |FlexiClock_312   |    63|
-|166   |          mtc        |m_to_clock_313   |    52|
-|167   |      gs32           |generateSine_38  |   159|
-|168   |        cs           |clockToSine8_307 |    96|
-|169   |          sl         |sineLUT_310      |    47|
-|170   |        fc           |FlexiClock_308   |    63|
-|171   |          mtc        |m_to_clock_309   |    52|
-|172   |      gs33           |generateSine_39  |   160|
-|173   |        cs           |clockToSine8_303 |    97|
-|174   |          sl         |sineLUT_306      |    47|
-|175   |        fc           |FlexiClock_304   |    63|
-|176   |          mtc        |m_to_clock_305   |    54|
-|177   |      gs34           |generateSine_40  |   151|
-|178   |        cs           |clockToSine8_299 |    88|
-|179   |          sl         |sineLUT_302      |    47|
-|180   |        fc           |FlexiClock_300   |    63|
-|181   |          mtc        |m_to_clock_301   |    53|
-|182   |      gs35           |generateSine_41  |   162|
-|183   |        cs           |clockToSine8_295 |    99|
-|184   |          sl         |sineLUT_298      |    47|
-|185   |        fc           |FlexiClock_296   |    63|
-|186   |          mtc        |m_to_clock_297   |    53|
-|187   |      gs36           |generateSine_42  |   160|
-|188   |        cs           |clockToSine8_291 |    97|
-|189   |          sl         |sineLUT_294      |    47|
-|190   |        fc           |FlexiClock_292   |    63|
-|191   |          mtc        |m_to_clock_293   |    53|
-|192   |      gs37           |generateSine_43  |   151|
-|193   |        cs           |clockToSine8_287 |    88|
-|194   |          sl         |sineLUT_290      |    47|
-|195   |        fc           |FlexiClock_288   |    63|
-|196   |          mtc        |m_to_clock_289   |    53|
-|197   |      gs38           |generateSine_44  |   135|
-|198   |        cs           |clockToSine8_283 |    72|
-|199   |          sl         |sineLUT_286      |    47|
-|200   |        fc           |FlexiClock_284   |    63|
-|201   |          mtc        |m_to_clock_285   |    53|
-|202   |      gs39           |generateSine_45  |   135|
-|203   |        cs           |clockToSine8_279 |    72|
-|204   |          sl         |sineLUT_282      |    47|
-|205   |        fc           |FlexiClock_280   |    63|
-|206   |          mtc        |m_to_clock_281   |    53|
-|207   |      gs4            |generateSine_46  |   135|
-|208   |        cs           |clockToSine8_275 |    72|
-|209   |          sl         |sineLUT_278      |    47|
-|210   |        fc           |FlexiClock_276   |    63|
-|211   |          mtc        |m_to_clock_277   |    53|
-|212   |      gs40           |generateSine_47  |   142|
-|213   |        cs           |clockToSine8_271 |    79|
-|214   |          sl         |sineLUT_274      |    47|
-|215   |        fc           |FlexiClock_272   |    63|
-|216   |          mtc        |m_to_clock_273   |    54|
-|217   |      gs41           |generateSine_48  |   135|
-|218   |        cs           |clockToSine8_267 |    72|
-|219   |          sl         |sineLUT_270      |    47|
-|220   |        fc           |FlexiClock_268   |    63|
-|221   |          mtc        |m_to_clock_269   |    54|
-|222   |      gs42           |generateSine_49  |   135|
-|223   |        cs           |clockToSine8_263 |    72|
-|224   |          sl         |sineLUT_266      |    47|
-|225   |        fc           |FlexiClock_264   |    63|
-|226   |          mtc        |m_to_clock_265   |    55|
-|227   |      gs44           |generateSine_50  |   135|
-|228   |        cs           |clockToSine8_259 |    72|
-|229   |          sl         |sineLUT_262      |    47|
-|230   |        fc           |FlexiClock_260   |    63|
-|231   |          mtc        |m_to_clock_261   |    54|
-|232   |      gs45           |generateSine_51  |   135|
-|233   |        cs           |clockToSine8_255 |    72|
-|234   |          sl         |sineLUT_258      |    47|
-|235   |        fc           |FlexiClock_256   |    63|
-|236   |          mtc        |m_to_clock_257   |    54|
-|237   |      gs46           |generateSine_52  |   135|
-|238   |        cs           |clockToSine8_251 |    72|
-|239   |          sl         |sineLUT_254      |    47|
-|240   |        fc           |FlexiClock_252   |    63|
-|241   |          mtc        |m_to_clock_253   |    53|
-|242   |      gs47           |generateSine_53  |   135|
-|243   |        cs           |clockToSine8_247 |    72|
-|244   |          sl         |sineLUT_250      |    47|
-|245   |        fc           |FlexiClock_248   |    63|
-|246   |          mtc        |m_to_clock_249   |    53|
-|247   |      gs48           |generateSine_54  |   135|
-|248   |        cs           |clockToSine8_243 |    72|
-|249   |          sl         |sineLUT_246      |    47|
-|250   |        fc           |FlexiClock_244   |    63|
-|251   |          mtc        |m_to_clock_245   |    52|
-|252   |      gs49           |generateSine_55  |   135|
-|253   |        cs           |clockToSine8_239 |    72|
-|254   |          sl         |sineLUT_242      |    47|
-|255   |        fc           |FlexiClock_240   |    63|
-|256   |          mtc        |m_to_clock_241   |    53|
-|257   |      gs5            |generateSine_56  |   135|
-|258   |        cs           |clockToSine8_235 |    72|
-|259   |          sl         |sineLUT_238      |    47|
-|260   |        fc           |FlexiClock_236   |    63|
-|261   |          mtc        |m_to_clock_237   |    56|
-|262   |      gs50           |generateSine_57  |   135|
-|263   |        cs           |clockToSine8_231 |    72|
-|264   |          sl         |sineLUT_234      |    47|
-|265   |        fc           |FlexiClock_232   |    63|
-|266   |          mtc        |m_to_clock_233   |    52|
-|267   |      gs51           |generateSine_58  |   135|
-|268   |        cs           |clockToSine8_227 |    72|
-|269   |          sl         |sineLUT_230      |    47|
-|270   |        fc           |FlexiClock_228   |    63|
-|271   |          mtc        |m_to_clock_229   |    53|
-|272   |      gs52           |generateSine_59  |   135|
-|273   |        cs           |clockToSine8_223 |    72|
-|274   |          sl         |sineLUT_226      |    47|
-|275   |        fc           |FlexiClock_224   |    63|
-|276   |          mtc        |m_to_clock_225   |    53|
-|277   |      gs53           |generateSine_60  |   135|
-|278   |        cs           |clockToSine8_219 |    72|
-|279   |          sl         |sineLUT_222      |    47|
-|280   |        fc           |FlexiClock_220   |    63|
-|281   |          mtc        |m_to_clock_221   |    54|
-|282   |      gs54           |generateSine_61  |   135|
-|283   |        cs           |clockToSine8_215 |    72|
-|284   |          sl         |sineLUT_218      |    47|
-|285   |        fc           |FlexiClock_216   |    63|
-|286   |          mtc        |m_to_clock_217   |    53|
-|287   |      gs56           |generateSine_62  |   135|
-|288   |        cs           |clockToSine8_211 |    72|
-|289   |          sl         |sineLUT_214      |    47|
-|290   |        fc           |FlexiClock_212   |    63|
-|291   |          mtc        |m_to_clock_213   |    52|
-|292   |      gs57           |generateSine_63  |   135|
-|293   |        cs           |clockToSine8_207 |    72|
-|294   |          sl         |sineLUT_210      |    47|
-|295   |        fc           |FlexiClock_208   |    63|
-|296   |          mtc        |m_to_clock_209   |    53|
-|297   |      gs58           |generateSine_64  |   135|
-|298   |        cs           |clockToSine8_203 |    72|
-|299   |          sl         |sineLUT_206      |    47|
-|300   |        fc           |FlexiClock_204   |    63|
-|301   |          mtc        |m_to_clock_205   |    52|
-|302   |      gs59           |generateSine_65  |   135|
-|303   |        cs           |clockToSine8_199 |    72|
-|304   |          sl         |sineLUT_202      |    47|
-|305   |        fc           |FlexiClock_200   |    63|
-|306   |          mtc        |m_to_clock_201   |    52|
-|307   |      gs6            |generateSine_66  |   135|
-|308   |        cs           |clockToSine8_195 |    72|
-|309   |          sl         |sineLUT_198      |    47|
-|310   |        fc           |FlexiClock_196   |    63|
-|311   |          mtc        |m_to_clock_197   |    54|
-|312   |      gs60           |generateSine_67  |   135|
-|313   |        cs           |clockToSine8_191 |    72|
-|314   |          sl         |sineLUT_194      |    47|
-|315   |        fc           |FlexiClock_192   |    63|
-|316   |          mtc        |m_to_clock_193   |    52|
-|317   |      gs61           |generateSine_68  |   135|
-|318   |        cs           |clockToSine8_187 |    72|
-|319   |          sl         |sineLUT_190      |    47|
-|320   |        fc           |FlexiClock_188   |    63|
-|321   |          mtc        |m_to_clock_189   |    52|
-|322   |      gs62           |generateSine_69  |   135|
-|323   |        cs           |clockToSine8_183 |    72|
-|324   |          sl         |sineLUT_186      |    47|
-|325   |        fc           |FlexiClock_184   |    63|
-|326   |          mtc        |m_to_clock_185   |    54|
-|327   |      gs63           |generateSine_70  |   135|
-|328   |        cs           |clockToSine8_179 |    72|
-|329   |          sl         |sineLUT_182      |    47|
-|330   |        fc           |FlexiClock_180   |    63|
-|331   |          mtc        |m_to_clock_181   |    53|
-|332   |      gs64           |generateSine_71  |   135|
-|333   |        cs           |clockToSine8_175 |    72|
-|334   |          sl         |sineLUT_178      |    47|
-|335   |        fc           |FlexiClock_176   |    63|
-|336   |          mtc        |m_to_clock_177   |    52|
-|337   |      gs65           |generateSine_72  |   135|
-|338   |        cs           |clockToSine8_171 |    72|
-|339   |          sl         |sineLUT_174      |    47|
-|340   |        fc           |FlexiClock_172   |    63|
-|341   |          mtc        |m_to_clock_173   |    52|
-|342   |      gs66           |generateSine_73  |   135|
-|343   |        cs           |clockToSine8_167 |    72|
-|344   |          sl         |sineLUT_170      |    47|
-|345   |        fc           |FlexiClock_168   |    63|
-|346   |          mtc        |m_to_clock_169   |    52|
-|347   |      gs68           |generateSine_74  |   135|
-|348   |        cs           |clockToSine8_163 |    72|
-|349   |          sl         |sineLUT_166      |    47|
-|350   |        fc           |FlexiClock_164   |    63|
-|351   |          mtc        |m_to_clock_165   |    52|
-|352   |      gs69           |generateSine_75  |   135|
-|353   |        cs           |clockToSine8_159 |    72|
-|354   |          sl         |sineLUT_162      |    47|
-|355   |        fc           |FlexiClock_160   |    63|
-|356   |          mtc        |m_to_clock_161   |    54|
-|357   |      gs70           |generateSine_76  |   135|
-|358   |        cs           |clockToSine8_155 |    72|
-|359   |          sl         |sineLUT_158      |    47|
-|360   |        fc           |FlexiClock_156   |    63|
-|361   |          mtc        |m_to_clock_157   |    53|
-|362   |      gs71           |generateSine_77  |   135|
-|363   |        cs           |clockToSine8_151 |    72|
-|364   |          sl         |sineLUT_154      |    47|
-|365   |        fc           |FlexiClock_152   |    63|
-|366   |          mtc        |m_to_clock_153   |    53|
-|367   |      gs72           |generateSine_78  |   135|
-|368   |        cs           |clockToSine8_147 |    72|
-|369   |          sl         |sineLUT_150      |    47|
-|370   |        fc           |FlexiClock_148   |    63|
-|371   |          mtc        |m_to_clock_149   |    54|
-|372   |      gs73           |generateSine_79  |   135|
-|373   |        cs           |clockToSine8_143 |    72|
-|374   |          sl         |sineLUT_146      |    47|
-|375   |        fc           |FlexiClock_144   |    63|
-|376   |          mtc        |m_to_clock_145   |    54|
-|377   |      gs74           |generateSine_80  |   143|
-|378   |        cs           |clockToSine8_139 |    80|
-|379   |          sl         |sineLUT_142      |    47|
-|380   |        fc           |FlexiClock_140   |    63|
-|381   |          mtc        |m_to_clock_141   |    53|
-|382   |      gs75           |generateSine_81  |   143|
-|383   |        cs           |clockToSine8_135 |    80|
-|384   |          sl         |sineLUT_138      |    47|
-|385   |        fc           |FlexiClock_136   |    63|
-|386   |          mtc        |m_to_clock_137   |    54|
-|387   |      gs76           |generateSine_82  |   150|
-|388   |        cs           |clockToSine8_131 |    87|
-|389   |          sl         |sineLUT_134      |    47|
-|390   |        fc           |FlexiClock_132   |    63|
-|391   |          mtc        |m_to_clock_133   |    53|
-|392   |      gs77           |generateSine_83  |   143|
-|393   |        cs           |clockToSine8_127 |    80|
-|394   |          sl         |sineLUT_130      |    47|
-|395   |        fc           |FlexiClock_128   |    63|
-|396   |          mtc        |m_to_clock_129   |    54|
-|397   |      gs78           |generateSine_84  |   143|
-|398   |        cs           |clockToSine8_123 |    80|
-|399   |          sl         |sineLUT_126      |    47|
-|400   |        fc           |FlexiClock_124   |    63|
-|401   |          mtc        |m_to_clock_125   |    55|
-|402   |      gs8            |generateSine_85  |   135|
-|403   |        cs           |clockToSine8_119 |    72|
-|404   |          sl         |sineLUT_122      |    47|
-|405   |        fc           |FlexiClock_120   |    63|
-|406   |          mtc        |m_to_clock_121   |    53|
-|407   |      gs80           |generateSine_86  |   143|
-|408   |        cs           |clockToSine8_115 |    80|
-|409   |          sl         |sineLUT_118      |    47|
-|410   |        fc           |FlexiClock_116   |    63|
-|411   |          mtc        |m_to_clock_117   |    53|
-|412   |      gs81           |generateSine_87  |   143|
-|413   |        cs           |clockToSine8_111 |    80|
-|414   |          sl         |sineLUT_114      |    47|
-|415   |        fc           |FlexiClock_112   |    63|
-|416   |          mtc        |m_to_clock_113   |    53|
-|417   |      gs82           |generateSine_88  |   143|
-|418   |        cs           |clockToSine8_107 |    80|
-|419   |          sl         |sineLUT_110      |    47|
-|420   |        fc           |FlexiClock_108   |    63|
-|421   |          mtc        |m_to_clock_109   |    54|
-|422   |      gs83           |generateSine_89  |   143|
-|423   |        cs           |clockToSine8_103 |    80|
-|424   |          sl         |sineLUT_106      |    47|
-|425   |        fc           |FlexiClock_104   |    63|
-|426   |          mtc        |m_to_clock_105   |    52|
-|427   |      gs84           |generateSine_90  |   143|
-|428   |        cs           |clockToSine8_99  |    80|
-|429   |          sl         |sineLUT_102      |    47|
-|430   |        fc           |FlexiClock_100   |    63|
-|431   |          mtc        |m_to_clock_101   |    52|
-|432   |      gs85           |generateSine_91  |   143|
-|433   |        cs           |clockToSine8_95  |    80|
-|434   |          sl         |sineLUT_98       |    47|
-|435   |        fc           |FlexiClock_96    |    63|
-|436   |          mtc        |m_to_clock_97    |    52|
-|437   |      gs9            |generateSine_92  |   135|
-|438   |        cs           |clockToSine8     |    72|
-|439   |          sl         |sineLUT          |    47|
-|440   |        fc           |FlexiClock_93    |    63|
-|441   |          mtc        |m_to_clock_94    |    53|
-|442   |      ss             |sevenseg         |    48|
-|443   |    t3               |task3a           |  3347|
-|444   |      circ           |task3a_circular  |  2300|
-|445   |        db1          |debounce         |    66|
-|446   |          d0         |dff_12           |     1|
-|447   |          d1         |dff_13           |    65|
-|448   |        db2          |debounce_6       |     3|
-|449   |          d0         |dff              |     2|
-|450   |          d1         |dff_11           |     1|
-|451   |        fc           |FlexiClock_7     |  1256|
-|452   |          ftm        |frequency_to_m   |  1189|
-|453   |          mtc        |m_to_clock_10    |    54|
-|454   |        fc1          |FlexiClock_8     |    63|
-|455   |          mtc        |m_to_clock_9     |    54|
-|456   |      df             |task3a_default   |   972|
-|457   |      fc0            |FlexiClock_5     |    63|
-|458   |        mtc          |m_to_clock       |    55|
-|459   |    taskthreeb       |project_3b       |   111|
-|460   |  u1                 |SPI              |   169|
-|461   |  u2                 |DA2RefComp       |    48|
-+------+---------------------+-----------------+------+
++------+---------------------+------------------------+------+
+|      |Instance             |Module                  |Cells |
++------+---------------------+------------------------+------+
+|1     |top                  |                        | 29452|
+|2     |  cc2                |FlexiClock              |    63|
+|3     |    mtc              |m_to_clock_464          |    63|
+|4     |  cc20k              |FlexiClock_0            |    63|
+|5     |    mtc              |m_to_clock_463          |    63|
+|6     |  ts                 |task_selector           | 20446|
+|7     |    cc3b20k          |FlexiClock_1            |    63|
+|8     |      mtc            |m_to_clock_462          |    53|
+|9     |    cc3b30k          |FlexiClock_2            |    63|
+|10    |      mtc            |m_to_clock_461          |    53|
+|11    |    cc3b50k          |FlexiClock_3            |    63|
+|12    |      mtc            |m_to_clock_460          |    55|
+|13    |    ex               |project_extra           |  2830|
+|14    |      cdebug         |FlexiClock_417          |    63|
+|15    |        mtc          |m_to_clock_459          |    56|
+|16    |      clvl1          |FlexiClock_418          |    64|
+|17    |        mtc          |m_to_clock_458          |    58|
+|18    |      clvl2          |FlexiClock_419          |    65|
+|19    |        mtc          |m_to_clock_457          |    59|
+|20    |      clvl3          |FlexiClock_420          |    63|
+|21    |        mtc          |m_to_clock_456          |    54|
+|22    |      nolabel_line50 |game_module             |  2570|
+|23    |        cm           |FlexiClock_421          |    63|
+|24    |          mtc        |m_to_clock_455          |    53|
+|25    |        rng          |randomizer              |  1029|
+|26    |          cr1        |FlexiClock_444          |    63|
+|27    |            mtc      |m_to_clock_454          |    62|
+|28    |          cr2        |FlexiClock_445          |    63|
+|29    |            mtc      |m_to_clock_453          |    53|
+|30    |          cr3        |FlexiClock_446          |    63|
+|31    |            mtc      |m_to_clock_452          |    52|
+|32    |          cr4        |FlexiClock_447          |    63|
+|33    |            mtc      |m_to_clock_451          |    53|
+|34    |          rg1        |my_random_generator     |   179|
+|35    |          rg2        |my_random_generator_448 |   179|
+|36    |          rg3        |my_random_generator_449 |   178|
+|37    |          rg4        |my_random_generator_450 |   178|
+|38    |        ss2          |sevenseg_422            |    55|
+|39    |        st           |score_tracker           |  1389|
+|40    |          dd2        |deciToDigits_423        |   626|
+|41    |          gs1        |generateSine_424        |   135|
+|42    |            cs       |clockToSine8_440        |    72|
+|43    |              sl     |sineLUT_443             |    47|
+|44    |            fc       |FlexiClock_441          |    63|
+|45    |              mtc    |m_to_clock_442          |    53|
+|46    |          gs2        |generateSine_425        |   135|
+|47    |            cs       |clockToSine8_436        |    72|
+|48    |              sl     |sineLUT_439             |    47|
+|49    |            fc       |FlexiClock_437          |    63|
+|50    |              mtc    |m_to_clock_438          |    54|
+|51    |          gs3        |generateSine_426        |   135|
+|52    |            cs       |clockToSine8_432        |    72|
+|53    |              sl     |sineLUT_435             |    47|
+|54    |            fc       |FlexiClock_433          |    63|
+|55    |              mtc    |m_to_clock_434          |    55|
+|56    |          gs4        |generateSine_427        |   151|
+|57    |            cs       |clockToSine8_428        |    88|
+|58    |              sl     |sineLUT_431             |    47|
+|59    |            fc       |FlexiClock_429          |    63|
+|60    |              mtc    |m_to_clock_430          |    54|
+|61    |    mpo              |project_1               |    87|
+|62    |      ccview         |FlexiClock_415          |    63|
+|63    |        mtc          |m_to_clock_416          |    56|
+|64    |    mpt              |project_2b              |   882|
+|65    |      ah2            |averagehigh2b           |   332|
+|66    |        cc2b100h     |FlexiClock_411          |    63|
+|67    |          mtc        |m_to_clock_414          |    54|
+|68    |        cc2b20kh     |FlexiClock_412          |    63|
+|69    |          mtc        |m_to_clock_413          |    53|
+|70    |      al2            |averageavg2b            |   410|
+|71    |        cc2b100l     |FlexiClock_407          |    63|
+|72    |          mtc        |m_to_clock_410          |    54|
+|73    |        cc2b20kl     |FlexiClock_408          |    63|
+|74    |          mtc        |m_to_clock_409          |    53|
+|75    |      ao2            |averageoff2b            |    79|
+|76    |        cc2b300off   |FlexiClock_405          |    63|
+|77    |          mtc        |m_to_clock_406          |    54|
+|78    |    t2               |task2a                  | 13863|
+|79    |      db1            |debounce_13             |     2|
+|80    |        d0           |dff_403                 |     1|
+|81    |        d1           |dff_404                 |     1|
+|82    |      db2            |debounce_14             |    40|
+|83    |        d0           |dff_401                 |    32|
+|84    |        d1           |dff_402                 |     8|
+|85    |      dtd            |deciToDigits_15         |  2824|
+|86    |      fc1            |FlexiClock_16           |    63|
+|87    |        mtc          |m_to_clock_400          |    54|
+|88    |      gs10           |generateSine            |   135|
+|89    |        cs           |clockToSine8_396        |    72|
+|90    |          sl         |sineLUT_399             |    47|
+|91    |        fc           |FlexiClock_397          |    63|
+|92    |          mtc        |m_to_clock_398          |    53|
+|93    |      gs11           |generateSine_17         |   135|
+|94    |        cs           |clockToSine8_392        |    72|
+|95    |          sl         |sineLUT_395             |    47|
+|96    |        fc           |FlexiClock_393          |    63|
+|97    |          mtc        |m_to_clock_394          |    53|
+|98    |      gs12           |generateSine_18         |   135|
+|99    |        cs           |clockToSine8_388        |    72|
+|100   |          sl         |sineLUT_391             |    47|
+|101   |        fc           |FlexiClock_389          |    63|
+|102   |          mtc        |m_to_clock_390          |    52|
+|103   |      gs13           |generateSine_19         |   135|
+|104   |        cs           |clockToSine8_384        |    72|
+|105   |          sl         |sineLUT_387             |    47|
+|106   |        fc           |FlexiClock_385          |    63|
+|107   |          mtc        |m_to_clock_386          |    54|
+|108   |      gs14           |generateSine_20         |   135|
+|109   |        cs           |clockToSine8_380        |    72|
+|110   |          sl         |sineLUT_383             |    47|
+|111   |        fc           |FlexiClock_381          |    63|
+|112   |          mtc        |m_to_clock_382          |    53|
+|113   |      gs15           |generateSine_21         |   135|
+|114   |        cs           |clockToSine8_376        |    72|
+|115   |          sl         |sineLUT_379             |    47|
+|116   |        fc           |FlexiClock_377          |    63|
+|117   |          mtc        |m_to_clock_378          |    53|
+|118   |      gs16           |generateSine_22         |   135|
+|119   |        cs           |clockToSine8_372        |    72|
+|120   |          sl         |sineLUT_375             |    47|
+|121   |        fc           |FlexiClock_373          |    63|
+|122   |          mtc        |m_to_clock_374          |    53|
+|123   |      gs17           |generateSine_23         |   135|
+|124   |        cs           |clockToSine8_368        |    72|
+|125   |          sl         |sineLUT_371             |    47|
+|126   |        fc           |FlexiClock_369          |    63|
+|127   |          mtc        |m_to_clock_370          |    54|
+|128   |      gs18           |generateSine_24         |   135|
+|129   |        cs           |clockToSine8_364        |    72|
+|130   |          sl         |sineLUT_367             |    47|
+|131   |        fc           |FlexiClock_365          |    63|
+|132   |          mtc        |m_to_clock_366          |    53|
+|133   |      gs2            |generateSine_25         |   135|
+|134   |        cs           |clockToSine8_360        |    72|
+|135   |          sl         |sineLUT_363             |    47|
+|136   |        fc           |FlexiClock_361          |    63|
+|137   |          mtc        |m_to_clock_362          |    53|
+|138   |      gs20           |generateSine_26         |   135|
+|139   |        cs           |clockToSine8_356        |    72|
+|140   |          sl         |sineLUT_359             |    47|
+|141   |        fc           |FlexiClock_357          |    63|
+|142   |          mtc        |m_to_clock_358          |    52|
+|143   |      gs21           |generateSine_27         |   135|
+|144   |        cs           |clockToSine8_352        |    72|
+|145   |          sl         |sineLUT_355             |    47|
+|146   |        fc           |FlexiClock_353          |    63|
+|147   |          mtc        |m_to_clock_354          |    54|
+|148   |      gs22           |generateSine_28         |   135|
+|149   |        cs           |clockToSine8_348        |    72|
+|150   |          sl         |sineLUT_351             |    47|
+|151   |        fc           |FlexiClock_349          |    63|
+|152   |          mtc        |m_to_clock_350          |    52|
+|153   |      gs23           |generateSine_29         |   135|
+|154   |        cs           |clockToSine8_344        |    72|
+|155   |          sl         |sineLUT_347             |    47|
+|156   |        fc           |FlexiClock_345          |    63|
+|157   |          mtc        |m_to_clock_346          |    52|
+|158   |      gs24           |generateSine_30         |   135|
+|159   |        cs           |clockToSine8_340        |    72|
+|160   |          sl         |sineLUT_343             |    47|
+|161   |        fc           |FlexiClock_341          |    63|
+|162   |          mtc        |m_to_clock_342          |    52|
+|163   |      gs25           |generateSine_31         |   135|
+|164   |        cs           |clockToSine8_336        |    72|
+|165   |          sl         |sineLUT_339             |    47|
+|166   |        fc           |FlexiClock_337          |    63|
+|167   |          mtc        |m_to_clock_338          |    52|
+|168   |      gs26           |generateSine_32         |   153|
+|169   |        cs           |clockToSine8_332        |    90|
+|170   |          sl         |sineLUT_335             |    47|
+|171   |        fc           |FlexiClock_333          |    63|
+|172   |          mtc        |m_to_clock_334          |    54|
+|173   |      gs27           |generateSine_33         |   151|
+|174   |        cs           |clockToSine8_328        |    88|
+|175   |          sl         |sineLUT_331             |    47|
+|176   |        fc           |FlexiClock_329          |    63|
+|177   |          mtc        |m_to_clock_330          |    53|
+|178   |      gs28           |generateSine_34         |   186|
+|179   |        cs           |clockToSine8_324        |   123|
+|180   |          sl         |sineLUT_327             |    47|
+|181   |        fc           |FlexiClock_325          |    63|
+|182   |          mtc        |m_to_clock_326          |    53|
+|183   |      gs29           |generateSine_35         |   153|
+|184   |        cs           |clockToSine8_320        |    90|
+|185   |          sl         |sineLUT_323             |    47|
+|186   |        fc           |FlexiClock_321          |    63|
+|187   |          mtc        |m_to_clock_322          |    52|
+|188   |      gs3            |generateSine_36         |   135|
+|189   |        cs           |clockToSine8_316        |    72|
+|190   |          sl         |sineLUT_319             |    47|
+|191   |        fc           |FlexiClock_317          |    63|
+|192   |          mtc        |m_to_clock_318          |    55|
+|193   |      gs30           |generateSine_37         |   151|
+|194   |        cs           |clockToSine8_312        |    88|
+|195   |          sl         |sineLUT_315             |    47|
+|196   |        fc           |FlexiClock_313          |    63|
+|197   |          mtc        |m_to_clock_314          |    52|
+|198   |      gs32           |generateSine_38         |   153|
+|199   |        cs           |clockToSine8_308        |    90|
+|200   |          sl         |sineLUT_311             |    47|
+|201   |        fc           |FlexiClock_309          |    63|
+|202   |          mtc        |m_to_clock_310          |    52|
+|203   |      gs33           |generateSine_39         |   151|
+|204   |        cs           |clockToSine8_304        |    88|
+|205   |          sl         |sineLUT_307             |    47|
+|206   |        fc           |FlexiClock_305          |    63|
+|207   |          mtc        |m_to_clock_306          |    54|
+|208   |      gs34           |generateSine_40         |   168|
+|209   |        cs           |clockToSine8_300        |   105|
+|210   |          sl         |sineLUT_303             |    47|
+|211   |        fc           |FlexiClock_301          |    63|
+|212   |          mtc        |m_to_clock_302          |    53|
+|213   |      gs35           |generateSine_41         |   153|
+|214   |        cs           |clockToSine8_296        |    90|
+|215   |          sl         |sineLUT_299             |    47|
+|216   |        fc           |FlexiClock_297          |    63|
+|217   |          mtc        |m_to_clock_298          |    53|
+|218   |      gs36           |generateSine_42         |   151|
+|219   |        cs           |clockToSine8_292        |    88|
+|220   |          sl         |sineLUT_295             |    47|
+|221   |        fc           |FlexiClock_293          |    63|
+|222   |          mtc        |m_to_clock_294          |    53|
+|223   |      gs37           |generateSine_43         |   168|
+|224   |        cs           |clockToSine8_288        |   105|
+|225   |          sl         |sineLUT_291             |    47|
+|226   |        fc           |FlexiClock_289          |    63|
+|227   |          mtc        |m_to_clock_290          |    53|
+|228   |      gs38           |generateSine_44         |   135|
+|229   |        cs           |clockToSine8_284        |    72|
+|230   |          sl         |sineLUT_287             |    47|
+|231   |        fc           |FlexiClock_285          |    63|
+|232   |          mtc        |m_to_clock_286          |    53|
+|233   |      gs39           |generateSine_45         |   135|
+|234   |        cs           |clockToSine8_280        |    72|
+|235   |          sl         |sineLUT_283             |    47|
+|236   |        fc           |FlexiClock_281          |    63|
+|237   |          mtc        |m_to_clock_282          |    53|
+|238   |      gs4            |generateSine_46         |   135|
+|239   |        cs           |clockToSine8_276        |    72|
+|240   |          sl         |sineLUT_279             |    47|
+|241   |        fc           |FlexiClock_277          |    63|
+|242   |          mtc        |m_to_clock_278          |    53|
+|243   |      gs40           |generateSine_47         |   135|
+|244   |        cs           |clockToSine8_272        |    72|
+|245   |          sl         |sineLUT_275             |    47|
+|246   |        fc           |FlexiClock_273          |    63|
+|247   |          mtc        |m_to_clock_274          |    54|
+|248   |      gs41           |generateSine_48         |   135|
+|249   |        cs           |clockToSine8_268        |    72|
+|250   |          sl         |sineLUT_271             |    47|
+|251   |        fc           |FlexiClock_269          |    63|
+|252   |          mtc        |m_to_clock_270          |    54|
+|253   |      gs42           |generateSine_49         |   135|
+|254   |        cs           |clockToSine8_264        |    72|
+|255   |          sl         |sineLUT_267             |    47|
+|256   |        fc           |FlexiClock_265          |    63|
+|257   |          mtc        |m_to_clock_266          |    55|
+|258   |      gs44           |generateSine_50         |   135|
+|259   |        cs           |clockToSine8_260        |    72|
+|260   |          sl         |sineLUT_263             |    47|
+|261   |        fc           |FlexiClock_261          |    63|
+|262   |          mtc        |m_to_clock_262          |    54|
+|263   |      gs45           |generateSine_51         |   135|
+|264   |        cs           |clockToSine8_256        |    72|
+|265   |          sl         |sineLUT_259             |    47|
+|266   |        fc           |FlexiClock_257          |    63|
+|267   |          mtc        |m_to_clock_258          |    54|
+|268   |      gs46           |generateSine_52         |   135|
+|269   |        cs           |clockToSine8_252        |    72|
+|270   |          sl         |sineLUT_255             |    47|
+|271   |        fc           |FlexiClock_253          |    63|
+|272   |          mtc        |m_to_clock_254          |    53|
+|273   |      gs47           |generateSine_53         |   135|
+|274   |        cs           |clockToSine8_248        |    72|
+|275   |          sl         |sineLUT_251             |    47|
+|276   |        fc           |FlexiClock_249          |    63|
+|277   |          mtc        |m_to_clock_250          |    53|
+|278   |      gs48           |generateSine_54         |   135|
+|279   |        cs           |clockToSine8_244        |    72|
+|280   |          sl         |sineLUT_247             |    47|
+|281   |        fc           |FlexiClock_245          |    63|
+|282   |          mtc        |m_to_clock_246          |    52|
+|283   |      gs49           |generateSine_55         |   135|
+|284   |        cs           |clockToSine8_240        |    72|
+|285   |          sl         |sineLUT_243             |    47|
+|286   |        fc           |FlexiClock_241          |    63|
+|287   |          mtc        |m_to_clock_242          |    53|
+|288   |      gs5            |generateSine_56         |   135|
+|289   |        cs           |clockToSine8_236        |    72|
+|290   |          sl         |sineLUT_239             |    47|
+|291   |        fc           |FlexiClock_237          |    63|
+|292   |          mtc        |m_to_clock_238          |    56|
+|293   |      gs50           |generateSine_57         |   135|
+|294   |        cs           |clockToSine8_232        |    72|
+|295   |          sl         |sineLUT_235             |    47|
+|296   |        fc           |FlexiClock_233          |    63|
+|297   |          mtc        |m_to_clock_234          |    52|
+|298   |      gs51           |generateSine_58         |   135|
+|299   |        cs           |clockToSine8_228        |    72|
+|300   |          sl         |sineLUT_231             |    47|
+|301   |        fc           |FlexiClock_229          |    63|
+|302   |          mtc        |m_to_clock_230          |    53|
+|303   |      gs52           |generateSine_59         |   143|
+|304   |        cs           |clockToSine8_224        |    80|
+|305   |          sl         |sineLUT_227             |    47|
+|306   |        fc           |FlexiClock_225          |    63|
+|307   |          mtc        |m_to_clock_226          |    53|
+|308   |      gs53           |generateSine_60         |   135|
+|309   |        cs           |clockToSine8_220        |    72|
+|310   |          sl         |sineLUT_223             |    47|
+|311   |        fc           |FlexiClock_221          |    63|
+|312   |          mtc        |m_to_clock_222          |    54|
+|313   |      gs54           |generateSine_61         |   135|
+|314   |        cs           |clockToSine8_216        |    72|
+|315   |          sl         |sineLUT_219             |    47|
+|316   |        fc           |FlexiClock_217          |    63|
+|317   |          mtc        |m_to_clock_218          |    53|
+|318   |      gs56           |generateSine_62         |   135|
+|319   |        cs           |clockToSine8_212        |    72|
+|320   |          sl         |sineLUT_215             |    47|
+|321   |        fc           |FlexiClock_213          |    63|
+|322   |          mtc        |m_to_clock_214          |    52|
+|323   |      gs57           |generateSine_63         |   135|
+|324   |        cs           |clockToSine8_208        |    72|
+|325   |          sl         |sineLUT_211             |    47|
+|326   |        fc           |FlexiClock_209          |    63|
+|327   |          mtc        |m_to_clock_210          |    53|
+|328   |      gs58           |generateSine_64         |   135|
+|329   |        cs           |clockToSine8_204        |    72|
+|330   |          sl         |sineLUT_207             |    47|
+|331   |        fc           |FlexiClock_205          |    63|
+|332   |          mtc        |m_to_clock_206          |    52|
+|333   |      gs59           |generateSine_65         |   135|
+|334   |        cs           |clockToSine8_200        |    72|
+|335   |          sl         |sineLUT_203             |    47|
+|336   |        fc           |FlexiClock_201          |    63|
+|337   |          mtc        |m_to_clock_202          |    52|
+|338   |      gs6            |generateSine_66         |   135|
+|339   |        cs           |clockToSine8_196        |    72|
+|340   |          sl         |sineLUT_199             |    47|
+|341   |        fc           |FlexiClock_197          |    63|
+|342   |          mtc        |m_to_clock_198          |    54|
+|343   |      gs60           |generateSine_67         |   135|
+|344   |        cs           |clockToSine8_192        |    72|
+|345   |          sl         |sineLUT_195             |    47|
+|346   |        fc           |FlexiClock_193          |    63|
+|347   |          mtc        |m_to_clock_194          |    52|
+|348   |      gs61           |generateSine_68         |   135|
+|349   |        cs           |clockToSine8_188        |    72|
+|350   |          sl         |sineLUT_191             |    47|
+|351   |        fc           |FlexiClock_189          |    63|
+|352   |          mtc        |m_to_clock_190          |    52|
+|353   |      gs62           |generateSine_69         |   135|
+|354   |        cs           |clockToSine8_184        |    72|
+|355   |          sl         |sineLUT_187             |    47|
+|356   |        fc           |FlexiClock_185          |    63|
+|357   |          mtc        |m_to_clock_186          |    54|
+|358   |      gs63           |generateSine_70         |   135|
+|359   |        cs           |clockToSine8_180        |    72|
+|360   |          sl         |sineLUT_183             |    47|
+|361   |        fc           |FlexiClock_181          |    63|
+|362   |          mtc        |m_to_clock_182          |    53|
+|363   |      gs64           |generateSine_71         |   135|
+|364   |        cs           |clockToSine8_176        |    72|
+|365   |          sl         |sineLUT_179             |    47|
+|366   |        fc           |FlexiClock_177          |    63|
+|367   |          mtc        |m_to_clock_178          |    52|
+|368   |      gs65           |generateSine_72         |   135|
+|369   |        cs           |clockToSine8_172        |    72|
+|370   |          sl         |sineLUT_175             |    47|
+|371   |        fc           |FlexiClock_173          |    63|
+|372   |          mtc        |m_to_clock_174          |    52|
+|373   |      gs66           |generateSine_73         |   135|
+|374   |        cs           |clockToSine8_168        |    72|
+|375   |          sl         |sineLUT_171             |    47|
+|376   |        fc           |FlexiClock_169          |    63|
+|377   |          mtc        |m_to_clock_170          |    52|
+|378   |      gs68           |generateSine_74         |   135|
+|379   |        cs           |clockToSine8_164        |    72|
+|380   |          sl         |sineLUT_167             |    47|
+|381   |        fc           |FlexiClock_165          |    63|
+|382   |          mtc        |m_to_clock_166          |    52|
+|383   |      gs69           |generateSine_75         |   135|
+|384   |        cs           |clockToSine8_160        |    72|
+|385   |          sl         |sineLUT_163             |    47|
+|386   |        fc           |FlexiClock_161          |    63|
+|387   |          mtc        |m_to_clock_162          |    54|
+|388   |      gs70           |generateSine_76         |   135|
+|389   |        cs           |clockToSine8_156        |    72|
+|390   |          sl         |sineLUT_159             |    47|
+|391   |        fc           |FlexiClock_157          |    63|
+|392   |          mtc        |m_to_clock_158          |    53|
+|393   |      gs71           |generateSine_77         |   135|
+|394   |        cs           |clockToSine8_152        |    72|
+|395   |          sl         |sineLUT_155             |    47|
+|396   |        fc           |FlexiClock_153          |    63|
+|397   |          mtc        |m_to_clock_154          |    53|
+|398   |      gs72           |generateSine_78         |   135|
+|399   |        cs           |clockToSine8_148        |    72|
+|400   |          sl         |sineLUT_151             |    47|
+|401   |        fc           |FlexiClock_149          |    63|
+|402   |          mtc        |m_to_clock_150          |    54|
+|403   |      gs73           |generateSine_79         |   135|
+|404   |        cs           |clockToSine8_144        |    72|
+|405   |          sl         |sineLUT_147             |    47|
+|406   |        fc           |FlexiClock_145          |    63|
+|407   |          mtc        |m_to_clock_146          |    54|
+|408   |      gs74           |generateSine_80         |   143|
+|409   |        cs           |clockToSine8_140        |    80|
+|410   |          sl         |sineLUT_143             |    47|
+|411   |        fc           |FlexiClock_141          |    63|
+|412   |          mtc        |m_to_clock_142          |    53|
+|413   |      gs75           |generateSine_81         |   143|
+|414   |        cs           |clockToSine8_136        |    80|
+|415   |          sl         |sineLUT_139             |    47|
+|416   |        fc           |FlexiClock_137          |    63|
+|417   |          mtc        |m_to_clock_138          |    54|
+|418   |      gs76           |generateSine_82         |   135|
+|419   |        cs           |clockToSine8_132        |    72|
+|420   |          sl         |sineLUT_135             |    47|
+|421   |        fc           |FlexiClock_133          |    63|
+|422   |          mtc        |m_to_clock_134          |    53|
+|423   |      gs77           |generateSine_83         |   143|
+|424   |        cs           |clockToSine8_128        |    80|
+|425   |          sl         |sineLUT_131             |    47|
+|426   |        fc           |FlexiClock_129          |    63|
+|427   |          mtc        |m_to_clock_130          |    54|
+|428   |      gs78           |generateSine_84         |   143|
+|429   |        cs           |clockToSine8_124        |    80|
+|430   |          sl         |sineLUT_127             |    47|
+|431   |        fc           |FlexiClock_125          |    63|
+|432   |          mtc        |m_to_clock_126          |    55|
+|433   |      gs8            |generateSine_85         |   135|
+|434   |        cs           |clockToSine8_120        |    72|
+|435   |          sl         |sineLUT_123             |    47|
+|436   |        fc           |FlexiClock_121          |    63|
+|437   |          mtc        |m_to_clock_122          |    53|
+|438   |      gs80           |generateSine_86         |   143|
+|439   |        cs           |clockToSine8_116        |    80|
+|440   |          sl         |sineLUT_119             |    47|
+|441   |        fc           |FlexiClock_117          |    63|
+|442   |          mtc        |m_to_clock_118          |    53|
+|443   |      gs81           |generateSine_87         |   143|
+|444   |        cs           |clockToSine8_112        |    80|
+|445   |          sl         |sineLUT_115             |    47|
+|446   |        fc           |FlexiClock_113          |    63|
+|447   |          mtc        |m_to_clock_114          |    53|
+|448   |      gs82           |generateSine_88         |   143|
+|449   |        cs           |clockToSine8_108        |    80|
+|450   |          sl         |sineLUT_111             |    47|
+|451   |        fc           |FlexiClock_109          |    63|
+|452   |          mtc        |m_to_clock_110          |    54|
+|453   |      gs83           |generateSine_89         |   143|
+|454   |        cs           |clockToSine8_104        |    80|
+|455   |          sl         |sineLUT_107             |    47|
+|456   |        fc           |FlexiClock_105          |    63|
+|457   |          mtc        |m_to_clock_106          |    52|
+|458   |      gs84           |generateSine_90         |   143|
+|459   |        cs           |clockToSine8_100        |    80|
+|460   |          sl         |sineLUT_103             |    47|
+|461   |        fc           |FlexiClock_101          |    63|
+|462   |          mtc        |m_to_clock_102          |    52|
+|463   |      gs85           |generateSine_91         |   143|
+|464   |        cs           |clockToSine8_96         |    80|
+|465   |          sl         |sineLUT_99              |    47|
+|466   |        fc           |FlexiClock_97           |    63|
+|467   |          mtc        |m_to_clock_98           |    52|
+|468   |      gs9            |generateSine_92         |   135|
+|469   |        cs           |clockToSine8            |    72|
+|470   |          sl         |sineLUT                 |    47|
+|471   |        fc           |FlexiClock_94           |    63|
+|472   |          mtc        |m_to_clock_95           |    53|
+|473   |      ss             |sevenseg_93             |    40|
+|474   |    t3               |task3a                  |  2439|
+|475   |      circ           |task3a_circular         |  1374|
+|476   |        db1          |debounce                |    35|
+|477   |          d0         |dff_11                  |     1|
+|478   |          d1         |dff_12                  |    34|
+|479   |        db2          |debounce_5              |     6|
+|480   |          d0         |dff                     |     2|
+|481   |          d1         |dff_10                  |     4|
+|482   |        dtd          |deciToDigits            |   238|
+|483   |        fc           |FlexiClock_6            |   147|
+|484   |          ftm        |frequency_to_m          |    92|
+|485   |          mtc        |m_to_clock_9            |    54|
+|486   |        fc1          |FlexiClock_7            |    63|
+|487   |          mtc        |m_to_clock_8            |    54|
+|488   |        ss           |sevenseg                |    44|
+|489   |      df             |task3a_default          |   972|
+|490   |      fc0            |FlexiClock_4            |    63|
+|491   |        mtc          |m_to_clock              |    55|
+|492   |    taskthreeb       |project_3b              |   103|
+|493   |  u1                 |SPI                     |   169|
+|494   |  u2                 |DA2RefComp              |    48|
++------+---------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:28 ; elapsed = 00:04:33 . Memory (MB): peak = 962.441 ; gain = 701.398
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:43 ; elapsed = 00:06:32 . Memory (MB): peak = 1045.957 ; gain = 785.152
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:06 ; elapsed = 00:04:21 . Memory (MB): peak = 962.441 ; gain = 335.793
-Synthesis Optimization Complete : Time (s): cpu = 00:04:28 ; elapsed = 00:04:34 . Memory (MB): peak = 962.441 ; gain = 701.398
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:15 ; elapsed = 00:05:50 . Memory (MB): peak = 1045.957 ; gain = 418.484
+Synthesis Optimization Complete : Time (s): cpu = 00:05:43 ; elapsed = 00:06:33 . Memory (MB): peak = 1045.957 ; gain = 785.152
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4063 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 4821 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 64 instances were transformed.
-  LDC => LDCE: 64 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-149 Infos, 200 Warnings, 0 Critical Warnings and 0 Errors encountered.
+144 Infos, 182 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:36 ; elapsed = 00:04:41 . Memory (MB): peak = 962.441 ; gain = 708.730
+synth_design: Time (s): cpu = 00:05:55 ; elapsed = 00:06:53 . Memory (MB): peak = 1045.957 ; gain = 792.113
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/synth_1/AUDIO_FX_TOP.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1045.957 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file AUDIO_FX_TOP_utilization_synth.rpt -pb AUDIO_FX_TOP_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.201 . Memory (MB): peak = 962.441 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Nov  5 08:31:06 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1045.957 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  5 17:51:41 2017...

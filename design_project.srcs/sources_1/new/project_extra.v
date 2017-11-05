@@ -27,7 +27,9 @@ module project_extra(
     output [3:0] an_e,
     output [6:0] seg_e,
     output [15:0] led_e,
-    output [11:0] speaker_e
+    output [11:0] speaker_e,
+    output [7:0]row,
+    output [3:0]col
     );
 
     //Define respective difficulties' game clock
@@ -45,7 +47,7 @@ module project_extra(
     
     // Instantiation of game module
     wire game_speed;
-    game_module (CLK, game_speed, sw, btn, an_e, seg_e, led_e, speaker_e);
+    game_module (CLK, game_speed, sw, btn, an_e, seg_e, led_e, speaker_e, row, col);
 
     // btn[2] -> Left button -> Easiest difficulty 1 sec refresh rate
     // btn[3] -> Right button -> Intermediate difficulty 0.5 sec refresh rate

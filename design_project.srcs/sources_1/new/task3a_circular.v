@@ -24,6 +24,7 @@ module task3a_circular(
     input [11:0] IN,
     input CLK, // assume 100MHz
     input [4:0] btn,
+    input [3:0] outside_state,
     output [11:0] OUT,
     output [3:0] an,
     output [6:0] seg
@@ -36,11 +37,9 @@ module task3a_circular(
         integer write = 0;
         wire slower_clk;
         
-        integer freq = 1000;
-        integer upper = 1100;
-        integer lower = 900;
-        
-        FlexiClock fc(freq * 10, CLK, slower_clk);
+        integer freq = 0;
+        integer upper = 2000;        
+        FlexiClock fc((freq + 200) * 10, CLK, slower_clk);
         
         reg [11:0] out_temp;
        
@@ -71,14 +70,18 @@ module task3a_circular(
         debounce db1 (btn[1], slow_clock, up);
         debounce db2 (btn[4], slow_clock, down);
         
-        always @(posedge up or posedge down) begin
-            if (up) begin
-                freq <= (freq >= upper) ? upper : freq + 10;
-            end else if (down) begin
-                freq <= (freq <= lower) ? lower : freq - 10;
-            end 
+        integer interval = 100;
+        
+        always @(posedge slow_clock) begin
+            if (up && !down && (outside_state == 4'b0100)) begin
+                freq <= (freq + interval > upper) ? upper : freq + interval;
+            end
+            
+            if (down && !up && (outside_state == 4'b0100)) begin
+                freq <= (freq - interval < 0) ? 0 : freq - interval;
+            end
         end
-       
+                   
         assign OUT = out_temp;
         
         wire [3:0] first;
