@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 21.10.2017 12:30:26
+// Create Date: 19.09.2017 15:47:53
 // Design Name: 
-// Module Name: custom_clock
+// Module Name: ee2020_lab3_dff
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module custom_clock(
-    input [31:0]DESIRED_FREQ,
-    input CLK,
-    output FINAL_CLK
-    );
-    wire [31:0]M_VALUE;
-    
-    m_value_getter mvg(DESIRED_FREQ,CLK,M_VALUE);
-    get_frequency_from_m gffm(M_VALUE,CLK,FINAL_CLK);
-    
+module dff(input DFF_CLOCK, D, output reg Q);
+    always @ (posedge DFF_CLOCK) begin
+        Q <= D;
+    end
 endmodule
