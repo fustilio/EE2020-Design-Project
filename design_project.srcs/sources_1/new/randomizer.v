@@ -23,6 +23,7 @@
 module randomizer(
     input CLK,
     input clk_1rr,
+    input [15:0]sw,
     input [4:0] btn,
     output reg [3:0]first_rand,
     output reg [3:0]second_rand,
@@ -60,16 +61,16 @@ module randomizer(
         // If digit = 0, randomize the next number. 
         // Else, countdown.
         else begin
-            first_rand <= (first_rand == 0) ? 
+            first_rand <= (first_rand == 0 || (sw[15] && first_rand == 1)) ? 
                                  ((random_one == second_rand || random_one == third_rand || random_one == fourth_rand || random_one == 0) ? 15 : random_one)
                                  : first_rand - 1;
-            second_rand <= (second_rand == 0) ? 
+            second_rand <= (second_rand == 0 || (sw[14] && second_rand == 1)) ? 
                                  ((random_two == first_rand || random_two == third_rand || random_two == fourth_rand || random_two == 0) ? 14 : random_two)
-                                 : second_rand - 1;
-            third_rand <= (third_rand == 0) ? 
+                                 : second_rand - 1; 
+            third_rand <= (third_rand == 0 || (sw[13] && third_rand == 1)) ? 
                                  ((random_three == second_rand || random_three == first_rand || random_three == fourth_rand || random_three == 0) ? 13 : random_three)
                                  : third_rand - 1;
-            fourth_rand <= (fourth_rand == 0) ? 
+            fourth_rand <= (fourth_rand == 0 || (sw[12] && fourth_rand == 1)) ? 
                                  ((random_four == second_rand || random_four == third_rand || random_four == first_rand || random_four == 0) ? 12 : random_four)
                                  : fourth_rand - 1;
         end

@@ -88,19 +88,19 @@ module score_tracker(
         end
         // Increase score by 1 if correct switch is pressed according 
         // to correct game state
-        else if (sw[15] && first_rand == 0) begin
+        else if (sw[15] && first_rand == 1) begin
             score_holder = score_holder + 1;
             music_player = 1;
         end
-        else if (sw[14] && second_rand == 0) begin
+        else if (sw[14] && second_rand == 1) begin
             score_holder = score_holder + 1;
             music_player = 2;
         end
-        else if (sw[13] && third_rand == 0) begin
+        else if (sw[13] && third_rand == 1) begin
             score_holder = score_holder + 1;
             music_player = 3;
         end
-        else if (sw[12] && fourth_rand == 0) begin
+        else if (sw[12] && fourth_rand == 1) begin
             score_holder = score_holder + 1;
             music_player = 4;
         end

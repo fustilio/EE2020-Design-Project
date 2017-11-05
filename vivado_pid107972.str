@@ -9239,3 +9239,157 @@ dismissDialog("Program Device"); // bA (cl)
 // Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
 // Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
 dismissDialog("Program Device"); // bs (cl)
+// Elapsed time: 191 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cl): Confirm Close: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (N, x): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+dismissDialog("Confirm Close"); // x (cl)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// bs (cl):  CLose Hardware Manager : addNotify
+// Tcl Message: close_hw 
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2532.383 ; gain = 0.000 
+dismissDialog("CLose Hardware Manager"); // bs (cl)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bs (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bs (cl)
+// bs (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714215A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cl): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/AUDIO_FX_TOP.bit"); // ag (af, bA)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Francis/Desktop/EE2020_FINAL/EE2020_Design_Project/design_project.runs/impl_1/AUDIO_FX_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs (cl)
+// Elapsed time: 11 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x (cl): Confirm Close: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (N, x): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+dismissDialog("Confirm Close"); // x (cl)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bs (cl):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bs (cl)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t2 : task2a (task2a.v)]", 67, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t2 : task2a (task2a.v), gs6 : generateSine (generateSine.v)]", 72, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectCodeEditor("task2a.v", 327, 198); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task3a_default.v", 1); // k (j, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t2 : task2a (task2a.v)]", 67); // B (D, cl)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true); // B (D, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v), df : task3a_default (task3a_default.v)]", 71, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v), df : task3a_default (task3a_default.v)]", 71, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), t3 : task3a (task3a.v)]", 69, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectCodeEditor("task3a.v", 245, 142); // cd (w, cl)
+// Elapsed time: 30 seconds
+selectCodeEditor("task3a.v", 334, 254); // cd (w, cl)
+selectCodeEditor("task3a.v", 334, 258); // cd (w, cl)
+// Elapsed time: 21 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "randomizer", true); // OverlayTextField (C, cl)
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "randomizer"); // OverlayTextField (C, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), rng : randomizer (randomizer.v)]", 20, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), rng : randomizer (randomizer.v)]", 20, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "randomizer.v", 'v'); // cd (w, cl)
+selectCodeEditor("randomizer.v", 10, 18); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "score_tracker", true); // OverlayTextField (C, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), st : score_tracker (score_tracker.v)]", 5, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AUDIO_FX_TOP (AUDIO_FX_TOP.v), ts : task_selector (task_selector.v), ex : project_extra (project_extra.v), game_module : game_module (game_module.v), st : score_tracker (score_tracker.v)]", 5, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectCodeEditor("score_tracker.v", 214, 90); // cd (w, cl)
+typeControlKey((HResource) null, "score_tracker.v", 'v'); // cd (w, cl)
+selectCodeEditor("score_tracker.v", 55, 72); // cd (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectCodeEditor("score_tracker.v", 149, 206); // cd (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task3a_circular.v", 5); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_module.v", 3); // k (j, cl)
+selectCodeEditor("game_module.v", 158, 112); // cd (w, cl)

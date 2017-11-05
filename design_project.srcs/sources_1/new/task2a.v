@@ -303,7 +303,7 @@ module task2a(
             end
             
             if (sw[5]) begin
-                inter = inter + active_octave[2];  
+                inter = inter + active_octave[5];  
             end
             
             if (sw[6]) begin
