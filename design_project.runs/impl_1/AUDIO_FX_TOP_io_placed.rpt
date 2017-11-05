@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date                      : Sun Nov  5 04:02:17 2017
+| Date                      : Sun Nov  5 08:33:07 2017
 | Host                      : Lee running 64-bit major release  (build 9200)
 | Command                   : report_io -file AUDIO_FX_TOP_io_placed.rpt
 | Design                    : AUDIO_FX_TOP

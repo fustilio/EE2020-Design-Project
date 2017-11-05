@@ -226,7 +226,7 @@ module task2a(
                     active_octave[10] = AS6;
                     active_octave[11] = B6;
                 end 7 : begin
-                    display = 3;
+                    display = 7;
                     active_octave[0] = C7;
                     active_octave[1] = CS7;
                     active_octave[2] = D7;
@@ -240,7 +240,7 @@ module task2a(
                     active_octave[10] = AS7;
                     active_octave[11] = B7;                    
                 end default : begin
-                    display = 0000;
+                    display = 0;
                     active_octave[0] = 0;
                     active_octave[1] = 0;
                     active_octave[2] = 0;
@@ -257,11 +257,18 @@ module task2a(
             endcase
         end
         
-        always @(btn) begin
-            if (btn[1]) begin
-                state <= state == 7? 7 : state + 1;
-            end else if (btn[4]) begin
-                state <= state == 0? 0 : state - 1;
+        wire slow_clock;
+        wire up;
+        wire down;
+        FlexiClock fc1 (4, CLK, slow_clock);
+        debounce db1 (btn[1], slow_clock, up);
+        debounce db2 (btn[4], slow_clock, down);
+        
+        always @(posedge up or posedge down) begin
+            if (up) begin
+                state <= (state >= 7) ? 7 : state + 1;
+            end else if (down) begin
+                state <= (state <= 0) ? 0 : state - 1;
             end 
         end
         

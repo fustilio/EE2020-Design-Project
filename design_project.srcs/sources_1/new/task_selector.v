@@ -43,9 +43,7 @@ module task_selector(
     wire clk_20k3b;
     wire clk_30k3b;
     wire clk_50k3b;
-    wire clk_10k;
-        
-    FlexiClock fc0 (10000, CLK, clk_10k);
+
     FlexiClock cc3b20k(20000,CLK,clk_20k3b);
     FlexiClock cc3b30k(30000,CLK,clk_30k3b);
     FlexiClock cc3b50k(50000,CLK,clk_50k3b);
@@ -79,7 +77,9 @@ module task_selector(
     
     //Declare lab 3a values and module
     wire [11:0] delayed;
-    task3a t3 (MIC_in, CLK, sw[15], delayed);
+    wire [3:0]an_3a;
+    wire [6:0]seg_3a;
+    task3a t3 (MIC_in, CLK, sw[15], btn, delayed, an_3a, seg_3a);
     
     //Declare lab 3b values and module
     wire [11:0] mpthreeOut;
@@ -113,8 +113,8 @@ module task_selector(
                 dp_inter <= 1;
             end TASK_THREE_A : begin
                 led_inter <= 0;
-                an_inter <= 15;
-                seg_inter <= 7'b1111111;
+                an_inter <= an_3a;
+                seg_inter <= seg_3a;
                 dp_inter <= 1;
                 speaker_inter <= delayed;
             end TASK_TWO_A : begin

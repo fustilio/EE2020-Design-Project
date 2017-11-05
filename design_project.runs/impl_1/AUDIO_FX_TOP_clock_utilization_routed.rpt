@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Sun Nov  5 04:03:25 2017
+| Date         : Sun Nov  5 08:34:42 2017
 | Host         : Lee running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file AUDIO_FX_TOP_clock_utilization_routed.rpt
 | Design       : AUDIO_FX_TOP
@@ -24,12 +24,15 @@ Table of Contents
 9. Device Cell Placement Summary for Global Clock g2
 10. Device Cell Placement Summary for Global Clock g3
 11. Device Cell Placement Summary for Global Clock g4
-12. Clock Region Cell Placement per Global Clock: Region X0Y0
-13. Clock Region Cell Placement per Global Clock: Region X1Y0
-14. Clock Region Cell Placement per Global Clock: Region X0Y1
-15. Clock Region Cell Placement per Global Clock: Region X1Y1
-16. Clock Region Cell Placement per Global Clock: Region X0Y2
-17. Clock Region Cell Placement per Global Clock: Region X1Y2
+12. Device Cell Placement Summary for Global Clock g5
+13. Device Cell Placement Summary for Global Clock g6
+14. Device Cell Placement Summary for Global Clock g7
+15. Clock Region Cell Placement per Global Clock: Region X0Y0
+16. Clock Region Cell Placement per Global Clock: Region X1Y0
+17. Clock Region Cell Placement per Global Clock: Region X0Y1
+18. Clock Region Cell Placement per Global Clock: Region X1Y1
+19. Clock Region Cell Placement per Global Clock: Region X0Y2
+20. Clock Region Cell Placement per Global Clock: Region X1Y2
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -37,7 +40,7 @@ Table of Contents
 +----------+------+-----------+-----+--------------+--------+
 | Type     | Used | Available | LOC | Clock Region | Pblock |
 +----------+------+-----------+-----+--------------+--------+
-| BUFGCTRL |    5 |        32 |   0 |            0 |      0 |
+| BUFGCTRL |    8 |        32 |   0 |            0 |      0 |
 | BUFH     |    0 |        72 |   0 |            0 |      0 |
 | BUFIO    |    0 |        20 |   0 |            0 |      0 |
 | BUFMR    |    0 |        10 |   0 |            0 |      0 |
@@ -50,15 +53,18 @@ Table of Contents
 2. Global Clock Resources
 -------------------------
 
-+-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+---------------------------+---------------------+
-| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock       | Driver Pin                | Net                 |
-+-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+---------------------------+---------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 6 |        3248 |               0 |       10.000 | sys_clk_pin | CLK_IBUF_BUFG_inst/O      | CLK_IBUF_BUFG       |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 2 |          68 |               0 |              |             | FINAL_MIC_h_reg[11]_i_3/O | mpt/ah2/clk_20k2bh  |
-| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 2 |          67 |               0 |              |             | FINAL_MIC_l_reg[11]_i_3/O | mpt/al2/clk_20k2bl  |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 1 |          32 |               0 |              |             | n_0_12237_BUFG_inst/O     | n_0_12237_BUFG      |
-| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 1 |          31 |               0 |              |             | score_holder_reg[0]_i_4/O | ex/game_speed_inter |
-+-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+---------------------------+---------------------+
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+----------------------------+---------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock       | Driver Pin                 | Net                 |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+----------------------------+---------------------+
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 6 |        3380 |               0 |       10.000 | sys_clk_pin | CLK_IBUF_BUFG_inst/O       | CLK_IBUF_BUFG       |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 4 |         984 |               0 |              |             | inter_output_reg[11]_i_2/O | t3/clk_10k          |
+| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 1 |          90 |               0 |              |             | fifo_reg_0_i_1/O           | t3/circ/slower_clk  |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 1 |          68 |               0 |              |             | FINAL_MIC_h_reg[11]_i_3/O  | mpt/ah2/clk_20k2bh  |
+| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 2 |          67 |               0 |              |             | FINAL_MIC_l_reg[11]_i_3/O  | mpt/al2/clk_20k2bl  |
+| g5        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y5 | n/a          |                 1 |          64 |               0 |              |             | circn_0_8384_BUFG_inst/O   | circn_0_8384_BUFG   |
+| g6        | src6      | BUFG/O          | None       | BUFGCTRL_X0Y6 | n/a          |                 2 |          64 |               0 |              |             | tsn_0_15207_BUFG_inst/O    | tsn_0_15207_BUFG    |
+| g7        | src7      | BUFG/O          | None       | BUFGCTRL_X0Y7 | n/a          |                 1 |          31 |               0 |              |             | score_holder_reg[0]_i_4/O  | ex/game_speed_inter |
++-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------------+----------------------------+---------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
@@ -66,15 +72,18 @@ Table of Contents
 3. Global Clock Source Details
 ------------------------------
 
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------------------------+--------------------------------------------+
-| Source Id | Global Id | Driver Type/Pin | Constraint | Site         | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                 | Net                                        |
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------------------------+--------------------------------------------+
-| src0      | g0        | IBUF/O          | IOB_X1Y26  | IOB_X1Y26    | X1Y0         |           1 |               0 |              10.000 | sys_clk_pin  | CLK_IBUF_inst/O                            | CLK_IBUF                                   |
-| src1      | g1        | FDRE/Q          | None       | SLICE_X48Y45 | X1Y0         |           1 |               1 |                     |              | ts/mpt/ah2/cc2b20kh/mtc/OUTPUT_CLOCK_reg/Q | ts/mpt/ah2/cc2b20kh/mtc/OUTPUT_CLOCK_reg_0 |
-| src2      | g2        | FDRE/Q          | None       | SLICE_X39Y48 | X1Y0         |           1 |               1 |                     |              | ts/mpt/al2/cc2b20kl/mtc/OUTPUT_CLOCK_reg/Q | ts/mpt/al2/cc2b20kl/mtc/OUTPUT_CLOCK_reg_0 |
-| src3      | g3        | LUT2/O          | None       | SLICE_X36Y46 | X1Y0         |           1 |               0 |                     |              | n_0_12237_BUFG_inst_i_1/O                  | n_0_12237_BUFG_inst_n_1                    |
-| src4      | g4        | FDRE/Q          | None       | SLICE_X37Y41 | X1Y0         |           1 |               1 |                     |              | ts/ex/game_speed_inter_reg/Q               | ts/ex/game_speed_inter_reg_0               |
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+--------------------------------------------+--------------------------------------------+
++-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------+----------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin | Constraint | Site         | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                     | Net                                          |
++-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------+----------------------------------------------+
+| src0      | g0        | IBUF/O          | IOB_X1Y26  | IOB_X1Y26    | X1Y0         |           1 |               0 |              10.000 | sys_clk_pin  | CLK_IBUF_inst/O                                | CLK_IBUF                                     |
+| src1      | g1        | FDRE/Q          | None       | SLICE_X30Y46 | X0Y0         |           1 |               1 |                     |              | ts/t3/fc0/mtc/OUTPUT_CLOCK_reg/Q               | ts/t3/fc0/mtc/OUTPUT_CLOCK_reg_0             |
+| src2      | g2        | FDRE/Q          | None       | SLICE_X32Y60 | X0Y1         |           1 |               1 |                     |              | ts/t3/circ/fc/mtc/OUTPUT_CLOCK_reg/Q           | ts/t3/circ/fc/mtc/OUTPUT_CLOCK_reg_0         |
+| src3      | g3        | FDRE/Q          | None       | SLICE_X38Y56 | X1Y1         |           1 |               1 |                     |              | ts/mpt/ah2/cc2b20kh/mtc/OUTPUT_CLOCK_reg/Q     | ts/mpt/ah2/cc2b20kh/mtc/OUTPUT_CLOCK_reg_0   |
+| src4      | g4        | FDRE/Q          | None       | SLICE_X33Y48 | X0Y0         |           1 |               1 |                     |              | ts/mpt/al2/cc2b20kl/mtc/OUTPUT_CLOCK_reg/Q     | ts/mpt/al2/cc2b20kl/mtc/OUTPUT_CLOCK_reg_0   |
+| src5      | g5        | LUT2/O          | None       | SLICE_X35Y45 | X0Y0         |           1 |               0 |                     |              | ts/t3/circ/db2/d0/circn_0_8384_BUFG_inst_i_1/O | ts/t3/circ/db2/d0/circn_0_8384_BUFG_inst_n_0 |
+| src6      | g6        | LUT2/O          | None       | SLICE_X36Y47 | X1Y0         |           1 |               0 |                     |              | ts/t2/db2/d0/tsn_0_15207_BUFG_inst_i_1/O       | ts/t2/db2/d0/tsn_0_15207_BUFG_inst_n_0       |
+| src7      | g7        | FDRE/Q          | None       | SLICE_X29Y37 | X0Y0         |           1 |               1 |                     |              | ts/ex/game_speed_inter_reg/Q                   | ts/ex/game_speed_inter_reg_0                 |
++-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------+----------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
@@ -85,95 +94,97 @@ Table of Contents
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------+--------------------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL          | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                   | Net                            |
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------+--------------------------------||
-| 0        | FDRE/Q          | None       | SLICE_X5Y110/AFF  | X0Y2         |          23 |               2 |              |       | u2/clk_counter_reg[0]/Q                      | u2/CLK                         - Static -
-| 1        | FDRE/Q          | None       | SLICE_X40Y129/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs10/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs10/fc/mtc/output_clock - Static -
-| 2        | FDRE/Q          | None       | SLICE_X35Y128/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs11/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs11/fc/mtc/output_clock - Static -
-| 3        | FDRE/Q          | None       | SLICE_X29Y119/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs12/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs12/fc/mtc/output_clock - Static -
-| 4        | FDRE/Q          | None       | SLICE_X3Y117/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs13/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs13/fc/mtc/output_clock - Static -
-| 5        | FDRE/Q          | None       | SLICE_X3Y104/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs14/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs14/fc/mtc/output_clock - Static -
-| 6        | FDRE/Q          | None       | SLICE_X21Y106/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs15/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs15/fc/mtc/output_clock - Static -
-| 7        | FDRE/Q          | None       | SLICE_X57Y114/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs16/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs16/fc/mtc/output_clock - Static -
-| 8        | FDRE/Q          | None       | SLICE_X39Y123/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs17/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs17/fc/mtc/output_clock - Static -
-| 9        | FDRE/Q          | None       | SLICE_X54Y105/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs18/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs18/fc/mtc/output_clock - Static -
-| 10       | FDRE/Q          | None       | SLICE_X3Y107/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs2/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs2/fc/mtc/output_clock  - Static -
-| 11       | FDRE/Q          | None       | SLICE_X32Y103/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs20/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs20/fc/mtc/output_clock - Static -
-| 12       | FDRE/Q          | None       | SLICE_X40Y139/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs21/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs21/fc/mtc/output_clock - Static -
-| 13       | FDRE/Q          | None       | SLICE_X45Y132/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs22/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs22/fc/mtc/output_clock - Static -
-| 14       | FDRE/Q          | None       | SLICE_X53Y126/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs23/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs23/fc/mtc/output_clock - Static -
-| 15       | FDRE/Q          | None       | SLICE_X20Y113/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs24/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs24/fc/mtc/output_clock - Static -
-| 16       | FDRE/Q          | None       | SLICE_X1Y125/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs25/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs25/fc/mtc/output_clock - Static -
-| 17       | FDRE/Q          | None       | SLICE_X5Y109/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs26/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs26/fc/mtc/output_clock - Static -
-| 18       | FDRE/Q          | None       | SLICE_X3Y99/AFF   | X0Y1         |          16 |               1 |              |       | ts/t2/gs27/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs27/fc/mtc/output_clock - Static -
-| 19       | FDRE/Q          | None       | SLICE_X40Y115/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs28/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs28/fc/mtc/output_clock - Static -
-| 20       | FDRE/Q          | None       | SLICE_X33Y123/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs29/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs29/fc/mtc/output_clock - Static -
-| 21       | FDRE/Q          | None       | SLICE_X16Y100/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs3/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs3/fc/mtc/output_clock  - Static -
-| 22       | FDRE/Q          | None       | SLICE_X53Y102/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs30/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs30/fc/mtc/output_clock - Static -
-| 23       | FDRE/Q          | None       | SLICE_X39Y105/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs32/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs32/fc/mtc/output_clock - Static -
-| 24       | FDRE/Q          | None       | SLICE_X50Y138/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs33/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs33/fc/mtc/output_clock - Static -
-| 25       | FDRE/Q          | None       | SLICE_X35Y130/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs34/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs34/fc/mtc/output_clock - Static -
-| 26       | FDRE/Q          | None       | SLICE_X49Y130/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs35/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs35/fc/mtc/output_clock - Static -
-| 27       | FDRE/Q          | None       | SLICE_X34Y117/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs36/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs36/fc/mtc/output_clock - Static -
-| 28       | FDRE/Q          | None       | SLICE_X4Y124/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs37/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs37/fc/mtc/output_clock - Static -
-| 29       | FDRE/Q          | None       | SLICE_X14Y115/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs38/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs38/fc/mtc/output_clock - Static -
-| 30       | FDRE/Q          | None       | SLICE_X10Y106/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs39/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs39/fc/mtc/output_clock - Static -
-| 31       | FDRE/Q          | None       | SLICE_X49Y113/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs4/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs4/fc/mtc/output_clock  - Static -
-| 32       | FDRE/Q          | None       | SLICE_X27Y110/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs40/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs40/fc/mtc/output_clock - Static -
-| 33       | FDRE/Q          | None       | SLICE_X19Y112/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs41/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs41/fc/mtc/output_clock - Static -
-| 34       | FDRE/Q          | None       | SLICE_X55Y111/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs42/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs42/fc/mtc/output_clock - Static -
-| 35       | FDRE/Q          | None       | SLICE_X63Y87/AFF  | X1Y1         |          16 |               1 |              |       | ts/t2/gs44/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs44/fc/mtc/output_clock - Static -
-| 36       | FDRE/Q          | None       | SLICE_X33Y132/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs45/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs45/fc/mtc/output_clock - Static -
-| 37       | FDRE/Q          | None       | SLICE_X57Y147/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs46/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs46/fc/mtc/output_clock - Static -
-| 38       | FDRE/Q          | None       | SLICE_X23Y136/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs47/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs47/fc/mtc/output_clock - Static -
-| 39       | FDRE/Q          | None       | SLICE_X16Y121/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs48/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs48/fc/mtc/output_clock - Static -
-| 40       | FDRE/Q          | None       | SLICE_X10Y125/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs49/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs49/fc/mtc/output_clock - Static -
-| 41       | FDRE/Q          | None       | SLICE_X52Y124/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs5/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs5/fc/mtc/output_clock  - Static -
-| 42       | FDRE/Q          | None       | SLICE_X5Y116/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs50/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs50/fc/mtc/output_clock - Static -
-| 43       | FDRE/Q          | None       | SLICE_X13Y107/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs51/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs51/fc/mtc/output_clock - Static -
-| 44       | FDRE/Q          | None       | SLICE_X28Y106/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs52/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs52/fc/mtc/output_clock - Static -
-| 45       | FDRE/Q          | None       | SLICE_X27Y112/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs53/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs53/fc/mtc/output_clock - Static -
-| 46       | FDRE/Q          | None       | SLICE_X57Y115/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs54/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs54/fc/mtc/output_clock - Static -
-| 47       | FDRE/Q          | None       | SLICE_X65Y96/AFF  | X1Y1         |          16 |               1 |              |       | ts/t2/gs56/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs56/fc/mtc/output_clock - Static -
-| 48       | FDRE/Q          | None       | SLICE_X30Y134/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs57/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs57/fc/mtc/output_clock - Static -
-| 49       | FDRE/Q          | None       | SLICE_X52Y137/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs58/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs58/fc/mtc/output_clock - Static -
-| 50       | FDRE/Q          | None       | SLICE_X26Y132/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs59/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs59/fc/mtc/output_clock - Static -
-| 51       | FDRE/Q          | None       | SLICE_X37Y103/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs6/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs6/fc/mtc/output_clock  - Static -
-| 52       | FDRE/Q          | None       | SLICE_X25Y125/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs60/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs60/fc/mtc/output_clock - Static -
-| 53       | FDRE/Q          | None       | SLICE_X21Y125/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs61/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs61/fc/mtc/output_clock - Static -
-| 54       | FDRE/Q          | None       | SLICE_X10Y116/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs62/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs62/fc/mtc/output_clock - Static -
-| 55       | FDRE/Q          | None       | SLICE_X13Y108/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs63/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs63/fc/mtc/output_clock - Static -
-| 56       | FDRE/Q          | None       | SLICE_X28Y107/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs64/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs64/fc/mtc/output_clock - Static -
-| 57       | FDRE/Q          | None       | SLICE_X30Y113/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs65/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs65/fc/mtc/output_clock - Static -
-| 58       | FDRE/Q          | None       | SLICE_X57Y129/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs66/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs66/fc/mtc/output_clock - Static -
-| 59       | FDRE/Q          | None       | SLICE_X52Y101/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs68/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs68/fc/mtc/output_clock - Static -
-| 60       | FDRE/Q          | None       | SLICE_X26Y137/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs69/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs69/fc/mtc/output_clock - Static -
-| 61       | FDRE/Q          | None       | SLICE_X56Y137/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs70/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs70/fc/mtc/output_clock - Static -
-| 62       | FDRE/Q          | None       | SLICE_X13Y132/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs71/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs71/fc/mtc/output_clock - Static -
-| 63       | FDRE/Q          | None       | SLICE_X31Y123/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs72/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs72/fc/mtc/output_clock - Static -
-| 64       | FDRE/Q          | None       | SLICE_X12Y125/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs73/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs73/fc/mtc/output_clock - Static -
-| 65       | FDRE/Q          | None       | SLICE_X20Y109/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs74/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs74/fc/mtc/output_clock - Static -
-| 66       | FDRE/Q          | None       | SLICE_X7Y107/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs75/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs75/fc/mtc/output_clock - Static -
-| 67       | FDRE/Q          | None       | SLICE_X48Y104/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs76/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs76/fc/mtc/output_clock - Static -
-| 68       | FDRE/Q          | None       | SLICE_X35Y114/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs77/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs77/fc/mtc/output_clock - Static -
-| 69       | FDRE/Q          | None       | SLICE_X57Y125/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs78/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs78/fc/mtc/output_clock - Static -
-| 70       | FDRE/Q          | None       | SLICE_X28Y105/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs8/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs8/fc/mtc/output_clock  - Static -
-| 71       | FDRE/Q          | None       | SLICE_X63Y91/BFF  | X1Y1         |          16 |               1 |              |       | ts/t2/gs80/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs80/fc/mtc/output_clock - Static -
-| 72       | FDRE/Q          | None       | SLICE_X22Y140/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs81/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs81/fc/mtc/output_clock - Static -
-| 73       | FDRE/Q          | None       | SLICE_X52Y136/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs82/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs82/fc/mtc/output_clock - Static -
-| 74       | FDRE/Q          | None       | SLICE_X17Y131/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs83/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs83/fc/mtc/output_clock - Static -
-| 75       | FDRE/Q          | None       | SLICE_X29Y128/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs84/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs84/fc/mtc/output_clock - Static -
-| 76       | FDRE/Q          | None       | SLICE_X20Y127/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs85/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs85/fc/mtc/output_clock - Static -
-| 77       | FDRE/Q          | None       | SLICE_X44Y145/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs9/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs9/fc/mtc/output_clock  - Static -
-| 78       | FDRE/Q          | None       | SLICE_X4Y82/CFF   | X0Y1         |          13 |               1 |              |       | ts/cc3b20k/mtc/OUTPUT_CLOCK_reg/Q            | ts/cc3b20k/mtc/clk_20k3b       - Static -
-| 79       | FDRE/Q          | None       | SLICE_X12Y86/AFF  | X0Y1         |          13 |               1 |              |       | ts/cc3b30k/mtc/OUTPUT_CLOCK_reg/Q            | ts/cc3b30k/mtc/clk_30k3b       - Static -
-| 80       | FDRE/Q          | None       | SLICE_X9Y80/AFF   | X0Y1         |          13 |               1 |              |       | ts/cc3b50k/mtc/OUTPUT_CLOCK_reg/Q            | ts/cc3b50k/mtc/clk_50k3b       - Static -
-| 81       | FDRE/Q          | None       | SLICE_X60Y92/AFF  | X1Y1         |          12 |              17 |              |       | cc20k/mtc/OUTPUT_CLOCK_reg/Q                 | cc20k/mtc/J_MIC3_Pin1_OBUF     - Static -
-| 82       | FDRE/Q          | None       | SLICE_X60Y86/AFF  | X1Y1         |          12 |               1 |              |       | fc0/mtc/OUTPUT_CLOCK_reg/Q                   | fc0/mtc/slow_clock             - Static -
-| 83       | FDRE/Q          | None       | SLICE_X11Y65/AFF  | X0Y1         |          12 |               1 |              |       | ts/mpo/ccview/mtc/OUTPUT_CLOCK_reg/Q         | ts/mpo/ccview/mtc/CLK          - Static -
-| 84       | FDRE/Q          | None       | SLICE_X38Y59/AFF  | X1Y1         |          12 |               1 |              |       | ts/mpt/ah2/cc2b100h/mtc/OUTPUT_CLOCK_reg/Q   | ts/mpt/ah2/cc2b100h/mtc/CLK    - Static -
-| 85       | FDRE/Q          | None       | SLICE_X32Y53/AFF  | X0Y1         |          12 |               1 |              |       | ts/mpt/al2/cc2b100l/mtc/OUTPUT_CLOCK_reg/Q   | ts/mpt/al2/cc2b100l/mtc/CLK    - Static -
-| 86       | FDRE/Q          | None       | SLICE_X56Y88/AFF  | X1Y1         |          12 |               2 |              |       | u1/sclk_reg/Q                                | u1/J_MIC3_Pin4_OBUF            - Static -
-| 87       | FDRE/Q          | None       | SLICE_X28Y58/AFF  | X0Y1         |           6 |               1 |              |       | ts/mpt/ao2/cc2b300off/mtc/OUTPUT_CLOCK_reg/Q | ts/mpt/ao2/cc2b300off/mtc/CLK  - Static -
-| 88       | FDRE/Q          | None       | SLICE_X4Y110/AFF  | X0Y2         |           1 |               1 |              |       | cc2/mtc/OUTPUT_CLOCK_reg/Q                   | cc2/mtc/clk_50M                - Static -
+| 0        | FDRE/Q          | None       | SLICE_X6Y119/AFF  | X0Y2         |          23 |               2 |              |       | u2/clk_counter_reg[0]/Q                      | u2/CLK                         - Static -
+| 1        | FDRE/Q          | None       | SLICE_X24Y110/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs10/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs10/fc/mtc/output_clock - Static -
+| 2        | FDRE/Q          | None       | SLICE_X34Y123/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs11/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs11/fc/mtc/output_clock - Static -
+| 3        | FDRE/Q          | None       | SLICE_X31Y127/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs12/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs12/fc/mtc/output_clock - Static -
+| 4        | FDRE/Q          | None       | SLICE_X49Y131/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs13/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs13/fc/mtc/output_clock - Static -
+| 5        | FDRE/Q          | None       | SLICE_X38Y134/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs14/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs14/fc/mtc/output_clock - Static -
+| 6        | FDRE/Q          | None       | SLICE_X12Y120/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs15/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs15/fc/mtc/output_clock - Static -
+| 7        | FDRE/Q          | None       | SLICE_X4Y100/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs16/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs16/fc/mtc/output_clock - Static -
+| 8        | FDRE/Q          | None       | SLICE_X18Y119/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs17/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs17/fc/mtc/output_clock - Static -
+| 9        | FDRE/Q          | None       | SLICE_X33Y106/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs18/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs18/fc/mtc/output_clock - Static -
+| 10       | FDRE/Q          | None       | SLICE_X32Y134/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs2/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs2/fc/mtc/output_clock  - Static -
+| 11       | FDRE/Q          | None       | SLICE_X14Y107/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs20/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs20/fc/mtc/output_clock - Static -
+| 12       | FDRE/Q          | None       | SLICE_X55Y117/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs21/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs21/fc/mtc/output_clock - Static -
+| 13       | FDRE/Q          | None       | SLICE_X34Y112/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs22/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs22/fc/mtc/output_clock - Static -
+| 14       | FDRE/Q          | None       | SLICE_X38Y126/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs23/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs23/fc/mtc/output_clock - Static -
+| 15       | FDRE/Q          | None       | SLICE_X31Y127/BFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs24/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs24/fc/mtc/output_clock - Static -
+| 16       | FDRE/Q          | None       | SLICE_X56Y138/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs25/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs25/fc/mtc/output_clock - Static -
+| 17       | FDRE/Q          | None       | SLICE_X33Y135/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs26/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs26/fc/mtc/output_clock - Static -
+| 18       | FDRE/Q          | None       | SLICE_X9Y120/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs27/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs27/fc/mtc/output_clock - Static -
+| 19       | FDRE/Q          | None       | SLICE_X11Y103/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs28/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs28/fc/mtc/output_clock - Static -
+| 20       | FDRE/Q          | None       | SLICE_X13Y114/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs29/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs29/fc/mtc/output_clock - Static -
+| 21       | FDRE/Q          | None       | SLICE_X16Y120/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs3/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs3/fc/mtc/output_clock  - Static -
+| 22       | FDRE/Q          | None       | SLICE_X32Y108/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs30/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs30/fc/mtc/output_clock - Static -
+| 23       | FDRE/Q          | None       | SLICE_X18Y108/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs32/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs32/fc/mtc/output_clock - Static -
+| 24       | FDRE/Q          | None       | SLICE_X34Y112/BFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs33/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs33/fc/mtc/output_clock - Static -
+| 25       | FDRE/Q          | None       | SLICE_X50Y121/BFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs34/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs34/fc/mtc/output_clock - Static -
+| 26       | FDRE/Q          | None       | SLICE_X35Y128/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs35/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs35/fc/mtc/output_clock - Static -
+| 27       | FDRE/Q          | None       | SLICE_X29Y125/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs36/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs36/fc/mtc/output_clock - Static -
+| 28       | FDRE/Q          | None       | SLICE_X50Y136/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs37/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs37/fc/mtc/output_clock - Static -
+| 29       | FDRE/Q          | None       | SLICE_X23Y134/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs38/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs38/fc/mtc/output_clock - Static -
+| 30       | FDRE/Q          | None       | SLICE_X6Y123/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs39/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs39/fc/mtc/output_clock - Static -
+| 31       | FDRE/Q          | None       | SLICE_X13Y100/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs4/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs4/fc/mtc/output_clock  - Static -
+| 32       | FDRE/Q          | None       | SLICE_X25Y105/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs40/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs40/fc/mtc/output_clock - Static -
+| 33       | FDRE/Q          | None       | SLICE_X3Y114/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs41/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs41/fc/mtc/output_clock - Static -
+| 34       | FDRE/Q          | None       | SLICE_X41Y103/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs42/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs42/fc/mtc/output_clock - Static -
+| 35       | FDRE/Q          | None       | SLICE_X6Y104/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs44/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs44/fc/mtc/output_clock - Static -
+| 36       | FDRE/Q          | None       | SLICE_X32Y113/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs45/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs45/fc/mtc/output_clock - Static -
+| 37       | FDRE/Q          | None       | SLICE_X56Y124/BFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs46/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs46/fc/mtc/output_clock - Static -
+| 38       | FDRE/Q          | None       | SLICE_X17Y125/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs47/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs47/fc/mtc/output_clock - Static -
+| 39       | FDRE/Q          | None       | SLICE_X28Y136/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs48/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs48/fc/mtc/output_clock - Static -
+| 40       | FDRE/Q          | None       | SLICE_X9Y138/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs49/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs49/fc/mtc/output_clock - Static -
+| 41       | FDRE/Q          | None       | SLICE_X21Y110/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs5/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs5/fc/mtc/output_clock  - Static -
+| 42       | FDRE/Q          | None       | SLICE_X19Y130/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs50/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs50/fc/mtc/output_clock - Static -
+| 43       | FDRE/Q          | None       | SLICE_X5Y128/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs51/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs51/fc/mtc/output_clock - Static -
+| 44       | FDRE/Q          | None       | SLICE_X36Y94/AFF  | X1Y1         |          16 |               1 |              |       | ts/t2/gs52/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs52/fc/mtc/output_clock - Static -
+| 45       | FDRE/Q          | None       | SLICE_X3Y117/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs53/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs53/fc/mtc/output_clock - Static -
+| 46       | FDRE/Q          | None       | SLICE_X31Y99/AFF  | X0Y1         |          16 |               1 |              |       | ts/t2/gs54/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs54/fc/mtc/output_clock - Static -
+| 47       | FDRE/Q          | None       | SLICE_X3Y105/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs56/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs56/fc/mtc/output_clock - Static -
+| 48       | FDRE/Q          | None       | SLICE_X26Y106/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs57/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs57/fc/mtc/output_clock - Static -
+| 49       | FDRE/Q          | None       | SLICE_X55Y128/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs58/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs58/fc/mtc/output_clock - Static -
+| 50       | FDRE/Q          | None       | SLICE_X23Y123/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs59/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs59/fc/mtc/output_clock - Static -
+| 51       | FDRE/Q          | None       | SLICE_X24Y103/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs6/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs6/fc/mtc/output_clock  - Static -
+| 52       | FDRE/Q          | None       | SLICE_X17Y135/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs60/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs60/fc/mtc/output_clock - Static -
+| 53       | FDRE/Q          | None       | SLICE_X8Y134/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs61/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs61/fc/mtc/output_clock - Static -
+| 54       | FDRE/Q          | None       | SLICE_X19Y130/BFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs62/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs62/fc/mtc/output_clock - Static -
+| 55       | FDRE/Q          | None       | SLICE_X0Y131/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs63/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs63/fc/mtc/output_clock - Static -
+| 56       | FDRE/Q          | None       | SLICE_X29Y99/AFF  | X0Y1         |          16 |               1 |              |       | ts/t2/gs64/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs64/fc/mtc/output_clock - Static -
+| 57       | FDRE/Q          | None       | SLICE_X5Y127/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs65/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs65/fc/mtc/output_clock - Static -
+| 58       | FDRE/Q          | None       | SLICE_X41Y103/BFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs66/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs66/fc/mtc/output_clock - Static -
+| 59       | FDRE/Q          | None       | SLICE_X3Y99/AFF   | X0Y1         |          16 |               1 |              |       | ts/t2/gs68/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs68/fc/mtc/output_clock - Static -
+| 60       | FDRE/Q          | None       | SLICE_X33Y102/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs69/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs69/fc/mtc/output_clock - Static -
+| 61       | FDRE/Q          | None       | SLICE_X53Y125/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs70/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs70/fc/mtc/output_clock - Static -
+| 62       | FDRE/Q          | None       | SLICE_X16Y130/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs71/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs71/fc/mtc/output_clock - Static -
+| 63       | FDRE/Q          | None       | SLICE_X42Y138/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs72/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs72/fc/mtc/output_clock - Static -
+| 64       | FDRE/Q          | None       | SLICE_X25Y140/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs73/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs73/fc/mtc/output_clock - Static -
+| 65       | FDRE/Q          | None       | SLICE_X14Y128/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs74/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs74/fc/mtc/output_clock - Static -
+| 66       | FDRE/Q          | None       | SLICE_X5Y129/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs75/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs75/fc/mtc/output_clock - Static -
+| 67       | FDRE/Q          | None       | SLICE_X29Y99/BFF  | X0Y1         |          16 |               1 |              |       | ts/t2/gs76/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs76/fc/mtc/output_clock - Static -
+| 68       | FDRE/Q          | None       | SLICE_X9Y119/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs77/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs77/fc/mtc/output_clock - Static -
+| 69       | FDRE/Q          | None       | SLICE_X29Y99/CFF  | X0Y1         |          16 |               1 |              |       | ts/t2/gs78/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs78/fc/mtc/output_clock - Static -
+| 70       | FDRE/Q          | None       | SLICE_X9Y109/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs8/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs8/fc/mtc/output_clock  - Static -
+| 71       | FDRE/Q          | None       | SLICE_X4Y103/AFF  | X0Y2         |          16 |               1 |              |       | ts/t2/gs80/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs80/fc/mtc/output_clock - Static -
+| 72       | FDRE/Q          | None       | SLICE_X27Y110/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs81/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs81/fc/mtc/output_clock - Static -
+| 73       | FDRE/Q          | None       | SLICE_X42Y129/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs82/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs82/fc/mtc/output_clock - Static -
+| 74       | FDRE/Q          | None       | SLICE_X20Y122/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs83/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs83/fc/mtc/output_clock - Static -
+| 75       | FDRE/Q          | None       | SLICE_X44Y137/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs84/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs84/fc/mtc/output_clock - Static -
+| 76       | FDRE/Q          | None       | SLICE_X15Y134/AFF | X0Y2         |          16 |               1 |              |       | ts/t2/gs85/fc/mtc/OUTPUT_CLOCK_reg/Q         | ts/t2/gs85/fc/mtc/output_clock - Static -
+| 77       | FDRE/Q          | None       | SLICE_X38Y122/AFF | X1Y2         |          16 |               1 |              |       | ts/t2/gs9/fc/mtc/OUTPUT_CLOCK_reg/Q          | ts/t2/gs9/fc/mtc/output_clock  - Static -
+| 78       | FDRE/Q          | None       | SLICE_X15Y77/CFF  | X0Y1         |          13 |               1 |              |       | ts/cc3b20k/mtc/OUTPUT_CLOCK_reg/Q            | ts/cc3b20k/mtc/clk_20k3b       - Static -
+| 79       | FDRE/Q          | None       | SLICE_X1Y84/AFF   | X0Y1         |          13 |               1 |              |       | ts/cc3b30k/mtc/OUTPUT_CLOCK_reg/Q            | ts/cc3b30k/mtc/clk_30k3b       - Static -
+| 80       | FDRE/Q          | None       | SLICE_X5Y86/CFF   | X0Y1         |          13 |               1 |              |       | ts/cc3b50k/mtc/OUTPUT_CLOCK_reg/Q            | ts/cc3b50k/mtc/clk_50k3b       - Static -
+| 81       | FDRE/Q          | None       | SLICE_X57Y114/AFF | X1Y2         |          12 |              17 |              |       | cc20k/mtc/OUTPUT_CLOCK_reg/Q                 | cc20k/mtc/J_MIC3_Pin1_OBUF     - Static -
+| 82       | FDRE/Q          | None       | SLICE_X65Y96/AFF  | X1Y1         |          12 |               1 |              |       | fc0/mtc/OUTPUT_CLOCK_reg/Q                   | fc0/mtc/slow_clock             - Static -
+| 83       | FDRE/Q          | None       | SLICE_X32Y65/AFF  | X0Y1         |          12 |               1 |              |       | ts/mpo/ccview/mtc/OUTPUT_CLOCK_reg/Q         | ts/mpo/ccview/mtc/CLK          - Static -
+| 84       | FDRE/Q          | None       | SLICE_X46Y54/AFF  | X1Y1         |          12 |               1 |              |       | ts/mpt/ah2/cc2b100h/mtc/OUTPUT_CLOCK_reg/Q   | ts/mpt/ah2/cc2b100h/mtc/CLK    - Static -
+| 85       | FDRE/Q          | None       | SLICE_X36Y61/AFF  | X1Y1         |          12 |               1 |              |       | ts/mpt/al2/cc2b100l/mtc/OUTPUT_CLOCK_reg/Q   | ts/mpt/al2/cc2b100l/mtc/CLK    - Static -
+| 86       | FDRE/Q          | None       | SLICE_X57Y128/AFF | X1Y2         |          12 |               2 |              |       | u1/sclk_reg/Q                                | u1/J_MIC3_Pin4_OBUF            - Static -
+| 87       | FDRE/Q          | None       | SLICE_X41Y61/AFF  | X1Y1         |           6 |               1 |              |       | ts/mpt/ao2/cc2b300off/mtc/OUTPUT_CLOCK_reg/Q | ts/mpt/ao2/cc2b300off/mtc/CLK  - Static -
+| 88       | FDRE/Q          | None       | SLICE_X37Y52/AFF  | X1Y1         |           4 |               1 |              |       | ts/t2/fc1/mtc/OUTPUT_CLOCK_reg/Q             | ts/t2/fc1/mtc/slow_clock       - Static -
+| 89       | FDRE/Q          | None       | SLICE_X10Y44/AFF  | X0Y0         |           4 |               1 |              |       | ts/t3/circ/fc1/mtc/OUTPUT_CLOCK_reg/Q        | ts/t3/circ/fc1/mtc/slow_clock  - Static -
+| 90       | FDRE/Q          | None       | SLICE_X6Y117/AFF  | X0Y2         |           1 |               1 |              |       | cc2/mtc/OUTPUT_CLOCK_reg/Q                   | cc2/mtc/clk_50M                - Static -
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------+--------------------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
@@ -188,12 +199,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   94 |  1200 |   80 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  135 |  1500 |   33 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  503 |  1200 |  224 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  503 |  1500 |  137 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2186 |  1800 |  567 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 | 1366 |   950 |  479 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
+| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  183 |  1200 |   69 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   48 |  1500 |   44 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  771 |  1200 |  414 |   400 |    0 |    20 |    6 |    10 |    0 |    20 |
+| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  523 |  1500 |  464 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2592 |  1800 |  643 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 | 1052 |   950 |  475 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -205,8 +216,8 @@ All Modules
 +----+----+----+
 |    | X0 | X1 |
 +----+----+----+
-| Y2 |  1 |  1 |
-| Y1 |  4 |  4 |
+| Y2 |  3 |  3 |
+| Y1 |  5 |  5 |
 | Y0 |  1 |  1 |
 +----+----+----+
 
@@ -217,7 +228,7 @@ All Modules
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock       | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net           |
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
-| g0        | BUFG/O          | n/a               | sys_clk_pin |      10.000 | {0.000 5.000} |        3248 |        0 |              0 |        0 | CLK_IBUF_BUFG |
+| g0        | BUFG/O          | n/a               | sys_clk_pin |      10.000 | {0.000 5.000} |        3380 |        0 |              0 |        0 | CLK_IBUF_BUFG |
 +-----------+-----------------+-------------------+-------------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -228,33 +239,33 @@ All Modules
 +----+-------+------+
 |    | X0    | X1   |
 +----+-------+------+
-| Y2 |  1576 |  810 |
-| Y1 |   299 |  334 |
-| Y0 |    94 |  135 |
+| Y2 |  1684 |  646 |
+| Y1 |   506 |  315 |
+| Y0 |   181 |   48 |
 +----+-------+------+
 
 
 8. Device Cell Placement Summary for Global Clock g1
 ----------------------------------------------------
 
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
-| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                |
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
-| g1        | BUFG/O          | n/a               |       |             |               |          68 |        0 |              0 |        0 | mpt/ah2/clk_20k2bh |
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net        |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------------+
+| g1        | BUFG/O          | n/a               |       |             |               |         984 |        0 |              0 |        0 | t3/clk_10k |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
 *** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-----+-----+
-|    | X0  | X1  |
-+----+-----+-----+
-| Y2 |   0 |   0 |
-| Y1 |  51 |  17 |
-| Y0 |   0 |   0 |
-+----+-----+-----+
++----+------+------+
+|    | X0   | X1   |
++----+------+------+
+| Y2 |  122 |  252 |
+| Y1 |  272 |  338 |
+| Y0 |    0 |    0 |
++----+------+------+
 
 
 9. Device Cell Placement Summary for Global Clock g2
@@ -263,31 +274,8 @@ All Modules
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
-| g2        | BUFG/O          | n/a               |       |             |               |          67 |        0 |              0 |        0 | mpt/al2/clk_20k2bl |
+| g2        | BUFG/O          | n/a               |       |             |               |          84 |        0 |              0 |        0 | t3/circ/slower_clk |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
-* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
-** IO Loads column represents load cell count of IO types
-*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
-**** GT Loads column represents load cell count of GT types
-
-
-+----+-----+-----+
-|    | X0  | X1  |
-+----+-----+-----+
-| Y2 |   0 |   0 |
-| Y1 |  42 |  25 |
-| Y0 |   0 |   0 |
-+----+-----+-----+
-
-
-10. Device Cell Placement Summary for Global Clock g3
------------------------------------------------------
-
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+----------------+
-| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net            |
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+----------------+
-| g3        | BUFG/O          | n/a               |       |             |               |          32 |        0 |              0 |        0 | n_0_12237_BUFG |
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+----------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
 *** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
@@ -298,18 +286,110 @@ All Modules
 |    | X0  | X1 |
 +----+-----+----+
 | Y2 |   0 |  0 |
-| Y1 |  32 |  0 |
+| Y1 |  84 |  0 |
 | Y0 |   0 |  0 |
 +----+-----+----+
+
+
+10. Device Cell Placement Summary for Global Clock g3
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
+| g3        | BUFG/O          | n/a               |       |             |               |          68 |        0 |              0 |        0 | mpt/ah2/clk_20k2bh |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
+* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+-----+
+|    | X0 | X1  |
++----+----+-----+
+| Y2 |  0 |   0 |
+| Y1 |  0 |  68 |
+| Y0 |  0 |   0 |
++----+----+-----+
 
 
 11. Device Cell Placement Summary for Global Clock g4
 -----------------------------------------------------
 
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
+| g4        | BUFG/O          | n/a               |       |             |               |          67 |        0 |              0 |        0 | mpt/al2/clk_20k2bl |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+--------------------+
+* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-----+-----+
+|    | X0  | X1  |
++----+-----+-----+
+| Y2 |   0 |   0 |
+| Y1 |  32 |  35 |
+| Y0 |   0 |   0 |
++----+-----+-----+
+
+
+12. Device Cell Placement Summary for Global Clock g5
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net               |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-------------------+
+| g5        | BUFG/O          | n/a               |       |             |               |          64 |        0 |              0 |        0 | circn_0_8384_BUFG |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-------------------+
+* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-----+----+
+|    | X0  | X1 |
++----+-----+----+
+| Y2 |   0 |  0 |
+| Y1 |  64 |  0 |
+| Y0 |   0 |  0 |
++----+-----+----+
+
+
+13. Device Cell Placement Summary for Global Clock g6
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net              |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------------------+
+| g6        | BUFG/O          | n/a               |       |             |               |          64 |        0 |              0 |        0 | tsn_0_15207_BUFG |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------------------+
+* Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+-----+-----+
+|    | X0  | X1  |
++----+-----+-----+
+| Y2 |  24 |  40 |
+| Y1 |   0 |   0 |
+| Y0 |   0 |   0 |
++----+-----+-----+
+
+
+14. Device Cell Placement Summary for Global Clock g7
+-----------------------------------------------------
+
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                 |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------------+
-| g4        | BUFG/O          | n/a               |       |             |               |          31 |        0 |              0 |        0 | ex/game_speed_inter |
+| g7        | BUFG/O          | n/a               |       |             |               |          31 |        0 |              0 |        0 | ex/game_speed_inter |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -326,85 +406,91 @@ All Modules
 +----+----+-----+
 
 
-12. Clock Region Cell Placement per Global Clock: Region X0Y0
+15. Clock Region Cell Placement per Global Clock: Region X0Y0
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
+| g0        | n/a   | BUFG/O          | None       |         181 |               0 | 181 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+16. Clock Region Cell Placement per Global Clock: Region X1Y0
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |          94 |               0 | 94 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG |
+| g0        | n/a   | BUFG/O          | None       |          48 |               0 | 48 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-13. Clock Region Cell Placement per Global Clock: Region X1Y0
--------------------------------------------------------------
-
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |         135 |               0 | 135 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-* Clock Loads column represents the clock pin loads (pin count)
-** Non-Clock Loads column represents the non-clock pin loads (pin count)
-*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
-
-
-14. Clock Region Cell Placement per Global Clock: Region X0Y1
+17. Clock Region Cell Placement per Global Clock: Region X0Y1
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------+
-| g0        | n/a   | BUFG/O          | None       |         299 |               0 | 299 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG      |
-| g1        | n/a   | BUFG/O          | None       |          51 |               0 |  51 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mpt/ah2/clk_20k2bh |
-| g2        | n/a   | BUFG/O          | None       |          42 |               0 |  42 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mpt/al2/clk_20k2bl |
-| g3        | n/a   | BUFG/O          | None       |          32 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | n_0_12237_BUFG     |
+| g0        | n/a   | BUFG/O          | None       |         506 |               0 | 506 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG      |
+| g1        | n/a   | BUFG/O          | None       |         272 |               0 |  26 |    246 |    0 |   0 |  0 |    0 |   0 |       0 | t3/clk_10k         |
+| g2        | n/a   | BUFG/O          | None       |          84 |               0 |  78 |      0 |    6 |   0 |  0 |    0 |   0 |       0 | t3/circ/slower_clk |
+| g4        | n/a   | BUFG/O          | None       |          32 |               0 |  32 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mpt/al2/clk_20k2bl |
+| g5        | n/a   | BUFG/O          | None       |          64 |               0 |  64 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | circn_0_8384_BUFG  |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+--------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-15. Clock Region Cell Placement per Global Clock: Region X1Y1
+18. Clock Region Cell Placement per Global Clock: Region X1Y1
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------+
-| g0        | n/a   | BUFG/O          | None       |         334 |               0 | 334 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG       |
-| g1        | n/a   | BUFG/O          | None       |          17 |               0 |  17 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mpt/ah2/clk_20k2bh  |
-| g2        | n/a   | BUFG/O          | None       |          25 |               0 |  25 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mpt/al2/clk_20k2bl  |
-| g4        | n/a   | BUFG/O          | None       |          31 |               0 |  31 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | ex/game_speed_inter |
+| g0        | n/a   | BUFG/O          | None       |         315 |               0 | 315 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG       |
+| g1        | n/a   | BUFG/O          | None       |         338 |               0 |   4 |    334 |    0 |   0 |  0 |    0 |   0 |       0 | t3/clk_10k          |
+| g3        | n/a   | BUFG/O          | None       |          68 |               0 |  68 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mpt/ah2/clk_20k2bh  |
+| g4        | n/a   | BUFG/O          | None       |          35 |               0 |  35 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | mpt/al2/clk_20k2bl  |
+| g7        | n/a   | BUFG/O          | None       |          31 |               0 |  31 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | ex/game_speed_inter |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-16. Clock Region Cell Placement per Global Clock: Region X0Y2
+19. Clock Region Cell Placement per Global Clock: Region X0Y2
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |        1576 |               0 | 1576 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net              |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------+
+| g0        | n/a   | BUFG/O          | None       |        1684 |               0 | 1684 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG    |
+| g1        | n/a   | BUFG/O          | None       |         122 |               0 |    2 |    120 |    0 |   0 |  0 |    0 |   0 |       0 | t3/clk_10k       |
+| g6        | n/a   | BUFG/O          | None       |          24 |               0 |   24 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | tsn_0_15207_BUFG |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-17. Clock Region Cell Placement per Global Clock: Region X1Y2
+20. Clock Region Cell Placement per Global Clock: Region X1Y2
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |         810 |               0 | 810 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net              |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+------------------+
+| g0        | n/a   | BUFG/O          | None       |         646 |               0 | 646 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | CLK_IBUF_BUFG    |
+| g1        | n/a   | BUFG/O          | None       |         252 |               0 |   4 |    248 |    0 |   0 |  0 |    0 |   0 |       0 | t3/clk_10k       |
+| g6        | n/a   | BUFG/O          | None       |          40 |               0 |  40 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | tsn_0_15207_BUFG |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -412,10 +498,13 @@ All Modules
 
 
 # Location of BUFG Primitives 
-set_property LOC BUFGCTRL_X0Y3 [get_cells n_0_12237_BUFG_inst]
-set_property LOC BUFGCTRL_X0Y2 [get_cells FINAL_MIC_l_reg[11]_i_3]
-set_property LOC BUFGCTRL_X0Y1 [get_cells FINAL_MIC_h_reg[11]_i_3]
-set_property LOC BUFGCTRL_X0Y4 [get_cells score_holder_reg[0]_i_4]
+set_property LOC BUFGCTRL_X0Y6 [get_cells tsn_0_15207_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y1 [get_cells inter_output_reg[11]_i_2]
+set_property LOC BUFGCTRL_X0Y2 [get_cells fifo_reg_0_i_1]
+set_property LOC BUFGCTRL_X0Y4 [get_cells FINAL_MIC_l_reg[11]_i_3]
+set_property LOC BUFGCTRL_X0Y3 [get_cells FINAL_MIC_h_reg[11]_i_3]
+set_property LOC BUFGCTRL_X0Y7 [get_cells score_holder_reg[0]_i_4]
+set_property LOC BUFGCTRL_X0Y5 [get_cells circn_0_8384_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y0 [get_cells CLK_IBUF_BUFG_inst]
 
 # Location of IO Primitives which is load of clock spine
@@ -423,32 +512,53 @@ set_property LOC BUFGCTRL_X0Y0 [get_cells CLK_IBUF_BUFG_inst]
 # Location of clock ports
 set_property LOC IOB_X1Y26 [get_ports CLK]
 
-# Clock net "n_0_12237_BUFG" driven by instance "n_0_12237_BUFG_inst" located at site "BUFGCTRL_X0Y3"
+# Clock net "tsn_0_15207_BUFG" driven by instance "tsn_0_15207_BUFG_inst" located at site "BUFGCTRL_X0Y6"
 #startgroup
-create_pblock {CLKAG_n_0_12237_BUFG}
-add_cells_to_pblock [get_pblocks  {CLKAG_n_0_12237_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_0_12237_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_n_0_12237_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+create_pblock {CLKAG_tsn_0_15207_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_tsn_0_15207_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="tsn_0_15207_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_tsn_0_15207_BUFG}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
-# Clock net "mpt/al2/clk_20k2bl" driven by instance "FINAL_MIC_l_reg[11]_i_3" located at site "BUFGCTRL_X0Y2"
+# Clock net "t3/clk_10k" driven by instance "inter_output_reg[11]_i_2" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_t3/clk_10k}
+add_cells_to_pblock [get_pblocks  {CLKAG_t3/clk_10k}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="t3/clk_10k"}]]]
+resize_pblock [get_pblocks {CLKAG_t3/clk_10k}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "t3/circ/slower_clk" driven by instance "fifo_reg_0_i_1" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock {CLKAG_t3/circ/slower_clk}
+add_cells_to_pblock [get_pblocks  {CLKAG_t3/circ/slower_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="t3/circ/slower_clk"}]]]
+resize_pblock [get_pblocks {CLKAG_t3/circ/slower_clk}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "mpt/al2/clk_20k2bl" driven by instance "FINAL_MIC_l_reg[11]_i_3" located at site "BUFGCTRL_X0Y4"
 #startgroup
 create_pblock {CLKAG_mpt/al2/clk_20k2bl}
 add_cells_to_pblock [get_pblocks  {CLKAG_mpt/al2/clk_20k2bl}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mpt/al2/clk_20k2bl"}]]]
 resize_pblock [get_pblocks {CLKAG_mpt/al2/clk_20k2bl}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "mpt/ah2/clk_20k2bh" driven by instance "FINAL_MIC_h_reg[11]_i_3" located at site "BUFGCTRL_X0Y1"
+# Clock net "mpt/ah2/clk_20k2bh" driven by instance "FINAL_MIC_h_reg[11]_i_3" located at site "BUFGCTRL_X0Y3"
 #startgroup
 create_pblock {CLKAG_mpt/ah2/clk_20k2bh}
 add_cells_to_pblock [get_pblocks  {CLKAG_mpt/ah2/clk_20k2bh}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mpt/ah2/clk_20k2bh"}]]]
-resize_pblock [get_pblocks {CLKAG_mpt/ah2/clk_20k2bh}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_mpt/ah2/clk_20k2bh}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "ex/game_speed_inter" driven by instance "score_holder_reg[0]_i_4" located at site "BUFGCTRL_X0Y4"
+# Clock net "ex/game_speed_inter" driven by instance "score_holder_reg[0]_i_4" located at site "BUFGCTRL_X0Y7"
 #startgroup
 create_pblock {CLKAG_ex/game_speed_inter}
 add_cells_to_pblock [get_pblocks  {CLKAG_ex/game_speed_inter}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex/game_speed_inter"}]]]
 resize_pblock [get_pblocks {CLKAG_ex/game_speed_inter}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "circn_0_8384_BUFG" driven by instance "circn_0_8384_BUFG_inst" located at site "BUFGCTRL_X0Y5"
+#startgroup
+create_pblock {CLKAG_circn_0_8384_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_circn_0_8384_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="circn_0_8384_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_circn_0_8384_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
 #endgroup
 
 # Clock net "CLK_IBUF_BUFG" driven by instance "CLK_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y0"
