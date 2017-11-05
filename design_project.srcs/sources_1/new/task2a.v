@@ -24,6 +24,7 @@ module task2a(
     input CLK,
     input [11:0] sw,
     input [4:0] btn,
+    input [3:0] outside_state,
     output [15:0] led,
     output [3:0] an,
     output [6:0] seg,
@@ -41,7 +42,7 @@ module task2a(
                     C6, CS6, D6, DS6, E6, F6, FS6, G6, GS6, B6, A6, AS6,
                     C7, CS7, D7, DS7, E7, F7, FS7, G7, GS7, B7, A7, AS7;
         
-        integer state = 3;
+        integer state = 0;
 
 //        wire [11:0] NOTE_B0 = 31; generateSine gs1 (NOTE_B0, CLK, B0); 
         wire [11:0] NOTE_C1 = 33; generateSine gs2 (NOTE_C1, CLK, C1);
@@ -226,7 +227,7 @@ module task2a(
                     active_octave[10] = AS6;
                     active_octave[11] = B6;
                 end 7 : begin
-                    display = 3;
+                    display = 7;
                     active_octave[0] = C7;
                     active_octave[1] = CS7;
                     active_octave[2] = D7;
@@ -240,7 +241,7 @@ module task2a(
                     active_octave[10] = AS7;
                     active_octave[11] = B7;                    
                 end default : begin
-                    display = 0000;
+                    display = 0;
                     active_octave[0] = 0;
                     active_octave[1] = 0;
                     active_octave[2] = 0;
@@ -257,13 +258,27 @@ module task2a(
             endcase
         end
         
-        always @(btn) begin
-            if (btn[1]) begin
-                state <= state == 7? 7 : state + 1;
-            end else if (btn[4]) begin
-                state <= state == 0? 0 : state - 1;
+        ///////////////////////////////////////////////////////////
+        
+        // Controls button press
+        wire slow_clock;
+        wire up;
+        wire down;
+        FlexiClock fc1 (4, CLK, slow_clock);
+        debounce db1 (btn[1], slow_clock, up);
+        debounce db2 (btn[4], slow_clock, down);
+
+        always @(posedge slow_clock) begin
+            if (up && !down && (outside_state == 4'b0010)) begin
+                state <= (state + 1 > 7) ? 7 : state + 1;
             end 
+            
+            if (down && !up && (outside_state == 4'b0010)) begin
+                state <= (state - 1 < 0) ? 0 : state - 1;
+            end
         end
+        
+        ///////////////////////////////////////////////////////////
         
         always @(posedge CLK) begin
             inter = 0;  
@@ -288,7 +303,7 @@ module task2a(
             end
             
             if (sw[5]) begin
-                inter = inter + active_octave[2];  
+                inter = inter + active_octave[5];  
             end
             
             if (sw[6]) begin

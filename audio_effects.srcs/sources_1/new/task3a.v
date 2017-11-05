@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/24/2017 03:20:46 PM
+// Create Date: 04.11.2017 02:50:27
 // Design Name: 
-// Module Name: Task3A
+// Module Name: task3a
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -22,24 +22,46 @@
 
 module task3a(
     input [11:0] IN,
-    input clk, // assume 100Hz
-    output [11:0] OUT
+    input CLK,
+    input switch,
+    input [4:0] btn,
+    input [3:0] outside_state,
+    output [11:0] OUT,
+    output [3:0] an,
+    output [6:0] seg
     );
     
-    // for clk duration is 1/100000 seconds, we need 0.25 * 100000 ticks 
-    localparam N = 25000; //N represents size of buffer
+    wire [11:0] default_output;
+    wire [11:0] circular_output;
+    wire [3:0] circular_an;
+    wire [6:0] circular_seg;
     
-    reg [11:0] fifo [0:N-1];
-    integer i;
+    wire clk_10k;
+    FlexiClock fc0 (10000, CLK, clk_10k);
     
-    always @(posedge clk) begin
-        fifo[0] = IN; // push new value to fifo
-        // push all values 1 step
-        for (i=1; i<=N-1; i=i+1) begin
-            fifo[i] <= fifo[i-1];
+    task3a_default df (IN, clk_10k, default_output);
+    task3a_circular circ (IN, CLK, btn, outside_state, circular_output, circular_an, circular_seg);
+    
+    reg [11:0] inter_output;
+    reg [3:0] inter_an;
+    reg [6:0] inter_seg;
+    
+    always @(posedge CLK) begin
+        if (switch) begin
+            inter_output <= circular_output;
+            inter_an <= circular_an;
+            inter_seg <= circular_seg;
+        end else begin
+            inter_output <= default_output;
+            inter_an <= 4'b1111;
+            inter_seg <= 7'b1111111;
         end
-    end    
+    end
     
-    assign OUT = fifo[N-1];
+    assign OUT = inter_output;
+    assign an = inter_an;
+    assign seg = inter_seg;
     
+    
+        
 endmodule

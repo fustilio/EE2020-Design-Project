@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Nov  4 04:44:25 2017">
+<application name="pa" timeStamp="Sun Nov 05 19:51:09 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="acadfe7f50e84362a297cd021fc1f852" type="ProjectID"/>
-<property name="ProjectIteration" value="77" type="ProjectIteration"/>
+<property name="ProjectIteration" value="161" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,60 +17,33 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="11" type="JavaHandler"/>
-<property name="AutoConnectTarget" value="28" type="JavaHandler"/>
+<property name="AddSources" value="26" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="59" type="JavaHandler"/>
 <property name="CloseProject" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="7" type="JavaHandler"/>
-<property name="EditUndo" value="54" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="63" type="JavaHandler"/>
+<property name="EditConstraintSets" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="12" type="JavaHandler"/>
+<property name="EditPaste" value="2" type="JavaHandler"/>
+<property name="EditRedo" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="127" type="JavaHandler"/>
+<property name="LaunchOpenTarget" value="1" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="124" type="JavaHandler"/>
 <property name="NewProject" value="3" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="91" type="JavaHandler"/>
-<property name="OpenProject" value="4" type="JavaHandler"/>
-<property name="OpenRecentTarget" value="32" type="JavaHandler"/>
-<property name="ProgramDevice" value="68" type="JavaHandler"/>
-<property name="RunBitgen" value="76" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="10" type="JavaHandler"/>
-<property name="ShowView" value="9" type="JavaHandler"/>
-<property name="ToggleViewNavigator" value="1" type="JavaHandler"/>
-<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="187" type="JavaHandler"/>
+<property name="OpenProject" value="3" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="71" type="JavaHandler"/>
+<property name="ProgramDevice" value="136" type="JavaHandler"/>
+<property name="RecustomizeCore" value="2" type="JavaHandler"/>
+<property name="ResetLayout" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="157" type="JavaHandler"/>
+<property name="RunImplementation" value="4" type="JavaHandler"/>
+<property name="RunSynthesis" value="5" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="33" type="JavaHandler"/>
+<property name="SaveProjectAs" value="2" type="JavaHandler"/>
+<property name="ShowView" value="32" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="4" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="4" type="JavaHandler"/>
 <property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
 <property name="ui.views.b.h.e" value="14" type="JavaHandler"/>
-</item>
-<item name="Gui Handlers">
-<property name="AbstractSearchablePanel_SHOW_SEARCH" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_CANCEL" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="8" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="1" type="GuiHandlerData"/>
-<property name="CmdMsgDialog_OK" value="2" type="GuiHandlerData"/>
-<property name="ConfirmSaveTextEditsDialog_NO" value="1" type="GuiHandlerData"/>
-<property name="CreateSrcFileDialog_FILE_NAME" value="3" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="88" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="4" type="GuiHandlerData"/>
-<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="4" type="GuiHandlerData"/>
-<property name="MainMenuMgr_VIEW" value="4" type="GuiHandlerData"/>
-<property name="MainMenuMgr_WINDOW" value="4" type="GuiHandlerData"/>
-<property name="MainWinMenuMgr_LAYOUT" value="8" type="GuiHandlerData"/>
-<property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_ADD_SOURCES" value="4" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="8" type="GuiHandlerData"/>
-<property name="PACommandNames_OPEN_PROJECT" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_TOGGLE_VIEW_NAV" value="1" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="2" type="GuiHandlerData"/>
-<property name="PlanAheadTab_SHOW_FLOW_NAVIGATOR" value="1" type="GuiHandlerData"/>
-<property name="RDICommands_DELETE" value="1" type="GuiHandlerData"/>
-<property name="RemoveSourcesDialog_ALSO_DELETE" value="1" type="GuiHandlerData"/>
-<property name="ReportIPStatusInfoDialog_IGNORE" value="1" type="GuiHandlerData"/>
-<property name="SrcChooserPanel_CREATE_FILE" value="3" type="GuiHandlerData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="11" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="1" type="GuiHandlerData"/>
-<property name="UpgradeProjectDialog_AUTOMATICALLY_UPGRADE_TO_CURRENT" value="1" type="GuiHandlerData"/>
-<property name="UpgradeProjectDialog_OPEN_PROJECT_IN_READ_ONLY_MODE" value="1" type="GuiHandlerData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="31" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="16" type="TclMode"/>
 </item>
 </section>
 </application>

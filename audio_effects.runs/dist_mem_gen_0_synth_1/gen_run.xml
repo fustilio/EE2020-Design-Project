@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="dist_mem_gen_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1509713594">
+<GenRun Id="dist_mem_gen_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1509880014">
   <File Type="PA-TCL" Name="dist_mem_gen_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="dist_mem_gen_0_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="dist_mem_gen_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="dist_mem_gen_0.vds"/>
   <File Type="RDS-UTIL" Name="dist_mem_gen_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="dist_mem_gen_0_utilization_synth.pb"/>
@@ -12,6 +11,8 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dist_mem_gen_0">
     <File Path="$PSRCDIR/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1509714318"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -25,6 +26,8 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dist_mem_gen_0">
     <File Path="$PSRCDIR/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1509714318"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

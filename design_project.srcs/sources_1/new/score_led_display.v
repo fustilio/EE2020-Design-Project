@@ -28,9 +28,17 @@ module score_led_display(
     output [15:0]led_e
     );
     
-    assign led_e[3:0] = fourth_score;
-    assign led_e[7:4] = third_score;
-    assign led_e[11:8] = second_score;
-    assign led_e[15:12] = first_score;
+    assign led_e[3:0] = (fourth_score >= 8) ? 8 : fourth_score;
+    assign led_e[7:4] = (third_score >= 8) ? 8 : third_score;
+    assign led_e[11:8] = (second_score >= 8) ? 8 : second_score;
+    assign led_e[15:12] = (first_score >= 8) ? 8 : first_score;
     
+endmodule
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module source_led_display(
+
+    );
 endmodule

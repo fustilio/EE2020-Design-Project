@@ -1,0 +1,178 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 10288
+
+Current time: 	11/5/17 7:51:00 PM SGT
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 8.1
+Version: 6.3
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Jeremylsw
+User home directory: C:/Users/s9539968a
+User working directory: C:/Users/s9539968a/Desktop/Design_project
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/s9539968a/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/s9539968a/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	197 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 458 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\s9539968a\Desktop\Design_project\audio_effects.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 37 MB (+36831kb) [00:00:05]
+// [Engine Memory]: 407 MB (+275806kb) [00:00:05]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 67 MB (+29011kb) [00:00:05]
+// [Engine Memory]: 453 MB (+26500kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/s9539968a/Desktop/Design_project/audio_effects.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/s9539968a/Downloads/NUS_FreshmenOweekTelegramBot-master' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 473 MB. GUI used memory: 31 MB. Current time: 11/5/17 7:51:01 PM SGT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: audio_effects; location: C:/Users/s9539968a/Desktop/Design_project; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 736.418 ; gain = 91.539 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// [Engine Memory]: 479 MB (+2785kb) [00:00:10]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov 05 19:51:09 2017] Launched synth_1... Run output will be captured here: C:/Users/s9539968a/Desktop/Design_project/audio_effects.runs/synth_1/runme.log [Sun Nov 05 19:51:09 2017] Launched impl_1... Run output will be captured here: C:/Users/s9539968a/Desktop/Design_project/audio_effects.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 516 MB (+13933kb) [00:05:35]
+// [GUI Memory]: 72 MB (+1250kb) [00:05:55]
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 530 MB. GUI used memory: 41 MB. Current time: 11/5/17 8:04:32 PM SGT
+// Elapsed time: 1216 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26); // x:Y (w:G, cv:JFrame)
+// [GUI Memory]: 76 MB (+829kb) [00:20:37]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 81 MB (+1469kb) [00:20:40]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bL:g (cv:JFrame):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.2   **** Build date : Jun  2 2016-16:57:03     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// Tcl Message: open_hw_target 
+// Tcl Message: ERROR: [Labtoolstcl 44-469] There is no current hw_target. 
+dismissDialog("Auto Connect"); // bL:g (cv:JFrame)
+// [Engine Memory]: 544 MB (+2114kb) [00:20:43]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 26, true); // x:Y (w:G, cv:JFrame) - Node
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// [Engine Memory]: 628 MB (+60018kb) [00:20:48]
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 47 MB. Current time: 11/5/17 8:11:42 PM SGT
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager]", 26); // x:Y (w:G, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/s9539968a/Desktop/Design_project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit"); // aq:ao (ap:JPanel, aW:ak)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/s9539968a/Desktop/Design_project/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// [GUI Memory]: 85 MB (+22kb) [00:21:56]
+// Elapsed time: 107 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cv:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 

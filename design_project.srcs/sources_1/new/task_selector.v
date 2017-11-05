@@ -29,7 +29,9 @@ module task_selector(
     output [3:0] an_selected,
     output [6:0] seg_selected,
     output dp_selected,
-    output [11:0] speaker_selected
+    output [11:0] speaker_selected,
+    output [7:0] row,
+    output [3:0] col
     );
     
     parameter TASK_ONE = 4'b0001, TASK_TWO_A = 4'b0010, TASK_TWO_B = 4'b0011,
@@ -43,9 +45,7 @@ module task_selector(
     wire clk_20k3b;
     wire clk_30k3b;
     wire clk_50k3b;
-    wire clk_10k;
-        
-    FlexiClock fc0 (10000, CLK, clk_10k);
+
     FlexiClock cc3b20k(20000,CLK,clk_20k3b);
     FlexiClock cc3b30k(30000,CLK,clk_30k3b);
     FlexiClock cc3b50k(50000,CLK,clk_50k3b);
@@ -69,7 +69,7 @@ module task_selector(
     wire [6:0] seg_2a;
     wire dp_2a;
     wire [11:0] speaker_2a;
-    task2a t2 (CLK, sw_in, btn, led_2a, an_2a, seg_2a, dp_2a, speaker_2a);
+    task2a t2 (CLK, sw_in, btn, state, led_2a, an_2a, seg_2a, dp_2a, speaker_2a);
     
     //Declare lab 2b values and module
     wire [15:0] led_twobout;
@@ -79,7 +79,9 @@ module task_selector(
     
     //Declare lab 3a values and module
     wire [11:0] delayed;
-    task3a t3 (MIC_in, CLK, sw[15], delayed);
+    wire [3:0]an_3a;
+    wire [6:0]seg_3a;
+    task3a t3 (MIC_in, CLK, sw[15], btn, state, delayed, an_3a, seg_3a);
     
     //Declare lab 3b values and module
     wire [11:0] mpthreeOut;
@@ -87,20 +89,19 @@ module task_selector(
     wire [6:0]segthreeb;
     project_3b taskthreeb(CLK, clk_20k3b, clk_30k3b, clk_50k3b, btn, mpthreeOut);
     
-    //Declare extra feature values and module
+    //Declare test function
     wire [3:0]an_extra;
     wire [6:0]seg_extra;
     wire [15:0]led_extra;
     wire [11:0]speaker_extra;
-    project_extra ex(CLK, sw, btn, an_extra, seg_extra, led_extra, speaker_extra);
-   
-   
+    project_extra ex(CLK, sw, btn, an_extra, seg_extra, led_extra, speaker_extra, row, col);
     
     always @(posedge CLK) begin
         case (state)
             TASK_FOUR : begin
                 an_inter <= an_extra;
                 seg_inter <= seg_extra;
+                // Default turns off speaker, LED, dp
                 led_inter <= led_extra;
                 speaker_inter <= speaker_extra;
                 dp_inter <= 1;
@@ -114,8 +115,8 @@ module task_selector(
                 dp_inter <= 1;
             end TASK_THREE_A : begin
                 led_inter <= 0;
-                an_inter <= 15;
-                seg_inter <= 7'b1111111;
+                an_inter <= an_3a;
+                seg_inter <= seg_3a;
                 dp_inter <= 1;
                 speaker_inter <= delayed;
             end TASK_TWO_A : begin
