@@ -9,5 +9,5 @@ The EE2020 Design Project is a Field Gate Programmable Array (FPGA) project cons
 The project was done in Semester 1 AY17/18.
 
 ## Site Map
-[User Guide](www.google.com)
+[User Guide](www.google.com)  
 [Developer Guide](www.google.com)
