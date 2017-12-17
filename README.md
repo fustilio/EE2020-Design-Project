@@ -11,3 +11,6 @@ The project was done in Semester 1 AY17/18.
 ## Site Map
 [User Guide](docs/UserGuide.adoc)  
 [Developer Guide](docs/DeveloperGuide.adoc)
+
+## Acknowledgements
+[Faraz Khan's](http://simplefpga.blogspot.sg/2012/07/seven-segment-led-multiplexing-circuit.html) blogpost on seven-segment
