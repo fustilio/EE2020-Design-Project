@@ -2,5 +2,5 @@
 
 The project is done in teams of two. 
 
-[Francis Lee](https://github.com/fustilio)
-[Jeremy Long](https://github.com/Jeremylsw)
+link:https://github.com/fustilio[Francis Lee]
+link:https://github.com/Jeremylsw[Jeremy Long]
