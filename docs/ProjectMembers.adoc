@@ -1,0 +1,6 @@
+= Project Members
+
+The project is done in teams of two. 
+
+[Francis Lee](https://github.com/fustilio)
+[Jeremy Long](https://github.com/Jeremylsw)
