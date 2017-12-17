@@ -81,8 +81,56 @@ BTNR – Right Button
 
 === Delay
 
+[width="59%",cols="<30%,<30%,<30%",options="header",]
+|=======================================================================
+|Input |Description |Remarks
+
+|SW[2] |Select this switch to activate Task 3A basic feature |Activating this switch activates the basic feature of 0.25s Delay using a simple fixed size buffer
+
+|SW[15] |Select this switch to activate Task 3A enhancement, usage of circular buffer |This mode uses a circular buffer to allow for longer delays.
+
+|BTNU or BTND |While in the circular buffer mode, use these buttons to increase/decrease the delay of the sound. |The buttons actually change the frequency of which the input signal is sampled to overwrite previous values and the frequency for which the data is read as output in the circular buffer, affecting the delay. At the same time, the Seven Segment displays numbers that relate to the frequency that we are changing, allowing the users to know what is the current delay. The maximum delay available is currently 5.0s without much distortion.
+|=======================================================================
+
 === Playback “Hello”
+
+[width="59%",cols="<30%,<30%,<30%",options="header",]
+|=======================================================================
+|Input |Description |Remarks
+
+|SW[0] and SW[2] |Select this switch to activate Task 3B basic feature |Activates 20kHz Hello Voice Playback
+
+|BTND |Select this switch to activate Task 3B enhancement |Activates 30kHz Hello Voice Playback
+
+|BTNU |Select this switch to activate Task 3B enhancement |Activates 50kHz Hello Voice Playback
+
+|BTNC |Pause Button |Pause the Hello Playback regardless of the frequency mode it is at
+
+|=======================================================================
 
 === Extra Feature
 
-=== 
+[width="59%",cols="<30%,<30%,<30%",options="header",]
+|=======================================================================
+|Input |Description |Remarks
+
+|SW[1] and SW[2] |Select this switch to activate Extra Feature |Extra feature is a game which is similar to guitar hero where users have to “hit” the note at the right time to earn points.
+Game starts off with Easy stage
+
+
+|SW[12] – SW[15] |4 Switches for the 4 columns of gameplay area respectively 
+|1)SW[15] “hits” the Left most seven-segment number / LED array +
+2)SW[12] “hits” the right most seven-segment +
+3)Users should “hit” the note when it is about to transition from LED 1 to LED 0
+
+|BTNL |Easy Mode |Restarts the game and activates Easy mode.
+
+|BTND |Normal Mode |Restarts the game and activates Normal mode.
+
+|BTNR |Difficult Mode |Restarts the game and activates Difficult mode.
+
+|BTNC |Pause |Pauses the game and displays score on seven segment.
+
+|BTNU |Reset |Restart the game.
+
+|=======================================================================
