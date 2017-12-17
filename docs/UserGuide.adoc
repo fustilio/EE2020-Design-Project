@@ -2,7 +2,7 @@
 
 == Glossary
 
-The following terms will be used throughout the report:
+The following terms will be used throughout the User Guide:
 SW[0] – Switch 0 (Switch at the far right of the BASYS3 FPGA)
 SW[INDEX] – Switch at the selected Index
 SW[15] – Switch 15 (Switch at the far left of the BASYS3 FPGA)
@@ -14,14 +14,55 @@ BTNR – Right Button
 
 == Features
 
-[width="59%",cols="<10%,<30%,<30%,<30%",options="header",]
+=== Real-time Microphone-Speaker System
+
+[width="59%",cols="<30%,<30%,<30%",options="header",]
 |=======================================================================
-|Feature |Input |Description |Remarks
+|Input |Description |Remarks
 
-|Real-time Microphone-Speaker System |a)PModMic3 +
-b)SW[0] |a)Takes in surrounding sound +
-b)Select this switch to activate Task 1 |a)PmodAMP2 digitizes the audio input signal. +
-b)Input strength is displayed on LED
+|PModMic3 |Takes in surrounding sound |1) PmodAMP2 digitizes the audio input signal. +
+2) Input strength is displayed on LED
 
+|SW[0] |Select this switch to activate Task 1 |-
 
 |=======================================================================
+
+=== Electronic Musical Instrument
+
+[width="59%",cols="<30%,<30%,<30%",options="header",]
+|=======================================================================
+|Input |Description |Remarks
+
+|SW[1] |Select this switch to activate Task 2A |-
+
+|SW[4] – SW[15] |Plays a Note |12 Musical Notes – More than 1 notes can be played at a time
+
+|BTND |Lowers the Octave Level (Min 0) |Range of 7 Octaves. All 12 Notes will produce a different sound at each octave. Octave 0 produces no sound
+
+|BTNU |Raises the Octave Level (Max 7)|-
+
+|=======================================================================
+
+=== Audio Volume Indicator
+
+[width="59%",cols="<30%,<30%,<30%",options="header",]
+|=======================================================================
+|Input |Description |Remarks
+
+|SW[0] and SW[1] |Select this switch to activate Task 2A |-
+
+|BTNC |Activate “OFF” Mode  |Displays “ - - - - “ on seven segment display
+
+|BTNL |Activate “Highest Value” Mode (Peak Value) |Calculates the highest value out of 200 samples and displays the range in which the value falls in on the LED.
+
+|BTNR |Activate “Linked” Mode (Average) |Takes 70% of the previous value and 30% of the input MIC value and displays the range in which the value falls in on the LED.
+
+|=======================================================================
+
+=== Delay
+
+=== Playback “Hello”
+
+=== Extra Feature
+
+=== 
