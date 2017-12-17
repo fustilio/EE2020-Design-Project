@@ -2,7 +2,7 @@
 
 == Glossary
 
-The following terms will be used throughout the User Guide: +
+*The following terms will be used throughout the User Guide:* +
 SW[0] – Switch 0 (Switch at the far right of the BASYS3 FPGA) +
 SW[INDEX] – Switch at the selected Index +
 SW[15] – Switch 15 (Switch at the far left of the BASYS3 FPGA) +
