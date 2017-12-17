@@ -1,1 +1,27 @@
-# User Guide
+= User Guide
+
+== Glossary
+
+The following terms will be used throughout the report:
+SW[0] – Switch 0 (Switch at the far right of the BASYS3 FPGA)
+SW[INDEX] – Switch at the selected Index
+SW[15] – Switch 15 (Switch at the far left of the BASYS3 FPGA)
+BTNC – Centre Button
+BTNU – Up Button
+BTND – Down Button
+BTNL – Left Button
+BTNR – Right Button
+
+== Features
+
+[width="59%",cols="<10%,<30%,<30%,<30%",options="header",]
+|=======================================================================
+|Feature |Input |Description |Remarks
+
+|Real-time Microphone-Speaker System |a) PModMic3 +
+b) SW[0] |a) Takes in surrounding sound +
+b) Select this switch to activate Task 1 |a) PmodAMP2 digitizes the audio input signal. +
+b) Input strength is displayed on LED
+
+
+|=======================================================================
