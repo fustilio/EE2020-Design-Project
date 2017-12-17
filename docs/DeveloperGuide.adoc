@@ -23,10 +23,10 @@ For the integration, we used the concept of a finite-state machine to encapsulat
 
 Regardless of switch selected, all tasks will be initialized once.
 
-![Image 1](image1.png)
+![Image 1](../master/image1.png)
 
 Based on the switches selected, the respective output will be assigned to an intermediate value.
 
-![Image 2](image2.png)
+![Image 2](../master/image2.png)
 
 The intermediate value will be assigned to the BASYS3’s seven-segments, LED and speaker at the end of the module.
