@@ -1,6 +1,6 @@
 # EE2020-Design-Project
 
-![Project Gif](https://github.com/Jeremylsw/EE2020-Design-Project/blob/master/EE2020.GIF)
+![Project Gif](docs/EE2020.GIF)
 
 
 ## About
