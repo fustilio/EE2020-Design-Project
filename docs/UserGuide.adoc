@@ -14,7 +14,7 @@ BTNR – Right Button
 
 == Features
 
-*There are 6 main features in the project. To activate them, "ON" the respective switches. *
+*There are 6 main features in the project. To activate them, "ON" the respective switches.*
 
 [width="59%",cols="<10%,<30%,<30%,<30%",options="header",]
 |=======================================================================
