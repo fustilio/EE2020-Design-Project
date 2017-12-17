@@ -3,3 +3,30 @@
 == Integration
 For the integration, we used the concept of a finite-state machine to encapsulate all our tasks. To do so, we created a module called task selector which runs all tasks at once. Depending on the switches selected, the respective tasks get selected. The table below shows the switch combination 
 
+[width="59%",cols="<10%,<30%,<30%,<30%",options="header",]
+|=======================================================================
+|S/N |Binary |Switch |Task Selected
+
+|1 |0001 |SW[0] |Real-time Microphone-Speaker System
+
+|2 |0010 |SW[1] |Electronic Musical Instrument
+
+|3 |0011 |SW[0] and SW[1] |Audio Volume Indicator
+
+|4 |0100 |SW[2] |Delay
+
+|5 |0101 |SW[0] and SW[2] |Playback “Hello”
+
+|6 |0110 |SW[1] and SW[2] |Extra Feature
+
+|=======================================================================
+
+Regardless of switch selected, all tasks will be initialized once.
+
+![Image 1](image1.png)
+
+Based on the switches selected, the respective output will be assigned to an intermediate value.
+
+![Image 2](image2.png)
+
+The intermediate value will be assigned to the BASYS3’s seven-segments, LED and speaker at the end of the module.
