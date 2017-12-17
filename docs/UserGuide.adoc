@@ -14,6 +14,26 @@ BTNR – Right Button
 
 == Features
 
+*There are 6 main features in the project. To activate them, "ON" the respective switches. *
+
+[width="59%",cols="<10%,<30%,<30%,<30%",options="header",]
+|=======================================================================
+|S/N |Binary |Switch |Task Selected
+
+|1 |0001 |SW[0] |Real-time Microphone-Speaker System
+
+|2 |0010 |SW[1] |Electronic Musical Instrument
+
+|3 |0011 |SW[0] and SW[1] |Audio Volume Indicator
+
+|4 |0100 |SW[2] |Delay
+
+|5 |0101 |SW[0] and SW[2] |Playback “Hello”
+
+|6 |0110 |SW[1] and SW[2] |Extra Feature
+
+|=======================================================================
+
 === Real-time Microphone-Speaker System
 
 [width="59%",cols="<30%,<30%,<30%",options="header",]
