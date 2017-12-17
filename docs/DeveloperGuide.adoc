@@ -21,12 +21,12 @@ For the integration, we used the concept of a finite-state machine to encapsulat
 
 |=======================================================================
 
-Regardless of switch selected, all tasks will be initialized once.
+*Regardless of switch selected, all tasks will be initialized once.*
 
 image::image1.png[width="800"]
 
-Based on the switches selected, the respective output will be assigned to an intermediate value.
+*Based on the switches selected, the respective output will be assigned to an intermediate value.*
 
 image::image2.png[width="800"]
 
-The intermediate value will be assigned to the BASYS3’s seven-segments, LED and speaker at the end of the module.
+*The intermediate value will be assigned to the BASYS3’s seven-segments, LED and speaker at the end of the module.*
