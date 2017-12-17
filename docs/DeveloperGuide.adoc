@@ -1,1 +1,5 @@
-# Developer Guide
+= Developer Guide
+
+== Integration
+For the integration, we used the concept of a finite-state machine to encapsulate all our tasks. To do so, we created a module called task selector which runs all tasks at once. Depending on the switches selected, the respective tasks get selected. The table below shows the switch combination 
+
